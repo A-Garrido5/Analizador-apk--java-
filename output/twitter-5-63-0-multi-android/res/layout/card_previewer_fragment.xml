@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/list_row_padding_horizontal" android:paddingTop="@dimen/list_row_padding_vertical" android:paddingRight="@dimen/list_row_padding_horizontal" android:paddingBottom="@dimen/list_row_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:enabled="false" android:id="@id/reload_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/developer_card_previewer_reload_button_label" style="@style/Button" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+            <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="@color/primary_text" android:id="@id/element_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_card_previewer_element_count_label" />
+            <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="@color/primary_text" android:id="@id/element_depth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_card_previewer_element_depth_label" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_small" android:textStyle="bold" android:textColor="@color/debug_card_previewer_error_banner_text" android:id="@id/error_banner_text" android:background="@color/debug_card_previewer_error_banner_bg" android:paddingLeft="@dimen/list_row_padding_horizontal" android:paddingTop="@dimen/list_row_padding_vertical" android:paddingRight="@dimen/list_row_padding_horizontal" android:paddingBottom="@dimen/list_row_padding_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/divider" />
+    <ScrollView android:paddingLeft="@dimen/list_row_padding_horizontal" android:paddingRight="@dimen/list_row_padding_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="vertical" android:id="@id/preview_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <include layout="@layout/divider" />
+</LinearLayout>

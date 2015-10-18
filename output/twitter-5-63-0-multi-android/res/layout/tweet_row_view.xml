@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/actions_stub" android:layout="@layout/swipe_actions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <include layout="@layout/tweet_row_view_tweet" />
+</RelativeLayout>

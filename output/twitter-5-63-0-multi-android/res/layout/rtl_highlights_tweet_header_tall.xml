@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.library.media.widget.MediaImageView android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_width="@dimen/medium_user_image_size" android:layout_height="@dimen/medium_user_image_size" android:layout_marginLeft="@dimen/highlights_inner_spacing" android:layout_marginTop="@dimen/highlights_ascii_topalign_image_adjustment" android:layout_alignParentRight="true">
+        <com.twitter.internal.android.widget.RichImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" twitter:cornerRadius="@dimen/highlights_rounded_corner_size" />
+    </com.twitter.library.media.widget.MediaImageView>
+    <ImageView android:id="@id/verified" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/highlights_verified_margin" android:src="@drawable/ic_profile_verified" android:layout_toLeftOf="@id/avatar" android:layout_alignTop="@id/name" android:contentDescription="@string/icon_verified" />
+    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/highlights_tweet_header_text_size" android:textStyle="bold" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/verified" android:layout_alignParentTop="true" />
+    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/highlights_tweet_header_text_size" android:textColor="@color/highlights_gray" android:ellipsize="end" android:id="@id/screen_name_and_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/avatar" android:layout_below="@id/name" />
+</merge>

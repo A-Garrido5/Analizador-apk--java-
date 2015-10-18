@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/text_container" android:background="@drawable/bg_medium_dark_to_clear_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/action_button" android:background="@drawable/moments_transparent_button_bg" android:layout_width="@dimen/moments_thumbnail_size" android:layout_height="@dimen/moments_thumbnail_size" android:layout_margin="@dimen/moments_standard_spacing" />
+    <com.twitter.ui.widget.TwitterButton android:id="@id/follow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/moments_standard_spacing" android:text="@string/follow" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TwitterButtonMediumNight" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/moments_standard_spacing" android:layout_toLeftOf="@id/follow_button" android:layout_toRightOf="@id/action_button" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <com.twitter.internal.android.widget.TypefacesTextView android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MomentsGuideText.Primary.White" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.twitter.android.moments.ui.guide.KnockoutTextView android:id="@id/live_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/live" style="@style/MomentsGuideText.LiveBadge" />
+            <com.twitter.internal.android.widget.TypefacesTextView android:id="@id/secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MomentsGuideText.Secondary.White" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

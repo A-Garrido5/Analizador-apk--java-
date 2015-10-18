@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:id="@id/gallery_header" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <GridView android:id="@id/gallery_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false" style="@style/GalleryGrid" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/footer" android:background="@color/dark_transparent_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/gallery_footer_height" />
+    </FrameLayout>
+</LinearLayout>

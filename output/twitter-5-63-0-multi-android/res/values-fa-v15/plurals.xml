@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badge_item_count">
+        <item quantity="other">%d مورد جديد</item>
+        <item quantity="one">۱ مورد جدید</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d روز</item>
+        <item quantity="one">١ روز</item>
+    </plurals>
+    <plurals name="followed_by_count">
+        <item quantity="other">دنبال‌شده توسط %1$s و %2$d نفر دیگر</item>
+        <item quantity="one">دنبال شده توسط \"%1$s\" و یک کاربر دیگر</item>
+    </plurals>
+    <plurals name="in_reply_to_name_and_count">
+        <item quantity="other">در پاسخ به %1$s و %2$d%3$s نفر دیگر</item>
+        <item quantity="one">در پاسخ به %1$s و 1%3$s نفر دیگر</item>
+    </plurals>
+    <plurals name="magic_recs_favorite_notif">
+        <item quantity="other">همین حالا توسط %1$s و %2$d نفر که شما دنبال می کنید برگزیده شد</item>
+        <item quantity="one">همین حالا توسط %1$s و %2$d نفر که شما دنبال می کنید برگزیده شد</item>
+    </plurals>
+    <plurals name="magic_recs_follow_notif">
+        <item quantity="other">همین حالا توسط %1$s و %2$d نفر که شما دنبال می کنید، دنبال شد</item>
+        <item quantity="one">همین حالا توسط %1$s و %2$d نفر که شما دنبال می کنید، دنبال شد</item>
+    </plurals>
+    <plurals name="magic_recs_retweet_notif">
+        <item quantity="other">همین حالا توسط %1$s و %2$d نفر بازتوییت شد</item>
+        <item quantity="one">همین حالا توسط %1$s و %2$d نفر که شما دنبال می کنید، بازتوییت شد</item>
+    </plurals>
+    <plurals name="media_tag_prompt">
+        <item quantity="other">چه کسانی در این عکس ها هستند؟</item>
+        <item quantity="one">چه کسی در این عکس است؟</item>
+    </plurals>
+    <plurals name="media_tag_remaining">
+        <item quantity="other">حداکثر %d نفر دیگر را تگ کنید.</item>
+        <item quantity="one">حداکثر 1 نفر دیگر را تگ کنید.</item>
+    </plurals>
+    <plurals name="media_tag_tagged">
+        <item quantity="other">%d نفر تگ شدند</item>
+        <item quantity="one">1 نفر تگ شد</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d ماه</item>
+        <item quantity="one">‍۱ ماه</item>
+    </plurals>
+    <plurals name="new_tweet_count">
+        <item quantity="other">%d توییت جدید</item>
+        <item quantity="one">۱ توییت جدید</item>
+    </plurals>
+    <plurals name="photo_stat_label_favorites">
+        <item quantity="other">برگزیده</item>
+        <item quantity="one">برگزیده</item>
+    </plurals>
+    <plurals name="photo_stat_label_replies">
+        <item quantity="other">پاسخ</item>
+        <item quantity="one">پاسخ</item>
+    </plurals>
+    <plurals name="photo_stat_label_retweets">
+        <item quantity="other">بازتوییت‌ها</item>
+        <item quantity="one">بازتوییت</item>
+    </plurals>
+    <plurals name="profile_followers_count_label">
+        <item quantity="other">دنبال کننده‌ها</item>
+        <item quantity="one">دنبال کننده</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_favorites">
+        <item quantity="other">%s مورد برگزیده</item>
+        <item quantity="one">%s مورد برگزیده</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_media">
+        <item quantity="other">تصویر %s</item>
+        <item quantity="one">تصویر %s</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_timeline">
+        <item quantity="other">%s توییت</item>
+        <item quantity="one">%s توییت</item>
+    </plurals>
+    <plurals name="profile_tweets_count_label">
+        <item quantity="other">توییت‌ها</item>
+        <item quantity="one">توییت</item>
+    </plurals>
+    <plurals name="replies_count">
+        <item quantity="other">%1$d پاسخ‌های بیشتر</item>
+        <item quantity="one">۱ پاسخ دیگر</item>
+    </plurals>
+    <plurals name="search_user_name_pile">
+        <item quantity="other">%1$s, %2$s و بیشتر</item>
+        <item quantity="one">%1$s و بیشتر</item>
+    </plurals>
+    <plurals name="selected_image_count">
+        <item quantity="other">%d مورد انتخاب شد</item>
+        <item quantity="one">۱ مورد انتخاب شد</item>
+    </plurals>
+    <plurals name="settings_notif_tweets_count">
+        <item quantity="other">%d نفر</item>
+        <item quantity="one">١ نفر</item>
+    </plurals>
+    <plurals name="social_fav_and_retweets_count">
+        <item quantity="other">%1$s برگزیده و %2$s بازتوییت</item>
+        <item quantity="one">%1$s برگزیده و ۱ بازتوییت</item>
+    </plurals>
+    <plurals name="social_fav_count">
+        <item quantity="other">%1$s برگزیده‌</item>
+        <item quantity="one">۱ برگزیده</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user">
+        <item quantity="other">%1$s و %2$d نفر از افراد دیگری که دنبال می کنید به موارد برگزیده اضافه شدند</item>
+        <item quantity="one">%1$s و 1 نفر دیگر که دنبال می کنید به موارد برگزیده اضافه شدند</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user_accessibility_description">
+        <item quantity="other">توسط %1$s و %2$d نفر دیگر که او را دنبال می کنید به موارد برگزیده اضافه شد</item>
+        <item quantity="one">توسط %1$s و 1 نفر دیگر که او را دنبال می کنید به موارد برگزیده اضافه شد</item>
+    </plurals>
+    <plurals name="social_follow_and_follow_and_others">
+        <item quantity="other">%1$s، %2$s و %3$d نفر دیگر دنبال می کنند</item>
+        <item quantity="one">%1$s، %2$s و 1 نفر دیگر دنبال می کنند</item>
+    </plurals>
+    <plurals name="social_proof_in_reply_multiple_names_and_count">
+        <item quantity="other">در پاسخ به %1$s، %2$s، و %3$d نفر دیگر</item>
+        <item quantity="one">در پاسخ به %1$s ، %2$s ، و یک نفر دیگر.</item>
+    </plurals>
+    <plurals name="social_retweet_and_favs_count">
+        <item quantity="other">%1$s بازتوییت و %2$s برگزیده</item>
+        <item quantity="one">%1$s بازتوییت و ۱ برگزیده</item>
+    </plurals>
+    <plurals name="social_retweet_count">
+        <item quantity="other">%1$s بازتوییت‌ها</item>
+        <item quantity="one">یک بازتوییت</item>
+    </plurals>
+    <plurals name="stat_label_favorites">
+        <item quantity="other">برگزیده‌ها</item>
+        <item quantity="one">برگزیده</item>
+    </plurals>
+    <plurals name="stat_label_replies">
+        <item quantity="other">پاسخ</item>
+        <item quantity="one">پاسخ</item>
+    </plurals>
+    <plurals name="stat_label_retweets">
+        <item quantity="other">بازتوییت‌ها</item>
+        <item quantity="one">بازتوییت</item>
+    </plurals>
+    <plurals name="stat_label_views">
+        <item quantity="other">مشاهده</item>
+        <item quantity="one">مشاهده</item>
+    </plurals>
+    <plurals name="story_proof_author_follow_by">
+        <item quantity="other">\"%1$s\" و %2$d نفر دیگر دنبال می کنند</item>
+        <item quantity="one">‎@%1$s و%2$d نفر دیگر دنبال کردند</item>
+    </plurals>
+    <plurals name="story_proof_favorite_by">
+        <item quantity="other">‎@%1$s و%2$d نفر دیگر برگزیدند</item>
+        <item quantity="one">‎@%1$s و%2$d نفر دیگر برگزیدند</item>
+    </plurals>
+    <plurals name="story_proof_follow_by">
+        <item quantity="other">\"%1$s\" و %2$d نفر دیگر اخیراً دنبال شده اند</item>
+        <item quantity="one">\"%1$s\" و %2$d نفر دیگر اخیراً دنبال شده اند</item>
+    </plurals>
+    <plurals name="story_proof_retweet_by">
+        <item quantity="other">‎@%1$s و%2$d نفر دیگر بازتوییت کردند</item>
+        <item quantity="one">‎@%1$s و%2$d نفر دیگر بازتوییت کردند</item>
+    </plurals>
+    <plurals name="story_proof_shared_by">
+        <item quantity="other">‎@%1$s و %2$d نفر دیگر درباره این مورد صحبت می کنند</item>
+        <item quantity="one">‎@%1$s و %2$d نفر دیگر درباره این مورد صحبت می کنند</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="other">%dر</item>
+        <item quantity="one">۱ر</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="other">%d روز پیش</item>
+        <item quantity="one">١ روز پیش</item>
+    </plurals>
+    <plurals name="time_hours">
+        <item quantity="other">%dس</item>
+        <item quantity="one">۱س</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="other">%d ساعت پیش</item>
+        <item quantity="one">۱ ساعت پیش</item>
+    </plurals>
+    <plurals name="time_mins">
+        <item quantity="other">%dد</item>
+        <item quantity="one">۱د</item>
+    </plurals>
+    <plurals name="time_mins_ago">
+        <item quantity="other">%d دقیقه پیش</item>
+        <item quantity="one">۱ دقیقه پیش</item>
+    </plurals>
+    <plurals name="time_secs">
+        <item quantity="other">%dها</item>
+        <item quantity="one">۱ث</item>
+    </plurals>
+    <plurals name="typing_users_count">
+        <item quantity="other">%d نفر در حال نوشتن هستند</item>
+        <item quantity="one">۱ نفر در حال نوشتن است</item>
+    </plurals>
+    <plurals name="users_fast_follow_text">
+        <item quantity="other">%1$s دنبال کننده پیامکی بیشتر</item>
+        <item quantity="one">+%1$s دنبال کننده پیامکی بیشتر</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="other">%d هفته</item>
+        <item quantity="one">۱ هفته</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d سال</item>
+        <item quantity="one">۱ سال</item>
+    </plurals>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DMRow"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/message_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/profile_image">
+        <com.twitter.android.widget.Divot android:id="@id/bubble_divot" twitter:color="@color/dm_received_bg" twitter:direction="left" style="@style/MessagesDivot" />
+        <com.twitter.android.widget.Divot android:id="@id/bubble_divot_error" android:visibility="gone" twitter:color="@color/dm_received_bg" twitter:direction="left" style="@style/MessagesDivot" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DMBubble.Received">
+            <com.twitter.internal.android.widget.TypefacesTextView android:id="@id/image_nsfw_text" android:visibility="gone" android:layout_width="@dimen/message_content_max_width" android:layout_height="wrap_content" android:text="@string/dm_nsfw_interstitial" style="@style/DMNSFWInterstitial" />
+            <com.twitter.library.media.widget.MediaImageView android:id="@id/media_image" android:visibility="gone" android:layout_width="@dimen/message_content_max_width" android:layout_height="wrap_content" twitter:scaleType="fill" style="@style/MessagePhoto">
+                <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:tint="@color/faint_transparent_black" android:contentDescription="@null" />
+            </com.twitter.library.media.widget.MediaImageView>
+            <com.twitter.library.view.QuoteView android:id="@id/quote_tweet" android:visibility="gone" android:layout_width="@dimen/message_content_max_width" android:layout_height="wrap_content" android:contentDescription="@null" twitter:borderColor="@color/dm_received_bg" style="@style/DMQuoteView" />
+            <com.twitter.internal.android.widget.TypefacesTextView android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DMContent.Received" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.twitter.library.media.widget.UserImageView android:id="@id/profile_image" android:layout_marginRight="@dimen/dm_avatar_spacing" android:layout_alignBottom="@id/message_container" android:layout_alignParentLeft="true" style="@style/MessageAvatar" />
+    <com.twitter.internal.android.widget.TypefacesTextView android:id="@id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dm_timestamp_margin_top" android:layout_marginBottom="@dimen/dm_timestamp_margin_bottom" android:layout_toRightOf="@id/profile_image" android:layout_below="@id/message_container" style="@style/Byline.Message.Received" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/spam_actions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/profile_image" android:layout_below="@id/timestamp">
+        <com.twitter.ui.widget.TwitterButton android:id="@id/is_not_spam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dm_not_spam_button" android:layout_weight="1.0" style="@style/TwitterButtonMediumRegular" />
+        <com.twitter.ui.widget.TwitterButton android:id="@id/is_spam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/dm_confirm_spam_button" android:layout_weight="1.0" style="@style/TwitterButtonMediumRegular" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/card_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.library.media.widget.MediaImageView android:id="@id/card_image" android:layout_width="72.0dip" android:layout_height="wrap_content" android:contentDescription="@string/image_profile_default" twitter:defaultDrawable="@color/placeholder_bg" twitter:errorDrawable="@drawable/bg_tweet_placeholder_photo_error" />
+    <RelativeLayout android:id="@id/card_content" android:paddingLeft="@dimen/card_default_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/card_image">
+        <RelativeLayout android:id="@id/card_stats_container" android:background="@drawable/bg_card_text" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/card_font_size_small" android:textColor="@color/black" android:ellipsize="end" android:id="@id/card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/card_font_size_small" android:textColor="@color/medium_gray" android:ellipsize="end" android:id="@id/card_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/card_title" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <com.twitter.ui.widget.TwitterButton android:textSize="@dimen/card_font_size_small" android:id="@id/card_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/app_install" android:layout_below="@id/card_stats_container" style="@style/TwitterButtonMediumCondensedBold" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="card_long_press_options">
+        <item>Tweeta länk</item>
+        <item>Kopiera länk</item>
+        <item>Skicka länk</item>
+    </string-array>
+    <string-array name="mention_notif">
+        <item>Skräddarsytt för dig</item>
+        <item>Från vem som helst</item>
+        <item>Av</item>
+    </string-array>
+    <string-array name="refresh_intervals">
+        <item>5 minuter</item>
+        <item>10 minuter</item>
+        <item>15 minuter</item>
+        <item>30 minuter</item>
+        <item>1 timme</item>
+        <item>2 timmar</item>
+        <item>4 timmar</item>
+    </string-array>
+</resources>

@@ -1,0 +1,57 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package com.whatsapp.gdrive;
+
+import com.whatsapp.util.Log;
+
+class a5 implements Runnable
+{
+    private static final String z;
+    final int a;
+    final b0 b;
+    
+    static {
+        final char[] charArray = "MG(:\"PE/c,ZP58.\u0013M>=.LT9<dSG8'*\u0013P9=?QP9c.LP3<k".toCharArray();
+        for (int i = charArray.length, n = 0; i > n; ++n) {
+            final char c = charArray[n];
+            char c2 = '\0';
+            switch (n % 5) {
+                default: {
+                    c2 = 'K';
+                    break;
+                }
+                case 0: {
+                    c2 = '>';
+                    break;
+                }
+                case 1: {
+                    c2 = '\"';
+                    break;
+                }
+                case 2: {
+                    c2 = '\\';
+                    break;
+                }
+                case 3: {
+                    c2 = 'N';
+                    break;
+                }
+            }
+            charArray[n] = (char)(c2 ^ c);
+        }
+        z = new String(charArray).intern();
+    }
+    
+    a5(final b0 b, final int a) {
+        this.b = b;
+        this.a = a;
+    }
+    
+    @Override
+    public void run() {
+        Log.i(a5.z + this.a);
+        SettingsGoogleDrive.a(this.b.b, this.a);
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="45.0dip" android:paddingTop="20.0dip" android:paddingRight="45.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/hello_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/signed_out_first_line" android:layout_alignParentTop="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:id="@id/welcome_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signed_out_second_line" android:layout_below="@id/hello_text" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/deep_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/widget_welcome_description" android:layout_below="@id/welcome_text" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <com.twitter.ui.widget.TwitterButton android:id="@id/widget_sign_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/standard_spacing" android:text="@string/signup_sign_up" android:drawablePadding="@dimen/standard_spacing" style="@style/TwitterButtonMediumHeavy" />
+        <com.twitter.ui.widget.TwitterButton android:gravity="center_horizontal" android:id="@id/widget_log_in" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/login_cta" android:layout_weight="1.0" style="@style/TwitterButtonMediumRegular" />
+    </LinearLayout>
+</RelativeLayout>

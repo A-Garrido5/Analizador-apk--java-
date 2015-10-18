@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_toolbar" />
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <RelativeLayout android:id="@id/scroll_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_xxlarge" android:textStyle="normal" android:textColor="@android:color/black" android:gravity="center_horizontal" android:id="@id/signed_out_first_line" android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/instant_signup_confirmation" />
+            <LinearLayout android:orientation="vertical" android:id="@id/form" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_below="@id/signed_out_first_line">
+                <com.twitter.ui.widget.TwitterEditText android:id="@id/name" android:hint="@string/signup_name_hint" android:inputType="textPersonName" twitter:labelText="@string/signup_name_label" style="@style/AccountEdit" />
+                <com.twitter.internal.android.widget.PopupEditText android:id="@id/username" android:nextFocusDown="@id/password" android:hint="@string/signup_username_hint" android:maxLength="@integer/username_max_length" android:drawableLeft="@drawable/ic_form_at" android:inputType="textNoSuggestions" twitter:labelText="@string/signup_username_label" style="@style/AccountEdit" />
+                <com.twitter.ui.widget.TwitterEditText android:id="@id/identifier" android:hint="@string/signup_email_hint" android:inputType="textEmailAddress" twitter:labelText="@string/signup_email_label" style="@style/AccountEdit" />
+                <com.twitter.ui.widget.TwitterEditText android:id="@id/password" android:focusable="true" android:hint="@string/signup_password_hint" android:drawableRight="@drawable/ic_sign_up_password_field_state_list" android:inputType="textPassword" twitter:labelText="@string/signup_password_label" style="@style/AccountEdit" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/phone_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.twitter.ui.widget.TwitterEditText android:id="@id/phone" android:focusable="true" android:hint="@string/signup_phone_hint" android:inputType="phone" twitter:labelText="@string/signup_phone_label" style="@style/AccountEdit" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/list_margin_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_below="@id/form">
+                <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="10.0dip" style="@style/HorizontalRule" />
+                <CheckBox android:textSize="@dimen/font_size_micro" android:layout_gravity="center_vertical" android:id="@id/phone_number_addr_book_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginBottom="10.0dip" android:checked="true" android:text="@string/signup_addr_book_no_phone_text" />
+                <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/HorizontalRule" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/HorizontalRule" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.twitter.ui.widget.TwitterButton android:enabled="false" android:id="@id/next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next" style="@style/TwitterButtonMediumHeavy" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

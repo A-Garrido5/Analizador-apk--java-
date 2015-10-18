@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_v_padding" android:layout_marginBottom="@dimen/card_v_padding">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/image" android:background="@color/conversation_background" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:layout_margin="16.0dip" android:src="@drawable/ic_person_outline_white" android:scaleType="fitCenter" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0sp" android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemTitle" />
+                    <TextView android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/divider_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/contact_info_ll" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:gravity="center" android:id="@id/footer_view" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip">
+        <View android:background="@color/divider_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        <Button android:textColor="@drawable/flat_button_text_color" android:layout_gravity="center" android:id="@id/add_contact_btn" android:background="@null" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="8.0dip" android:text="@string/add_contact" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/footer_send" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/ok_cancel" />
+    </FrameLayout>
+</LinearLayout>

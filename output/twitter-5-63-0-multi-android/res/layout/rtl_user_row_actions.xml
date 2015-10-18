@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.library.widget.ActionButton android:id="@id/action_button" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_silhouette" android:layout_toRightOf="@id/user_checkbox" android:layout_alignBottom="@id/user_checkbox" />
+    <CheckBox android:id="@id/user_checkbox" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="false" />
+</RelativeLayout>

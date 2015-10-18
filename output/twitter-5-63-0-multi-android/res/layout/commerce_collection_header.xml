@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.android.widget.UnboundedFrameLayout android:orientation="vertical" android:id="@id/event_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?toolBarSize">
+        <com.twitter.library.media.widget.MediaImageView android:id="@id/collection_header" android:layout_width="fill_parent" android:layout_height="wrap_content" twitter:defaultDrawable="@color/twitter_blue" twitter:aspect_ratio="@dimen/commerce_collection_header_aspect_ratio" />
+    </com.twitter.android.widget.UnboundedFrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commerce_collection_header_padding">
+        <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_xlarge" android:textStyle="bold" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentTop="true" />
+        <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_medium" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/owner_byline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/name" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_medium" android:id="@id/description" android:paddingBottom="@dimen/commerce_collection_header_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commerce_collection_header_padding" android:layout_marginRight="@dimen/commerce_collection_header_padding" />
+</LinearLayout>

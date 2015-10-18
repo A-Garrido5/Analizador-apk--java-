@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+        <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_xlarge" android:textStyle="bold" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:lines="1" android:layout_alignParentTop="true" />
+        <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_medium" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/owner_byline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/name" android:layout_alignParentLeft="true" />
+        <com.twitter.ui.widget.TwitterButton android:gravity="center_vertical" android:id="@id/follow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TwitterButtonMediumBold" />
+        <com.twitter.ui.widget.TwitterButton android:gravity="center_vertical" android:id="@id/unfollow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unfollow" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TwitterButtonMediumHeavy" />
+    </RelativeLayout>
+    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_medium" android:textStyle="italic" android:textColor="@color/deep_gray" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" />
+    <include layout="@layout/section_divider" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListRow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_medium" android:textStyle="bold" android:id="@id/found_people" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/follow_all" android:layout_alignParentLeft="true" />
+    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_medium" android:textColor="@color/secondary_text" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/follow_all" android:layout_below="@id/found_people" android:layout_alignParentLeft="true" />
+    <Button android:id="@id/follow_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow_all" android:drawableLeft="@drawable/ic_follow_action_default" android:drawablePadding="@dimen/standard_spacing" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClickHandler" style="@style/ImageButton" />
+</RelativeLayout>

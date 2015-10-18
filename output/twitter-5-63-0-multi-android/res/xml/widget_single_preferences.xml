@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.android.samsung.single.WidgetPreferencesCategory android:title="@string/settings_account" android:key="accounts">
+        <Preference android:title="@string/add_account" android:key="add_account" android:summary="@string/add_account_summary" />
+    </com.twitter.android.samsung.single.WidgetPreferencesCategory>
+    <com.twitter.android.samsung.single.WidgetPreferencesCategory android:title="@string/settings" android:key="refresh_options">
+        <ListPreference android:entries="@array/refresh_intervals" android:title="@string/settings_polling_interval_title" android:key="refresh_rate" android:entryValues="@array/refresh_interval_values" />
+    </com.twitter.android.samsung.single.WidgetPreferencesCategory>
+</PreferenceScreen>

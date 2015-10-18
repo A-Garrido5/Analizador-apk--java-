@@ -1,0 +1,28 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package com.whatsapp;
+
+import android.view.animation.Animation;
+import android.view.animation.Animation$AnimationListener;
+
+class rb implements Animation$AnimationListener
+{
+    final HomeActivity a;
+    
+    rb(final HomeActivity a) {
+        this.a = a;
+    }
+    
+    public void onAnimationEnd(final Animation animation) {
+        HomeActivity.g(this.a).setIconified(true);
+        HomeActivity.f(this.a).setVisibility(4);
+    }
+    
+    public void onAnimationRepeat(final Animation animation) {
+    }
+    
+    public void onAnimationStart(final Animation animation) {
+    }
+}

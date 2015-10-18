@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="card_long_press_options">
+        <item>توییت کردن پیوند</item>
+        <item>کپی کردن پیوند</item>
+        <item>فرستادن پیوند</item>
+    </string-array>
+    <string-array name="mention_notif">
+        <item>تهیه شده برای شما</item>
+        <item>از همه</item>
+        <item>خاموش</item>
+    </string-array>
+    <string-array name="refresh_intervals">
+        <item>۵ دقیقه</item>
+        <item>۱۰ دقیقه</item>
+        <item>۱۵ دقیقه</item>
+        <item>۳۰ دقیقه</item>
+        <item>١ ساعت</item>
+        <item>۲ ساعت</item>
+        <item>۴ ساعت</item>
+    </string-array>
+</resources>

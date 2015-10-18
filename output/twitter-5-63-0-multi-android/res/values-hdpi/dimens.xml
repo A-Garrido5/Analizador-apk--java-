@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divider_thickness">1.0px</dimen>
+    <dimen name="message_avatar_top_margin">3.0dip</dimen>
+    <dimen name="photo_row_height">120.0dip</dimen>
+</resources>

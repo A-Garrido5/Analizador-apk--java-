@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.library.widget.AspectRatioFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" twitter:aspect_ratio="1.333"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.internal.android.widget.HorizontalListView android:id="@id/horizontal_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.twitter.library.widget.AspectRatioFrameLayout>

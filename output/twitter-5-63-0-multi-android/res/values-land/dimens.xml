@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_row_height">100.0dip</dimen>
+    <dimen name="event_header_image_height">48.0dip</dimen>
+    <dimen name="filter_crop_padding">10.0dip</dimen>
+    <dimen name="prompt_fullscreen_text_padding_horizontal">64.0dip</dimen>
+    <dimen name="toolBarHeight">48.0dip</dimen>
+    <dimen name="trendsplus_border_width">1.0px</dimen>
+    <dimen name="video_segment_edit_thumbnail_divider_width">2.0dip</dimen>
+    <dimen name="video_segment_edit_thumbnail_indicator_offset">8.0dip</dimen>
+    <dimen name="video_segments_duration_margin_bottom">70.0dip</dimen>
+    <dimen name="video_segments_duration_margin_left">12.0dip</dimen>
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badge_item_count">
+        <item quantity="other">%d nieuw items</item>
+        <item quantity="one">1 nieuw item</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d dagen</item>
+        <item quantity="one">1 dag</item>
+    </plurals>
+    <plurals name="followed_by_count">
+        <item quantity="other">Gevolgd door %1$s en %2$d anderen</item>
+        <item quantity="one">Gevolgd door %1$s en 1 ander</item>
+    </plurals>
+    <plurals name="in_reply_to_name_and_count">
+        <item quantity="other">Als antwoord op %1$s en %2$d%3$sanderen</item>
+        <item quantity="one">Als antwoord op %1$s en 1%3$sander</item>
+    </plurals>
+    <plurals name="magic_recs_favorite_notif">
+        <item quantity="other">Zojuist toegevoegd aan favorieten door %1$s en %2$d personen die je volgt</item>
+        <item quantity="one">Zojuist toegevoegd aan favorieten door %1$s en %2$d persoon die je volgt</item>
+    </plurals>
+    <plurals name="magic_recs_follow_notif">
+        <item quantity="other">Zojuist gevolgd door %1$s en %2$d personen die je volgt</item>
+        <item quantity="one">Zojuist gevolgd door %1$s en %2$d persoon die je volgt</item>
+    </plurals>
+    <plurals name="magic_recs_retweet_notif">
+        <item quantity="other">Zojuist geretweet door %1$s en %2$d personen die je volgt</item>
+        <item quantity="one">Zojuist geretweet door %1$s en %2$d persoon die je volgt</item>
+    </plurals>
+    <plurals name="media_tag_prompt">
+        <item quantity="other">"Wie staan op deze foto's?"</item>
+        <item quantity="one">Wie staan er op deze foto?</item>
+    </plurals>
+    <plurals name="media_tag_remaining">
+        <item quantity="other">Je kunt nog %d personen taggen.</item>
+        <item quantity="one">Je kunt nog 1 persoon taggen.</item>
+    </plurals>
+    <plurals name="media_tag_tagged">
+        <item quantity="other">%d personen getagd</item>
+        <item quantity="one">1 persoon getagd</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d maanden</item>
+        <item quantity="one">1 maand</item>
+    </plurals>
+    <plurals name="new_tweet_count">
+        <item quantity="other">%d nieuwe tweets</item>
+        <item quantity="one">1 nieuwe tweet</item>
+    </plurals>
+    <plurals name="photo_stat_label_favorites">
+        <item quantity="other">favorieten</item>
+        <item quantity="one">favoriet</item>
+    </plurals>
+    <plurals name="photo_stat_label_replies">
+        <item quantity="other">antwoorden</item>
+        <item quantity="one">antwoord</item>
+    </plurals>
+    <plurals name="photo_stat_label_retweets">
+        <item quantity="other">retweets</item>
+        <item quantity="one">retweet</item>
+    </plurals>
+    <plurals name="profile_followers_count_label">
+        <item quantity="other">Volgers</item>
+        <item quantity="one">Volger</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_favorites">
+        <item quantity="other">%s favorieten</item>
+        <item quantity="one">%s favoriet</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_media">
+        <item quantity="other">"%s foto's"</item>
+        <item quantity="one">%s foto</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_timeline">
+        <item quantity="other">%s tweets</item>
+        <item quantity="one">%s tweet</item>
+    </plurals>
+    <plurals name="profile_tweets_count_label">
+        <item quantity="other">Tweets</item>
+        <item quantity="one">tweet</item>
+    </plurals>
+    <plurals name="replies_count">
+        <item quantity="other">nog %1$d antwoorden</item>
+        <item quantity="one">nog 1 antwoord</item>
+    </plurals>
+    <plurals name="search_user_name_pile">
+        <item quantity="other">%1$s, %2$s en meer</item>
+        <item quantity="one">%1$s en meer</item>
+    </plurals>
+    <plurals name="selected_image_count">
+        <item quantity="other">%d geselecteerd</item>
+        <item quantity="one">1 geselecteerd</item>
+    </plurals>
+    <plurals name="settings_notif_tweets_count">
+        <item quantity="other">%d personen</item>
+        <item quantity="one">1 persoon</item>
+    </plurals>
+    <plurals name="social_fav_and_retweets_count">
+        <item quantity="other">%1$s favorieten en %2$s retweets</item>
+        <item quantity="one">%1$s favorieten en 1 retweet</item>
+    </plurals>
+    <plurals name="social_fav_count">
+        <item quantity="other">%1$s favorieten</item>
+        <item quantity="one">1 favoriet</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user">
+        <item quantity="other">%1$s en %2$d anderen die je volgt voegde aan favorieten toe</item>
+        <item quantity="one">%1$s en 1 andere die je volgt voegde aan favorieten toe</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user_accessibility_description">
+        <item quantity="other">Toegevoegd aan favorieten door %1$s en %2$d anderen die je volgt</item>
+        <item quantity="one">Toegevoegd aan favorieten door %1$s en 1 ander die je volgt</item>
+    </plurals>
+    <plurals name="social_follow_and_follow_and_others">
+        <item quantity="other">%1$s, %2$s en %3$d anderen volgen</item>
+        <item quantity="one">%1$s, %2$s en 1 ander volgen</item>
+    </plurals>
+    <plurals name="social_proof_in_reply_multiple_names_and_count">
+        <item quantity="other">Als antwoord op %1$s, %2$s en %3$d anderen</item>
+        <item quantity="one">Als antwoord op %1$s, %2$s en 1 ander</item>
+    </plurals>
+    <plurals name="social_retweet_and_favs_count">
+        <item quantity="other">%1$s retweets en %2$s favorieten</item>
+        <item quantity="one">%1$s retweets en 1 favoriet</item>
+    </plurals>
+    <plurals name="social_retweet_count">
+        <item quantity="other">%1$s retweets</item>
+        <item quantity="one">1 retweet</item>
+    </plurals>
+    <plurals name="stat_label_favorites">
+        <item quantity="other">FAVORIETEN</item>
+        <item quantity="one">FAVORIET</item>
+    </plurals>
+    <plurals name="stat_label_replies">
+        <item quantity="other">ANTWOORDEN</item>
+        <item quantity="one">ANTWOORD</item>
+    </plurals>
+    <plurals name="stat_label_retweets">
+        <item quantity="other">RETWEETS</item>
+        <item quantity="one">RETWEET</item>
+    </plurals>
+    <plurals name="stat_label_views">
+        <item quantity="other">KEER BEKEKEN</item>
+        <item quantity="one">KEER BEKEKEN</item>
+    </plurals>
+    <plurals name="story_proof_author_follow_by">
+        <item quantity="other">\@%1$s en %2$d anderen volgen</item>
+        <item quantity="one">\@%1$s en %2$d ander volgen</item>
+    </plurals>
+    <plurals name="story_proof_favorite_by">
+        <item quantity="other">\@%1$s en %2$d anderen hebben toegevoegd aan hun favorieten</item>
+        <item quantity="one">\@%1$s en %2$d ander hebben toegevoegd aan hun favorieten</item>
+    </plurals>
+    <plurals name="story_proof_follow_by">
+        <item quantity="other">\@%1$s en %2$d anderen volgen nu</item>
+        <item quantity="one">\@%1$s en %2$d ander volgen nu</item>
+    </plurals>
+    <plurals name="story_proof_retweet_by">
+        <item quantity="other">\@%1$s en %2$d anderen hebben geretweet</item>
+        <item quantity="one">\@%1$s en %2$d ander hebben geretweet</item>
+    </plurals>
+    <plurals name="story_proof_shared_by">
+        <item quantity="other">\@%1$s en %2$d anderen praten hierover</item>
+        <item quantity="one">\@%1$s en %2$d ander praten hierover</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="other">%dd</item>
+        <item quantity="one">1d</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="other">%d DAGEN GELEDEN</item>
+        <item quantity="one">1 DAG GELEDEN</item>
+    </plurals>
+    <plurals name="time_hours">
+        <item quantity="other">%du</item>
+        <item quantity="one">1u</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="other">%d UUR GELEDEN</item>
+        <item quantity="one">1 UUR GELEDEN</item>
+    </plurals>
+    <plurals name="time_mins">
+        <item quantity="other">%dm</item>
+        <item quantity="one">1m</item>
+    </plurals>
+    <plurals name="time_mins_ago">
+        <item quantity="other">%d MINUTEN GELEDEN</item>
+        <item quantity="one">1 MINUUT GELEDEN</item>
+    </plurals>
+    <plurals name="time_secs">
+        <item quantity="other">%ds</item>
+        <item quantity="one">1s</item>
+    </plurals>
+    <plurals name="typing_users_count">
+        <item quantity="other">%d personen zijn aan het typen</item>
+        <item quantity="one">1 persoon is aan het typen</item>
+    </plurals>
+    <plurals name="users_fast_follow_text">
+        <item quantity="other">+%1$s andere sms-volgers</item>
+        <item quantity="one">+%1$s andere sms-volger</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="other">%d weken</item>
+        <item quantity="one">1 week</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d jaar</item>
+        <item quantity="one">1 jaar</item>
+    </plurals>
+</resources>

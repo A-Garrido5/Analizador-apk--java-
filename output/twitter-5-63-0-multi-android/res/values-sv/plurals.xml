@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badge_item_count">
+        <item quantity="other">%d nya objekt</item>
+        <item quantity="one">1 nytt objekt</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d dagar</item>
+        <item quantity="one">1 dag</item>
+    </plurals>
+    <plurals name="followed_by_count">
+        <item quantity="other">Följd av %1$s och %2$d andra</item>
+        <item quantity="one">Följd av %1$s och en annan</item>
+    </plurals>
+    <plurals name="in_reply_to_name_and_count">
+        <item quantity="other">Som svar till %1$s och %2$d%3$sandra</item>
+        <item quantity="one">Som svar till %1$s och en%3$sannan</item>
+    </plurals>
+    <plurals name="magic_recs_favorite_notif">
+        <item quantity="other">Favoritmarkerades precis av %1$s och %2$d personer du följer</item>
+        <item quantity="one">Favoritmarkerades precis av %1$s och %2$d personer du följer</item>
+    </plurals>
+    <plurals name="magic_recs_follow_notif">
+        <item quantity="other">Följdes precis av %1$s och %2$d personer du följer</item>
+        <item quantity="one">Följdes precis av %1$s och %2$d personer du följer</item>
+    </plurals>
+    <plurals name="magic_recs_retweet_notif">
+        <item quantity="other">Retweetades precis av %1$s och %2$d personer du följer</item>
+        <item quantity="one">Retweetades precis av %1$s och %2$d personer du följer</item>
+    </plurals>
+    <plurals name="media_tag_prompt">
+        <item quantity="other">Vem/vilka är det i dessa foton?</item>
+        <item quantity="one">Vem/vilka är det på det här fotot?</item>
+    </plurals>
+    <plurals name="media_tag_remaining">
+        <item quantity="other">Tagga ytterligare %d fler personer.</item>
+        <item quantity="one">Tagga ytterligare 1 person till.</item>
+    </plurals>
+    <plurals name="media_tag_tagged">
+        <item quantity="other">%d personer taggade</item>
+        <item quantity="one">1 person taggad</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d månader</item>
+        <item quantity="one">en månad</item>
+    </plurals>
+    <plurals name="new_tweet_count">
+        <item quantity="other">%d nya tweets</item>
+        <item quantity="one">1 ny tweet</item>
+    </plurals>
+    <plurals name="photo_stat_label_favorites">
+        <item quantity="other">favoriter</item>
+        <item quantity="one">favoritmarkera</item>
+    </plurals>
+    <plurals name="photo_stat_label_replies">
+        <item quantity="other">svar</item>
+        <item quantity="one">svar</item>
+    </plurals>
+    <plurals name="photo_stat_label_retweets">
+        <item quantity="other">retweets</item>
+        <item quantity="one">retweeta</item>
+    </plurals>
+    <plurals name="profile_followers_count_label">
+        <item quantity="other">Följare</item>
+        <item quantity="one">Följare</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_favorites">
+        <item quantity="other">%s favoriter</item>
+        <item quantity="one">%s favorit</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_media">
+        <item quantity="other">%s foton</item>
+        <item quantity="one">%s foto</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_timeline">
+        <item quantity="other">%s tweets</item>
+        <item quantity="one">%s tweet</item>
+    </plurals>
+    <plurals name="profile_tweets_count_label">
+        <item quantity="other">Tweets</item>
+        <item quantity="one">Tweeta</item>
+    </plurals>
+    <plurals name="replies_count">
+        <item quantity="other">%1$d svar till</item>
+        <item quantity="one">Ett svar till</item>
+    </plurals>
+    <plurals name="search_user_name_pile">
+        <item quantity="other">%1$s, %2$s och fler</item>
+        <item quantity="one">%1$s och fler</item>
+    </plurals>
+    <plurals name="selected_image_count">
+        <item quantity="other">%d vald(a)</item>
+        <item quantity="one">1 vald</item>
+    </plurals>
+    <plurals name="settings_notif_tweets_count">
+        <item quantity="other">%d personer</item>
+        <item quantity="one">En person</item>
+    </plurals>
+    <plurals name="social_fav_and_retweets_count">
+        <item quantity="other">%1$s favoriter och %2$s retweets</item>
+        <item quantity="one">%1$s favoriter och 1 retweet</item>
+    </plurals>
+    <plurals name="social_fav_count">
+        <item quantity="other">%1$s favoritmarkeringar</item>
+        <item quantity="one">1 favoritmarkering</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user">
+        <item quantity="other">%1$s och %2$d andra du följer favoritmarkerade</item>
+        <item quantity="one">%1$s och 1 annan du följer favoritmarkerade</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user_accessibility_description">
+        <item quantity="other">Favoritmarkerades av %1$s och %2$d andra du följer</item>
+        <item quantity="one">Favoritmarkerades av %1$s och en till du följer</item>
+    </plurals>
+    <plurals name="social_follow_and_follow_and_others">
+        <item quantity="other">%1$s, %2$s, och %3$d andra följer</item>
+        <item quantity="one">%1$s, %2$s, och 1 annan följer</item>
+    </plurals>
+    <plurals name="social_proof_in_reply_multiple_names_and_count">
+        <item quantity="other">Som svar till %1$s, %2$s och %3$d andra</item>
+        <item quantity="one">Som svar till %1$s, %2$s och en annan</item>
+    </plurals>
+    <plurals name="social_retweet_and_favs_count">
+        <item quantity="other">%1$s retweets och %2$s favoriter</item>
+        <item quantity="one">%1$s retweets och 1 favoritmarkeringar</item>
+    </plurals>
+    <plurals name="social_retweet_count">
+        <item quantity="other">%1$s retweets</item>
+        <item quantity="one">1 retweet</item>
+    </plurals>
+    <plurals name="stat_label_favorites">
+        <item quantity="other">FAVORITER</item>
+        <item quantity="one">FAVORIT</item>
+    </plurals>
+    <plurals name="stat_label_replies">
+        <item quantity="other">SVAR</item>
+        <item quantity="one">SVARA</item>
+    </plurals>
+    <plurals name="stat_label_retweets">
+        <item quantity="other">RETWEETS</item>
+        <item quantity="one">RETWEET</item>
+    </plurals>
+    <plurals name="stat_label_views">
+        <item quantity="other">VISNINGAR</item>
+        <item quantity="one">VISA</item>
+    </plurals>
+    <plurals name="story_proof_author_follow_by">
+        <item quantity="other">\@%1$s och %2$d andra följer</item>
+        <item quantity="one">\@%1$s och %2$d andra följer</item>
+    </plurals>
+    <plurals name="story_proof_favorite_by">
+        <item quantity="other">\@%1$s och %2$d andra favoritmarkerade</item>
+        <item quantity="one">\@%1$s och %2$d andra favoritmarkerade</item>
+    </plurals>
+    <plurals name="story_proof_follow_by">
+        <item quantity="other">\@%1$s och %2$d andra följde nyligen</item>
+        <item quantity="one">\@%1$s och %2$d andra följde nyligen</item>
+    </plurals>
+    <plurals name="story_proof_retweet_by">
+        <item quantity="other">\@%1$s och %2$d andra retweetade</item>
+        <item quantity="one">\@%1$s och %2$d andra retweetade</item>
+    </plurals>
+    <plurals name="story_proof_shared_by">
+        <item quantity="other">\@%1$s och %2$d andra pratar om det här</item>
+        <item quantity="one">\@%1$s och %2$d andra pratar om det här</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="other">%dd</item>
+        <item quantity="one">1d</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="other">%d DAGAR SEDAN</item>
+        <item quantity="one">1 DAG SEDAN</item>
+    </plurals>
+    <plurals name="time_hours">
+        <item quantity="other">%dh</item>
+        <item quantity="one">1t</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="other">%d TIMMAR SEDAN</item>
+        <item quantity="one">1 TIMME SEDAN</item>
+    </plurals>
+    <plurals name="time_mins">
+        <item quantity="other">%dm</item>
+        <item quantity="one">1m</item>
+    </plurals>
+    <plurals name="time_mins_ago">
+        <item quantity="other">%d MINUTER SEDAN</item>
+        <item quantity="one">1 MINUT SEDAN</item>
+    </plurals>
+    <plurals name="time_secs">
+        <item quantity="other">%ds</item>
+        <item quantity="one">1s</item>
+    </plurals>
+    <plurals name="typing_users_count">
+        <item quantity="other">%d personer skriver</item>
+        <item quantity="one">1 person skriver</item>
+    </plurals>
+    <plurals name="users_fast_follow_text">
+        <item quantity="other">+%1$s fler SMS-följare</item>
+        <item quantity="one">+%1$s till SMS-följare</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="other">%d veckor</item>
+        <item quantity="one">1 vecka</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d år</item>
+        <item quantity="one">1 år</item>
+    </plurals>
+</resources>

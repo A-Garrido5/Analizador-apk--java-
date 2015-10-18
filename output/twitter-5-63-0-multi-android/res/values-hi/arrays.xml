@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="card_long_press_options">
+        <item>लिंक ट्वीट करें</item>
+        <item>लिंक कॉपी करें</item>
+        <item>लिंक भेजें</item>
+    </string-array>
+    <string-array name="mention_notif">
+        <item>आपके अनुरूप</item>
+        <item>किसी से भी</item>
+        <item>बंद</item>
+    </string-array>
+    <string-array name="refresh_intervals">
+        <item>5 मिनट</item>
+        <item>10 मिनट</item>
+        <item>15 मिनट</item>
+        <item>30 मिनट</item>
+        <item>1 घंटा</item>
+        <item>2 घंटे</item>
+        <item>4 घंटे</item>
+    </string-array>
+</resources>

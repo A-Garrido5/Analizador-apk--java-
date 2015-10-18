@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badge_item_count">
+        <item quantity="other">%dটি নতুন আইটেম</item>
+        <item quantity="one">1টি নতুন আইটেম</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d দিন</item>
+        <item quantity="one">1 দিন</item>
+    </plurals>
+    <plurals name="followed_by_count">
+        <item quantity="other">%1$s ও আরো %2$d জন অনুসরণ করছেন</item>
+        <item quantity="one">%1$s ও আরো 1 জন অনুসরণ করছেন</item>
+    </plurals>
+    <plurals name="in_reply_to_name_and_count">
+        <item quantity="other">%1$s এবং আরো %2$d%3$s জনের প্রত্যুত্তরে</item>
+        <item quantity="one">%1$s এবং আরো 1%3$sজনের প্রত্যুত্তরে</item>
+    </plurals>
+    <plurals name="magic_recs_favorite_notif">
+        <item quantity="other">%1$s এবং %2$d জন ব্যক্তি আপনি যাদের অনুসরণ করেন শুধুমাত্র তারাই পছন্দ করেছে</item>
+        <item quantity="one">%1$s এবং %2$d ব্যক্তি যাদের আপনি অনুসরণ করেন তারাই শুধুমাত্র পছন্দ করেছে</item>
+    </plurals>
+    <plurals name="magic_recs_follow_notif">
+        <item quantity="other">%1$s এবং %2$d জন ব্যক্তি আপনি যাদের অনুসরণ করেন কেবল তারাই অনুসরণ করেছে</item>
+        <item quantity="one">%1$s এবং %2$d জন ব্যক্তি আপনি যাদের অনুসরণ করেন কেবল তারাই অনুসরণ করেছে</item>
+    </plurals>
+    <plurals name="magic_recs_retweet_notif">
+        <item quantity="other">%1$s এবং %2$d জন ব্যক্তি আপনি যাদের অনুসরণ করেন কেবল তারাই পুনঃটুইট করেছে</item>
+        <item quantity="one">%1$s এবং %2$d জন ব্যক্তি আপনি যাদের অনুসরণ করেন কেবল তারাই পুনঃটুইট করেছে</item>
+    </plurals>
+    <plurals name="media_tag_prompt">
+        <item quantity="other">এই ফোটোগুলিতে কে রয়েছেন?</item>
+        <item quantity="one">এই ফোটোতে কে রয়েছেন?</item>
+    </plurals>
+    <plurals name="media_tag_remaining">
+        <item quantity="other">সর্বাধিক আরো %d জনকে ট্যাগ করুন।</item>
+        <item quantity="one">সর্বাধিক আরো 1 জন ব্যক্তিকে ট্যাগ করুন।</item>
+    </plurals>
+    <plurals name="media_tag_tagged">
+        <item quantity="other">%d জনকে ট্যাগ করা হয়েছে</item>
+        <item quantity="one">1 জনকে ট্যাগ করা হয়েছে</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d মাস</item>
+        <item quantity="one">1 মাস</item>
+    </plurals>
+    <plurals name="new_tweet_count">
+        <item quantity="other">%dটি নতুন ট্যুইট</item>
+        <item quantity="one">১টি নতুন ট্যুইট</item>
+    </plurals>
+    <plurals name="photo_stat_label_favorites">
+        <item quantity="other">পছন্দসই</item>
+        <item quantity="one">পছন্দসই</item>
+    </plurals>
+    <plurals name="photo_stat_label_replies">
+        <item quantity="other">প্রত্যুত্তরগুলি</item>
+        <item quantity="one">প্রত্যুত্তর</item>
+    </plurals>
+    <plurals name="photo_stat_label_retweets">
+        <item quantity="other">পুনঃটুইট</item>
+        <item quantity="one">পুনঃটুইট</item>
+    </plurals>
+    <plurals name="profile_followers_count_label">
+        <item quantity="other">অনুসরণকারী</item>
+        <item quantity="one">অনুসরণকারী</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_favorites">
+        <item quantity="other">%s প্রিয়</item>
+        <item quantity="one">%s প্রিয়</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_media">
+        <item quantity="other">%s ফোটো</item>
+        <item quantity="one">%s ফোটো</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_timeline">
+        <item quantity="other">%s টুইট</item>
+        <item quantity="one">%s টুইট</item>
+    </plurals>
+    <plurals name="profile_tweets_count_label">
+        <item quantity="other">ট্যুইট</item>
+        <item quantity="one">ট্যুইট</item>
+    </plurals>
+    <plurals name="replies_count">
+        <item quantity="other">আরো %1$dটি প্রত্যুত্তর</item>
+        <item quantity="one">আরো ১টি প্রত্যুত্তর</item>
+    </plurals>
+    <plurals name="search_user_name_pile">
+        <item quantity="other">%1$s, %2$s এবং অনেকে</item>
+        <item quantity="one">%1$s এবং অনেকে</item>
+    </plurals>
+    <plurals name="selected_image_count">
+        <item quantity="other">%dটি ফটো নির্বাচন করা হয়েছে</item>
+        <item quantity="one">1টি ফটো নির্বাচন করা হয়েছে</item>
+    </plurals>
+    <plurals name="settings_notif_tweets_count">
+        <item quantity="other">%d জন</item>
+        <item quantity="one">1 জন ব্যক্তি</item>
+    </plurals>
+    <plurals name="social_fav_and_retweets_count">
+        <item quantity="other">%1$s বার প্রিয় এবং %2$s বার পুনঃটুইট</item>
+        <item quantity="one">%1$s বার প্রিয় এবং ১ বার পুনঃটুইট</item>
+    </plurals>
+    <plurals name="social_fav_count">
+        <item quantity="other">%1$s বার পছন্দসই</item>
+        <item quantity="one">১ বার পছন্দসই</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user">
+        <item quantity="other">আপনার অনুসরণ করা %1$s এবং আরো %2$d জন পছন্দসই করেছেন</item>
+        <item quantity="one">আপনার অনুসরণ করা %1$s এবং আরো 1 জন পছন্দসই করেছেন</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user_accessibility_description">
+        <item quantity="other">আপনার অনুসরণ করা %1$s এবং আরো %2$d জন পছন্দসই করেছেন</item>
+        <item quantity="one">আপনার অনুসরণ করা %1$s এবং অন্য 1 জন পছন্দসই করেছেন</item>
+    </plurals>
+    <plurals name="social_follow_and_follow_and_others">
+        <item quantity="other">%1$s, %2$s এবং আরো %3$d জন অনুসরণ করছেন</item>
+        <item quantity="one">%1$s, %2$s এবং আরো 1 জন অনুসরণ করছেন</item>
+    </plurals>
+    <plurals name="social_proof_in_reply_multiple_names_and_count">
+        <item quantity="other">%1$s, %2$s এবং আরো %3$d জনের প্রত্যুত্তরে</item>
+        <item quantity="one">%1$s, %2$s এবং আরো 1 জনের প্রত্যুত্তরে</item>
+    </plurals>
+    <plurals name="social_retweet_and_favs_count">
+        <item quantity="other">%1$s বার পুনঃটুইট এবং %2$s বার প্রিয়</item>
+        <item quantity="one">%1$s বার পুনঃটুইট এবং ১ বার প্রিয়</item>
+    </plurals>
+    <plurals name="social_retweet_count">
+        <item quantity="other">%1$s বার পুনঃট্যুইট</item>
+        <item quantity="one">১ বার পুনঃট্যুইট</item>
+    </plurals>
+    <plurals name="stat_label_favorites">
+        <item quantity="other">পছন্দসই</item>
+        <item quantity="one">পছন্দসই</item>
+    </plurals>
+    <plurals name="stat_label_replies">
+        <item quantity="other">প্রত্যুত্তরগুলি</item>
+        <item quantity="one">প্রত্যুত্তর</item>
+    </plurals>
+    <plurals name="stat_label_retweets">
+        <item quantity="other">পুনঃট্যুইট</item>
+        <item quantity="one">পুনঃট্যুইট</item>
+    </plurals>
+    <plurals name="stat_label_views">
+        <item quantity="other">বার</item>
+        <item quantity="one">দেখা</item>
+    </plurals>
+    <plurals name="story_proof_author_follow_by">
+        <item quantity="other">\@%1$s এবং অন্যান্য %2$d জন অনুসরণ​ করছেন​</item>
+        <item quantity="one">\@%1$s এবং অন্যান্য %2$d জন অনুসরণ​ করছেন​</item>
+    </plurals>
+    <plurals name="story_proof_favorite_by">
+        <item quantity="other">\@%1$s এবং অন্যান্য %2$d জন পছন্দসই করেছেন</item>
+        <item quantity="one">\@%1$s এবং অন্যান্য %2$d জন পছন্দসই করেছেন</item>
+    </plurals>
+    <plurals name="story_proof_follow_by">
+        <item quantity="other">\@%1$s এবং অন্যান্য %2$d জন সাম্প্রতিক অনুসরণ​ করা শুরু করেছেন​</item>
+        <item quantity="one">\@%1$s এবং অন্যান্য %2$d জন সাম্প্রতিক অনুসরণ​ করা শুরু করেছেন​</item>
+    </plurals>
+    <plurals name="story_proof_retweet_by">
+        <item quantity="other">\@%1$s এবং অন্যান্য %2$d জন পুনঃটুইট​ করেছেন​</item>
+        <item quantity="one">\@%1$s এবং অন্যান্য %2$d জন পুনঃটুইট​ করেছেন​</item>
+    </plurals>
+    <plurals name="story_proof_shared_by">
+        <item quantity="other">\@%1$s এবং অন্যান্য %2$d জন এই সম্পর্কে কথা বলছেন</item>
+        <item quantity="one">\@%1$s এবং অন্যান্য %2$d জন এই সম্পর্কে কথা বলছেন</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="other">%dদিন​</item>
+        <item quantity="one">এক দিন​</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="other">%d দিন পূর্বে</item>
+        <item quantity="one">১ দিন পূর্বে</item>
+    </plurals>
+    <plurals name="time_hours">
+        <item quantity="other">%dঘন্টা</item>
+        <item quantity="one">1 ঘন্টা</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="other">%d ঘন্টা পূর্বে</item>
+        <item quantity="one">১ ঘন্টা পূর্বে</item>
+    </plurals>
+    <plurals name="time_mins">
+        <item quantity="other">%d মি</item>
+        <item quantity="one">1 মি</item>
+    </plurals>
+    <plurals name="time_mins_ago">
+        <item quantity="other">%d মিনিট পূর্বে</item>
+        <item quantity="one">১ মিনিট পূর্বে</item>
+    </plurals>
+    <plurals name="time_secs">
+        <item quantity="other">%d সেঃ</item>
+        <item quantity="one">1 সেঃ</item>
+    </plurals>
+    <plurals name="typing_users_count">
+        <item quantity="other">%d জন লিখছেন</item>
+        <item quantity="one">1 জন লিখছেন</item>
+    </plurals>
+    <plurals name="users_fast_follow_text">
+        <item quantity="other">আরো +%1$s এস্এমএস অনুসরণাকারী</item>
+        <item quantity="one">আরো +%1$s এস্এমএস অনুসরণকারী</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="other">%d সপ্তাহ</item>
+        <item quantity="one">1 সপ্তাহ</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d বছর</item>
+        <item quantity="one">1 বছর</item>
+    </plurals>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="right" android:layout_gravity="top" android:id="@id/emoji_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="230.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/emoji_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="#ffedf1f0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/emoji_group_layout" android:background="@color/emoji_popup_header" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <FrameLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/emoji_recent_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_emoji_recent" android:scaleType="center" />
+                <View android:layout_gravity="bottom" android:id="@id/emoji_recent_marker" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/emoji_smile_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_emoji_smile" android:scaleType="center" />
+                <View android:layout_gravity="bottom" android:id="@id/emoji_smile_marker" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/emoji_flower_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_emoji_flower" android:scaleType="center" />
+                <View android:layout_gravity="bottom" android:id="@id/emoji_flower_marker" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/emoji_bell_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_emoji_bell" android:scaleType="center" />
+                <View android:layout_gravity="bottom" android:id="@id/emoji_bell_marker" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/emoji_car_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_emoji_car" android:scaleType="center" />
+                <View android:layout_gravity="bottom" android:id="@id/emoji_car_marker" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/emoji_symbols_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_emoji_symbols" android:scaleType="center" />
+                <View android:layout_gravity="bottom" android:id="@id/emoji_symbols_marker" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            </FrameLayout>
+            <FrameLayout android:background="#ffe9edf0" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/delete_symbol" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/emoji_x" style="@style/ActionBarButtonStyle" />
+            </FrameLayout>
+        </LinearLayout>
+        <View android:background="#fff5f7f6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <FrameLayout android:id="@id/emoji_icons_layout" android:background="@color/emoji_popup_body" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

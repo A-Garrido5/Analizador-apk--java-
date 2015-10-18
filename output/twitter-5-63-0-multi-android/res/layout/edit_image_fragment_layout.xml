@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/filter_root" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.android.LockableViewPager android:id="@id/filter_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.twitter.android.media.widget.FilterFilmstripView android:id="@id/filter_select" android:background="?filmstripViewBackground" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttons" twitter:scrollPadding="5.0dip" twitter:filterNames="@array/new_filter_names" twitter:filterIds="@array/new_filters" twitter:filterIntensities="@array/new_filter_intensities" twitter:filterLayoutId="@layout/filter_cell" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/buttons" android:background="?editImageButtonBackground" android:layout_width="fill_parent" android:layout_height="?editImageButtonsHeight" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/enhance" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="?iconEnhance" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/button_enhance" />
+        <ImageButton android:id="@id/show_filters" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="?iconFilters" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/button_enhance" />
+        <ImageButton android:id="@id/crop" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="?iconCrop" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/button_crop" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/crop_buttons" android:background="?cropButtonsBackground" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/filter_controls_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/orig_crop_button" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?iconOriginalCrop" android:scaleType="fitCenter" android:contentDescription="@null" />
+            <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_micro" android:textColor="?cropTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_original_crop_ratio" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wide_crop_button" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?iconWideCrop" android:scaleType="fitCenter" android:contentDescription="@null" />
+            <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_micro" android:textColor="?cropTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_wide_crop_ratio" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/square_crop_button" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?iconSquareCrop" android:scaleType="fitCenter" android:contentDescription="@null" />
+            <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_micro" android:textColor="?cropTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_square_crop_ratio" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center" android:id="@id/rotate" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="?iconRotateCrop" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/button_rotate" />
+    </LinearLayout>
+    <FrameLayout android:background="?editImageHeaderBackground" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center|left" android:id="@id/back" android:background="@drawable/actionbar_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center|left" android:id="@id/back_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_title_up_default" android:contentDescription="@null" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_title_logo_default" android:contentDescription="@null" />
+            </LinearLayout>
+            <ImageView android:id="@id/enhanced_flow_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cc_close" android:contentDescription="@string/button_exit" />
+            <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/button_medium_text" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/back" android:textAllCaps="true" />
+        </LinearLayout>
+        <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/button_medium_text" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/done" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="9.0dip" android:text="@string/done" android:textAllCaps="true" />
+    </FrameLayout>
+</RelativeLayout>
