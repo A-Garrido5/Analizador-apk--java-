@@ -244,11 +244,6 @@ permisosBuscados = []
 listaPermisos = []
 listaPublicidad = []
 
-#def obtenerListaPermisos():
-
-	#print(len(diccionarioPermisos))
-
-
 
 def revisarManifest(folder,carpetaArchivosJava):
 
