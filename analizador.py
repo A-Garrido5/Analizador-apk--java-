@@ -168,19 +168,89 @@ diccionarioPermisos = {
 
 }
 
+diccionarioPublicidad = {
+
+	"com.google.ads": 0,
+	"com.flurry": 0,
+	"com.inmobi": 0,
+	"com.tapjoy": 0,
+	"com.mobclix": 0,
+	"com.chartboost": 0,
+	"com.adwhirl": 0,
+	"com.mopub": 0,
+	"com.greystripe": 0,
+	"com.jumptap": 0,
+	"com.google.analytics": 0,
+	"com.admob": 0,
+	"com.burstly": 0,
+	"com.sponsorpay": 0,
+	"com.cauly": 0,
+	"com.mobfox": 0,
+	"com.vpon": 0,
+	"com.appbrain": 0,
+	"net.daum": 0,
+	"com.admarvel": 0,
+	"com.applovin": 0,
+	"com.adfonic": 0,
+	"com.mdotm": 0,
+	"com.getjar": 0,
+	"com.nexage": 0,
+	"com.inneractive": 0,
+	"com.pontiflex": 0,
+	"com.zestadz": 0,
+	"com.madhouse": 0,
+	"com.smaato": 0,
+	"net.youmi": 0,
+	"de.madvertise": 0,
+	"cn.domob": 0,
+	"com.jirbo.adcolony": 0,
+	"com.revmob": 0,
+	"com.senddroid": 0,
+	"com.airpush": 0,
+	"com.tapit": 0,
+	"com.medialets": 0,
+	"mediba.ad": 0,
+	"com.papaya": 0,
+	"com.huntmads": 0,
+	"com.rhythmnewmedia": 0,
+	"com.tapfortap": 0,
+	"com.adknowledge": 0,
+	"net.metaps": 0,
+	"com.wiyun": 0,
+	"com.vdopia": 0,
+	"com.waps": 0,
+	"com.adwo": 0,
+	"com.mobosquare": 0,
+	"mobi.vserv": 0,
+	"com.wooboo": 0,
+	"com.everbadge": 0,
+	"com.mt.airad": 0,
+	"com.noqoush.adfalcon": 0,
+	"com.moolah": 0,
+	"com.kuguo": 0,
+	"buzzcity": 0,
+	"com.adsmogo": 0,
+	"com.sellaring": 0,
+	"com.startapp": 0,
+	"com.admoda": 0,
+	"com.mobpartner": 0,
+	"com.quclix": 0,
+	"com.ldevelop": 0
+	
+}
+
 permisosBuscados = []
 
 listaPermisos = []
+listaPublicidad = []
 
-def obtenerListaPermisos():
+#def obtenerListaPermisos():
 
-	print(len(diccionarioPermisos))
+	#print(len(diccionarioPermisos))
 
 
 
-def revisarManifest(folder):
-
-	#archi=open(folder+'/AndroidManifest.xml','r')
+def revisarManifest(folder,carpetaArchivosJava):
 
 	f=open(folder+'/AndroidManifest.xml')
 	lines=f.readlines()
@@ -189,9 +259,9 @@ def revisarManifest(folder):
 	for x in lines:
 
 		if x.find('package="') != -1:
-			#indice = x.index('package="')
 
-			i = x.find('package="') # i now contains the value 18
+
+			i = x.find('package="') 
 
 			i=i+9;
 
@@ -205,10 +275,12 @@ def revisarManifest(folder):
 
 			nombrePaquete=x
 
-		if x.find('VersionName="') != -1:
-			#indice = x.index('package="')
+		
 
-			r = x.find('VersionName="') # i now contains the value 18
+		if x.find('VersionName="') != -1:
+			
+
+			r = x.find('VersionName="') 
 
 			r=r+13;
 
@@ -293,25 +365,88 @@ def revisarManifest(folder):
 
 	os.chdir(carpetaPrincipal)
 
+	revisarJava(carpetaArchivosJava,packageName,Version)
+
    	
 
+
+def ficherosEnDir(ruta):
+    listado = []
+    for raiz, subcarpetas, ficheros in os.walk(ruta):
+        for fichero in ficheros:
+            listado.append(os.path.join(raiz,fichero))
+    return listado
 	
     #linea=archi.readline()
     
     #archi.close()
 	#print(folder+'/AndroidManifest.xml')
 
+def revisarJava(folder,paquete,Version):
+
+	listaArchivos=ficherosEnDir(folder)
+
+	for x in listaArchivos:
+		javaFile=open(x,'r')
+		lines=javaFile.readlines()
+
+		for y in diccionarioPublicidad:
+
+			for z in lines:
+				if z.find(y) != -1:
+					if y not in listaPublicidad:
+						listaPublicidad.append(y)
+					break;
+
+	for g in listaPublicidad:
+		ubicacion = listaPublicidad.index(g)
+
+		diccionarioPublicidad[g] = 1;
 
 
-def analizar(carpeta,filename):
-	
 
-	
-	
-	archivos=os.listdir(carpeta)
-	#print(os.path.abspath(archivos[0,]))
-	#print(archivos)
+	#for q in diccionarioPublicidad:
+		#print(q + diccionarioPublicidad.get(q))
+
+	javaFile.close()
+
+	#print(diccionarioPublicidad)
+		#print(x)
+
+	os.chdir("output_Publicidad")			
+	archivo=open('outputPublicidad - '+paquete+'.txt' ,'w')
+	archivo.write('% Nombre del paquete = '+paquete)
+	archivo.write('\n')
+	archivo.write('\n')
+	archivo.write('% Version = '+ Version)
+	archivo.write('\n')
+	archivo.write('\n')
+	archivo.write('@Relation Publicity')
+	archivo.write('\n')
+	archivo.write('\n')
+
+	for n in diccionarioPublicidad:
+		archivo.write('@ATTRIBUTE '+ n + ' {true,false}\n')
+
+	archivo.write('\n')
+	archivo.write('\n')
+	archivo.write('@data')
+	archivo.write('\n')
+	archivo.write('\n')
+
+	for n in diccionarioPublicidad:
+
+		verificador = diccionarioPublicidad.get(n)
+
+		if(verificador==0):
+			archivo.write('false\n')
+		
+		else:
+			archivo.write('true\n')
+
+
 	os.chdir(carpetaPrincipal)
+
 
 
 
@@ -320,7 +455,7 @@ def analizar(carpeta,filename):
 
 def main():
 
-	obtenerListaPermisos()
+	#obtenerListaPermisos()
 
 	ficheros = os.listdir(carpetaAPK)
 
@@ -340,10 +475,11 @@ def main():
 		
 		carpetaArchivosJava=carpetaPrincipal+'/output/'+nombreArchivo+'/src'
 
+		
 		#print (carpetaArchivosJava)
 		#analizar("output/"+nombreArchivo+"/src",nombreArchivo)
 
-		revisarManifest(carpetaPrincipal+'/output/'+nombreArchivo)
+		revisarManifest(carpetaPrincipal+'/output/'+nombreArchivo,carpetaArchivosJava)
 
 if __name__=="__main__":
   main()

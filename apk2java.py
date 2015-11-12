@@ -64,9 +64,9 @@ def apktool(smali):
     #if smali == True:
       #call(home+'/tool/apktool_200rc3.jar d '+apk_file+' -o '+outdir+"/"+project_name+' -f',shell=True)
     #else:
-      #call(home+'/tool/apktool_200rc3.jar d '+apk_file+' -o '+outdir+"/"+project_name+' -sf',shell=True)
-      #os.system('mv %s %s' % (outdir+project_name+'/classes.dex', outdir+"/"+project_name+'/original/'))
-    print ('Done')
+      call(home+'/tool/apktool_200rc3.jar d '+apk_file+' -o '+outdir+"/"+project_name+' -sf',shell=True)
+      os.system('mv %s %s' % (outdir+project_name+'/classes.dex', outdir+"/"+project_name+'/original/'))
+      print ('Done')
 
 def dex2jar():
   print ("*********************************************")
@@ -75,8 +75,8 @@ def dex2jar():
   if apk_file != '':
     #call(home+'/tool/dex2jar-0.0.9.15/d2j-dex2jar.sh -f -o '+outdir+apk_file+'.jar '+apk_file, shell=True)
     #call(home+'/tool/dex2jar-0.0.9.15/d2j-asm-verify.sh '+outdir+apk_file+'.jar',shell=True)
-    #call(home+'/tool/dex2jar-0.0.9.15/d2j-dex2jar.sh -f -o '+outdir+"/"+project_name+'.jar '+apk_file, shell=True)
-    #call(home+'/tool/dex2jar-0.0.9.15/d2j-asm-verify.sh '+outdir+"/"+project_name+'.jar',shell=True)
+    call(home+'/tool/dex2jar-0.0.9.15/d2j-dex2jar.sh -f -o '+outdir+"/"+project_name+'.jar '+apk_file, shell=True)
+    call(home+'/tool/dex2jar-0.0.9.15/d2j-asm-verify.sh '+outdir+"/"+project_name+'.jar',shell=True)
 
 
     print ('Done')
@@ -87,7 +87,7 @@ def procyon():
   print ("*********************************************")
   if apk_file != '':
     #print('java -jar '+home+'/tool/procyon-decompiler-0528.jar -jar '+outdir+project_name+'.jar -o '+outdir+project_name+'/src/')
-    #call('java -jar '+home+'/tool/procyon-decompiler-0.5.30.jar -jar '+outdir+project_name+'.jar -o '+outdir+"/"+project_name+'/src/',shell=True)
+    call('java -jar '+home+'/tool/procyon-decompiler-0.5.30.jar -jar '+outdir+project_name+'.jar -o '+outdir+"/"+project_name+'/src/',shell=True)
     
     print ('Done')
 
