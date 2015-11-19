@@ -172,52 +172,53 @@ public class TextEmojiLabel extends TextView
                                         TextEmojiLabel.c = true;
                                         b = new kw();
                                         return;
-                                        Label_0535: {
+                                        Label_0627: {
                                             final char c = '\u001a';
                                         }
                                         while (true) {
-                                            break Label_0504;
-                                            Label_0627:
+                                            break Label_0596;
+                                            Label_0592:
+                                            char c = '~';
+                                            break Label_0596;
+                                            Label_0535:
                                             char c2 = '\u001a';
-                                            final char c3;
-                                            Label_0596: {
-                                                break Label_0596;
-                                                Label_0500:
-                                                char c = '~';
+                                            Label_0504: {
                                                 break Label_0504;
-                                                Label_0521:
+                                                Label_0500:
+                                                c2 = '~';
+                                                break Label_0504;
+                                                final char c3 = charArray2[n4];
+                                                Label_0613:
                                                 c = '\u000f';
+                                                break Label_0596;
+                                                Label_0521:
+                                                c2 = '\u000f';
+                                                break Label_0504;
+                                                Label_0634:
+                                                c = 'Y';
+                                                break Label_0596;
+                                                Label_0542:
+                                                c2 = 'Y';
                                                 break Label_0504;
                                                 Label_0528:
-                                                c = 'o';
-                                                break Label_0504;
-                                                Label_0613:
-                                                c2 = '\u000f';
-                                                break Label_0596;
-                                                c3 = charArray2[n4];
-                                                Label_0634:
-                                                c2 = 'Y';
-                                                break Label_0596;
-                                                Label_0592:
-                                                c2 = '~';
-                                                break Label_0596;
-                                                final char c4 = charArray[n3];
-                                                charArray[n3] = (char)(c ^ c4);
-                                                ++n3;
-                                                continue Label_0386_Outer;
-                                                Label_0620:
                                                 c2 = 'o';
+                                                break Label_0504;
+                                                charArray2[n4] = (char)(c ^ c3);
+                                                ++n4;
+                                                continue Label_0447_Outer;
                                             }
-                                            charArray2[n4] = (char)(c2 ^ c3);
-                                            ++n4;
-                                            continue Label_0447_Outer;
-                                            Label_0542:
-                                            char c = 'Y';
+                                            final char c4;
+                                            charArray[n3] = (char)(c2 ^ c4);
+                                            ++n3;
+                                            continue Label_0386_Outer;
+                                            c4 = charArray[n3];
+                                            Label_0620:
+                                            c = 'o';
                                             continue;
                                         }
                                     }
-                                    // switch([Lcom.strobel.decompiler.ast.Label;@faf580a, n4 % 5)
-                                    // switch([Lcom.strobel.decompiler.ast.Label;@5fd16f47, n3 % 5)
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@70cea89b, n4 % 5)
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@fc12b33, n3 % 5)
                                     catch (NoSuchMethodException ex) {
                                         continue;
                                     }

@@ -8,6 +8,7 @@ import os
 
 carpetaPrincipal=os.path.dirname(os.path.abspath(__file__))
 carpetaAPK=carpetaPrincipal+"/Apk"
+carpetaAPKmalware=carpetaPrincipal+"/ApkMalware"
 carpetaSalida=carpetaPrincipal+"/output"
 
 Version_app=0;
@@ -271,6 +272,8 @@ def revisarManifest(folder,carpetaArchivosJava):
 
 			nombrePaquete=x
 
+		Version="0"
+
 		
 
 		if x.find('VersionName="') != -1:
@@ -301,9 +304,7 @@ def revisarManifest(folder,carpetaArchivosJava):
 
 			permissionName = permissionName[0:n]
 
-			#print(permissionName)
-
-
+		
 			if permissionName not in listaPermisos:
 				listaPermisos.append(permissionName)
 
@@ -474,12 +475,14 @@ def main():
 
 	ficheros = os.listdir(carpetaAPK)
 
+	ficherosMalware = os.listdir(carpetaAPKmalware)
+
 	for x in ficheros:
 		
 		nombreArchivo=os.path.splitext(x)[0]
 		
 		#python3 apk2java.py d /home/adrian/Escritorio/APK/com.whatsapp.apk -o hola --java
-		call('python3 apk2java.py d '+carpetaAPK +'/'+ x+' -o output/ --java',shell=True)
+		call('python3 decompilador.py d '+carpetaAPK +'/'+ x+' -o output/ --java',shell=True)
 		call('rm -r -f output/'+nombreArchivo+'-new.apk',shell=True)
 		call('rm -r -f output/'+nombreArchivo+'.jar',shell=True)
 
@@ -491,7 +494,30 @@ def main():
 
 		revisarManifest(carpetaPrincipal+'/output/'+nombreArchivo,carpetaArchivosJava)
 
-	print('\n\nListo')
+		print('')
+		print('Listo')
+		print('')
+
+	for y in ficherosMalware:
+
+		nombreArchivo=os.path.splitext(y)[0]
+
+		call('python3 decompilador.py d '+carpetaAPKmalware +'/'+ y+' -o output/ --java',shell=True)
+		call('rm -r -f output/'+nombreArchivo+'-new.apk',shell=True)
+		call('rm -r -f output/'+nombreArchivo+'.jar',shell=True)
+
+		print ("*********************************************")
+		print ("**         Analizando - (MalWare)          **")
+		print ("*********************************************")
+		
+		carpetaArchivosJava=carpetaPrincipal+'/output/'+nombreArchivo+'/src'
+
+		revisarManifest(carpetaPrincipal+'/output/'+nombreArchivo,carpetaArchivosJava)
+
+		print('')
+		print('Listo')
+		print('')
+
 
 if __name__=="__main__":
   main()

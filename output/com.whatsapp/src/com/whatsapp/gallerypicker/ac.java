@@ -56,30 +56,30 @@ public class ac
                         try {
                             ac.b = new SimpleDateFormat(ac.z[1], Locale.getDefault());
                             return;
-                            Label_0183: {
-                                final char c = '/';
+                            Label_0156: {
+                                final char c = '\u0001';
                             }
                             while (true) {
                                 break Label_0159;
-                                Label_0156:
-                                char c = '\u0001';
+                                Label_0176:
+                                char c = '9';
                                 break Label_0159;
-                                final char c2 = charArray[n3];
+                                Label_0183:
+                                c = '/';
+                                final char c2;
                                 charArray[n3] = (char)(c ^ c2);
                                 ++n3;
                                 continue Label_0159_Outer;
                                 Label_0197:
                                 c = '\u001c';
                                 continue;
-                                Label_0176:
-                                c = '9';
-                                continue;
+                                c2 = charArray[n3];
                                 Label_0190:
                                 c = '\u0011';
                                 continue;
                             }
                         }
-                        // switch([Lcom.strobel.decompiler.ast.Label;@5ada6193, n3 % 5)
+                        // switch([Lcom.strobel.decompiler.ast.Label;@5a24bd60, n3 % 5)
                         catch (IllegalArgumentException ex) {
                             ac.b = new SimpleDateFormat(ac.z[0], Locale.getDefault());
                         }

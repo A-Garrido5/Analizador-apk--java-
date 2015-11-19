@@ -35,24 +35,25 @@ public abstract class GcmListenerService extends Service
             final boolean a = zzb$zza.a;
         Label_0263:
             while (true) {
-            Label_0241:
+            Label_0249_Outer:
                 while (true) {
-                Label_0249:
+                    String stringExtra;
+                    String s;
+                    int n = 0;
+                    Label_0249:Label_0229_Outer:
                     while (true) {
                         while (true) {
-                            int n = 0;
                         Label_0309:
                             while (true) {
-                                String stringExtra;
                                 try {
                                     if (!"com.google.android.c2dm.intent.RECEIVE".equals(intent.getAction())) {
                                         return;
                                     }
                                     stringExtra = intent.getStringExtra("message_type");
                                     if (stringExtra == null) {
-                                        final String s = "gcm";
+                                        s = "gcm";
                                         n = -1;
-                                    Label_0196:
+                                        Label_0196:Label_0213_Outer:
                                         while (true) {
                                         Label_0213:
                                             while (true) {
@@ -61,8 +62,7 @@ public abstract class GcmListenerService extends Service
                                                         break Label_0196;
                                                     }
                                                     case -2062414158: {
-                                                    Label_0179:
-                                                        while (true) {
+                                                        Label_0179: {
                                                             break Label_0179;
                                                         Label_0118:
                                                             while (true) {
@@ -73,49 +73,51 @@ public abstract class GcmListenerService extends Service
                                                                             this.zzgf(this.zzavB);
                                                                         }
                                                                         return;
+                                                                        // iftrue(Label_0118:, !a)
+                                                                        // iftrue(Label_0118:, !a)
                                                                         // iftrue(Label_0309:, !s.equals((Object)"send_event"))
+                                                                        // iftrue(Label_0309:, !a)
+                                                                        // iftrue(Label_0309:, !s.equals((Object)"gcm"))
+                                                                        // iftrue(Label_0309:, !a)
                                                                         // iftrue(Label_0309:, !s.equals((Object)"send_error"))
-                                                                        // iftrue(Label_0309:, !a)
-                                                                        // iftrue(Label_0309:, !a)
-                                                                        // iftrue(Label_0118:, !a)
-                                                                        // iftrue(Label_0118:, !a)
-                                                                        // iftrue(Label_0118:, !a)
-                                                                        // iftrue(Label_0309:, !s.equals((Object)"deleted_messages"))
-                                                                    Block_12:
                                                                         while (true) {
-                                                                            Block_10: {
-                                                                                break Block_10;
-                                                                                Block_11: {
-                                                                                    break Block_11;
-                                                                                    n = 1;
-                                                                                    continue Label_0196;
-                                                                                }
-                                                                                n = 3;
-                                                                                break Label_0309;
-                                                                            }
-                                                                            n = 2;
-                                                                            continue Label_0213;
+                                                                            n = 3;
+                                                                            break Label_0309;
                                                                             this.onSendError(intent.getStringExtra("google.message_id"), intent.getStringExtra("error"));
-                                                                            break Block_12;
-                                                                            this.onDeletedMessages();
-                                                                            break Label_0249;
-                                                                            this.zzs(intent.getExtras());
-                                                                            continue Label_0241;
+                                                                            Block_12: {
+                                                                                break Block_12;
+                                                                                this.onDeletedMessages();
+                                                                                break Label_0249;
+                                                                                Block_10: {
+                                                                                    break Block_10;
+                                                                                    while (true) {
+                                                                                        n = 0;
+                                                                                        break Label_0179;
+                                                                                        continue Label_0213_Outer;
+                                                                                    }
+                                                                                }
+                                                                                n = 2;
+                                                                                break Label_0213;
+                                                                            }
+                                                                            break Label_0092;
                                                                             continue Label_0263_Outer;
                                                                         }
-                                                                        break Label_0092;
-                                                                        n = 0;
                                                                         // iftrue(Label_0309:, !a)
-                                                                        continue Label_0179;
+                                                                        // iftrue(Label_0309:, !s.equals((Object)"deleted_messages"))
+                                                                        while (true) {
+                                                                            n = 1;
+                                                                            continue Label_0196;
+                                                                            continue Label_0229_Outer;
+                                                                        }
                                                                         this.onMessageSent(intent.getStringExtra("google.message_id"));
                                                                         // iftrue(Label_0118:, !a)
                                                                         continue Label_0263;
+                                                                        this.zzs(intent.getExtras());
                                                                     }
-                                                                    // iftrue(Label_0309:, !s.equals((Object)"gcm"))
+                                                                    // iftrue(Label_0118:, !a)
                                                                 }
                                                                 Log.w("GcmListenerService", "Received message with unknown type: " + s);
                                                             }
-                                                            break;
                                                         }
                                                         break;
                                                     }
@@ -138,7 +140,7 @@ public abstract class GcmListenerService extends Service
                                 finally {
                                     WakefulBroadcastReceiver.completeWakefulIntent(intent);
                                 }
-                                final String s = stringExtra;
+                                s = stringExtra;
                                 continue Label_0263_Outer;
                             }
                             switch (n) {
@@ -146,7 +148,7 @@ public abstract class GcmListenerService extends Service
                                     continue;
                                 }
                                 case 1: {
-                                    continue Label_0241;
+                                    continue Label_0249_Outer;
                                 }
                                 case 2: {
                                     continue Label_0249;

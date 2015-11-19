@@ -1977,57 +1977,53 @@ public class AccountInfoActivity extends DialogToastActivity
     protected void onPrepareDialog(final int n, final Dialog dialog) {
         final boolean i = App.I;
         AlertDialog alertDialog;
-        Label_0061_Outer:Label_0089_Outer:
+        Block_2_Outer:Label_0075_Outer:
         while (true) {
-        Label_0089:
+        Label_0089_Outer:
             while (true) {
-            Label_0075:
                 while (true) {
                     switch (n) {
                         default: {
                             break Label_0040;
                         }
                         case 121: {
-                            break Label_0089;
+                            break Label_0089_Outer;
                         }
                         case 117: {
-                            while (true) {
+                            Label_0061: {
                                 break Label_0061;
                                 try {
                                     super.onPrepareDialog(n, dialog);
                                     Label_0046: {
                                         return;
                                     }
-                                    alertDialog = (AlertDialog)dialog;
-                                    alertDialog.setMessage(yt.c());
-                                    yt.a(this, alertDialog, this.r);
-                                    // iftrue(Label_0046:, !i)
-                                    // iftrue(Label_0046:, !i)
-                                    Block_2: {
-                                        break Block_2;
-                                        ((AlertDialog)dialog).setMessage(yt.a());
-                                        break Label_0075;
-                                    }
-                                    continue Label_0061_Outer;
-                                    ((AlertDialog)dialog).setMessage(yt.d());
-                                    // iftrue(Label_0046:, !i)
-                                    continue Label_0089;
                                     ((AlertDialog)dialog).setMessage(yt.b());
                                     // iftrue(Label_0046:, !i)
-                                    continue Label_0089_Outer;
+                                    break Label_0061;
+                                    while (true) {
+                                        continue Block_2_Outer;
+                                        ((AlertDialog)dialog).setMessage(yt.a());
+                                        ((AlertDialog)dialog).setMessage(yt.d());
+                                        alertDialog = (AlertDialog)dialog;
+                                        alertDialog.setMessage(yt.c());
+                                        yt.a(this, alertDialog, this.r);
+                                        continue Label_0075_Outer;
+                                    }
                                 }
+                                // iftrue(Label_0046:, !i)
+                                // iftrue(Label_0046:, !i)
+                                // iftrue(Label_0046:, !i)
                                 catch (IllegalStateException ex) {
                                     throw ex;
                                 }
-                                break;
                             }
                             break;
                         }
                         case 118: {
-                            continue Label_0075;
+                            continue Label_0089_Outer;
                         }
                         case 119: {
-                            continue Label_0089;
+                            continue;
                         }
                     }
                     break;

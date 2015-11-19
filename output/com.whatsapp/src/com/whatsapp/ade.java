@@ -379,30 +379,30 @@ public class ade
                                         g = new aw_(null);
                                         return;
                                         char c = '\0';
-                                        Label_1166: {
-                                            c = '\u0016';
+                                        Label_1145: {
+                                            c = 'Z';
                                         }
-                                        while (true) {
-                                            final char c2;
-                                            charArray[n3] = (char)(c ^ c2);
-                                            ++n3;
-                                            break;
+                                        Label_1128: {
+                                            break Label_1128;
                                             Label_1124:
                                             c = '{';
-                                            continue;
-                                            Label_1159:
-                                            c = '.';
-                                            continue;
-                                            c2 = charArray[n3];
-                                            Label_1145:
-                                            c = 'Z';
-                                            continue;
+                                            break Label_1128;
                                             Label_1152:
                                             c = 'Y';
-                                            continue;
+                                            break Label_1128;
+                                            Label_1166:
+                                            c = '\u0016';
+                                            break Label_1128;
+                                            Label_1159:
+                                            c = '.';
                                         }
+                                        final char c2;
+                                        charArray[n3] = (char)(c ^ c2);
+                                        ++n3;
+                                        break;
+                                        c2 = charArray[n3];
                                     }
-                                    // switch([Lcom.strobel.decompiler.ast.Label;@6e6681a0, n3 % 5)
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@2ddb7ce8, n3 % 5)
                                     catch (NumberFormatException ex) {
                                         throw ex;
                                     }

@@ -936,31 +936,31 @@ public class VerifySms extends VerifyNumber
                                             return;
                                         }
                                         break Label_2750;
-                                        char c = '\0';
-                                        Label_2731: {
-                                            c = 'e';
+                                        Label_2717: {
+                                            final char c = 'X';
                                         }
-                                        // switch([Lcom.strobel.decompiler.ast.Label;@62242e29, n3 % 5)
-                                        final char c2;
-                                        Label_2700: {
+                                        while (true) {
                                             break Label_2700;
-                                            Label_2696:
-                                            c = ']';
-                                            break Label_2700;
-                                            Label_2724:
-                                            c = '4';
-                                            break Label_2700;
-                                            c2 = charArray[n3];
-                                            Label_2717:
-                                            c = 'X';
-                                            break Label_2700;
+                                            final char c2 = charArray[n3];
+                                            char c = '\0';
+                                            charArray[n3] = (char)(c ^ c2);
+                                            ++n3;
+                                            break;
                                             Label_2738:
                                             c = '\u000b';
+                                            continue;
+                                            Label_2696:
+                                            c = ']';
+                                            continue;
+                                            Label_2724:
+                                            c = '4';
+                                            continue;
+                                            Label_2731:
+                                            c = 'e';
+                                            continue;
                                         }
-                                        charArray[n3] = (char)(c ^ c2);
-                                        ++n3;
-                                        break;
                                     }
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@3e721a16, n3 % 5)
                                     catch (ActivityNotFoundException ex) {
                                         throw ex;
                                     }

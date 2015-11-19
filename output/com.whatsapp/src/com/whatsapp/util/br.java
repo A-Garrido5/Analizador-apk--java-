@@ -3426,84 +3426,83 @@ public class br
                 }
                 catch (NumberFormatException ex) {
                     throw ex;
-                    final SharedPreferences sharedPreferences2;
-                    sharedPreferences = (sharedPreferences2 = context.getSharedPreferences(br.z[4], 0));
-                    final String[] array = br.z;
-                    final int n = 2;
-                    final String s = array[n];
-                    final int n2 = -1;
-                    br.c = sharedPreferences2.getInt(s, n2);
-                    final SharedPreferences sharedPreferences3 = sharedPreferences;
-                    final String[] array2 = br.z;
-                    final int n3 = 5;
-                    final String s2 = array2[n3];
-                    final String s3 = null;
-                    br.b = sharedPreferences3.getString(s2, s3);
-                    final int c = br.c;
-                    final int c2 = c;
+                    // iftrue(Label_0142:, b)
                     // iftrue(Label_0142:, c2 < 0)
+                Block_8:
                     while (true) {
-                        Block_7: {
-                            break Block_7;
-                            final StringBuilder sb = new StringBuilder();
-                            final String[] array3 = br.z;
-                            final int n4 = 3;
-                            final String s4 = array3[n4];
-                            final StringBuilder sb2 = sb.append(s4);
-                            final int n5 = br.c;
-                            final StringBuilder sb3 = sb2.append(n5);
-                            final String[] array4 = br.z;
-                            final int n6 = 9;
-                            final String s5 = array4[n6];
-                            final StringBuilder sb4 = sb3.append(s5);
-                            final String s6 = br.b;
-                            final StringBuilder sb5 = sb4.append(s6);
-                            final String s7 = sb5.toString();
-                            Log.i(s7);
-                            return;
-                        }
-                        final String s8 = br.b;
-                        final boolean b = TextUtils.isEmpty((CharSequence)s8);
+                        final String s = br.b;
+                        final boolean b = TextUtils.isEmpty((CharSequence)s);
+                        break Block_8;
+                        final SharedPreferences sharedPreferences2;
+                        sharedPreferences = (sharedPreferences2 = context.getSharedPreferences(br.z[4], 0));
+                        final String[] array = br.z;
+                        final int n = 2;
+                        final String s2 = array[n];
+                        final int n2 = -1;
+                        br.c = sharedPreferences2.getInt(s2, n2);
+                        final SharedPreferences sharedPreferences3 = sharedPreferences;
+                        final String[] array2 = br.z;
+                        final int n3 = 5;
+                        final String s3 = array2[n3];
+                        final String s4 = null;
+                        br.b = sharedPreferences3.getString(s3, s4);
+                        final int c = br.c;
+                        final int c2 = c;
                         continue;
                     }
+                    final StringBuilder sb = new StringBuilder();
+                    final String[] array3 = br.z;
+                    final int n4 = 3;
+                    final String s5 = array3[n4];
+                    final StringBuilder sb2 = sb.append(s5);
+                    final int n5 = br.c;
+                    final StringBuilder sb3 = sb2.append(n5);
+                    final String[] array4 = br.z;
+                    final int n6 = 9;
+                    final String s6 = array4[n6];
+                    final StringBuilder sb4 = sb3.append(s6);
+                    final String s7 = br.b;
+                    final StringBuilder sb5 = sb4.append(s7);
+                    final String s8 = sb5.toString();
+                    Log.i(s8);
+                    return;
                 }
-                // iftrue(Label_0142:, b)
             }
             try {
                 final SharedPreferences sharedPreferences2 = sharedPreferences;
                 final String[] array = br.z;
                 final int n = 2;
-                final String s = array[n];
+                final String s2 = array[n];
                 final int n2 = -1;
-                br.c = sharedPreferences2.getInt(s, n2);
+                br.c = sharedPreferences2.getInt(s2, n2);
                 final SharedPreferences sharedPreferences3 = sharedPreferences;
                 final String[] array2 = br.z;
                 final int n3 = 5;
-                final String s2 = array2[n3];
-                final String s3 = null;
-                br.b = sharedPreferences3.getString(s2, s3);
+                final String s3 = array2[n3];
+                final String s4 = null;
+                br.b = sharedPreferences3.getString(s3, s4);
                 final int c2;
                 final int c = c2 = br.c;
                 if (c2 >= 0) {
                     try {
-                        final String s8 = br.b;
-                        final boolean b = TextUtils.isEmpty((CharSequence)s8);
+                        final String s = br.b;
+                        final boolean b = TextUtils.isEmpty((CharSequence)s);
                         if (!b) {
                             final StringBuilder sb = new StringBuilder();
                             final String[] array3 = br.z;
                             final int n4 = 3;
-                            final String s4 = array3[n4];
-                            final StringBuilder sb2 = sb.append(s4);
+                            final String s5 = array3[n4];
+                            final StringBuilder sb2 = sb.append(s5);
                             final int n5 = br.c;
                             final StringBuilder sb3 = sb2.append(n5);
                             final String[] array4 = br.z;
                             final int n6 = 9;
-                            final String s5 = array4[n6];
-                            final StringBuilder sb4 = sb3.append(s5);
-                            final String s6 = br.b;
-                            final StringBuilder sb5 = sb4.append(s6);
-                            final String s7 = sb5.toString();
-                            Log.i(s7);
+                            final String s6 = array4[n6];
+                            final StringBuilder sb4 = sb3.append(s6);
+                            final String s7 = br.b;
+                            final StringBuilder sb5 = sb4.append(s7);
+                            final String s8 = sb5.toString();
+                            Log.i(s8);
                             return;
                         }
                     }

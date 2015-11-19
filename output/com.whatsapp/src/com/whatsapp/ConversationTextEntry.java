@@ -43,7 +43,6 @@ public class ConversationTextEntry extends AppCompatEditText
                 final char[] charArray = s.toCharArray();
                 final int length = charArray.length;
                 int n3 = 0;
-            Label_0116_Outer:
                 while (true) {
                     Label_0188: {
                         if (length > n3) {
@@ -79,60 +78,56 @@ public class ConversationTextEntry extends AppCompatEditText
                                     break Label_0277;
                                 }
                                 final String intern2 = new String(charArray2).intern();
-                            Label_0324_Outer:
                                 while (true) {
                                     try {
                                         Layout.class.getDeclaredMethod(intern2, CharSequence.class, Integer.TYPE, Integer.TYPE);
                                         ConversationTextEntry.c = true;
                                         d = new py();
                                         return;
-                                        Label_0256: {
-                                            final char c = '\u0007';
+                                        Label_0341: {
+                                            final char c = 'Q';
                                         }
-                                        // switch([Lcom.strobel.decompiler.ast.Label;@6f358519, n3 % 5)
-                                        // switch([Lcom.strobel.decompiler.ast.Label;@390ce40a, n4 % 5)
-                                    Label_0324:
-                                        while (true) {
-                                            char c2;
-                                            char c4;
+                                        // switch([Lcom.strobel.decompiler.ast.Label;@23d302b3, n4 % 5)
+                                        // switch([Lcom.strobel.decompiler.ast.Label;@2113dc6b, n3 % 5)
+                                        char c3 = '\0';
+                                        final char c4;
+                                        Label_0232: {
                                             while (true) {
-                                                break Label_0232;
-                                                Label_0341:
-                                                c2 = 'Q';
                                                 break Label_0324;
-                                                final char c3 = charArray[n3];
+                                                Label_0348:
+                                                char c = '\u0007';
+                                                break Label_0324;
+                                                final char c2 = charArray2[n4];
                                                 Label_0362:
-                                                c2 = '\u0011';
-                                                break Label_0324;
-                                                Label_0355:
-                                                c2 = 'z';
-                                                break Label_0324;
-                                                Label_0320:
-                                                c2 = '%';
+                                                c = '\u0011';
                                                 break Label_0324;
                                                 Label_0228:
-                                                char c = '%';
+                                                c3 = '%';
                                                 break Label_0232;
-                                                Label_0263:
-                                                c = 'z';
-                                                charArray[n3] = (char)(c ^ c3);
-                                                ++n3;
-                                                continue Label_0116_Outer;
-                                                c4 = charArray2[n4];
-                                                Label_0249:
-                                                c = 'Q';
-                                                continue Label_0324_Outer;
+                                                Label_0256:
+                                                c3 = '\u0007';
+                                                break Label_0232;
+                                                Label_0320:
+                                                c = '%';
+                                                charArray2[n4] = (char)(c ^ c2);
+                                                ++n4;
+                                                continue Label_0177_Outer;
                                                 Label_0270:
-                                                c = '\u0011';
-                                                continue Label_0324_Outer;
+                                                c3 = '\u0011';
+                                                break Label_0232;
+                                                Label_0355:
+                                                c = 'z';
+                                                continue;
                                             }
-                                            charArray2[n4] = (char)(c2 ^ c4);
-                                            ++n4;
-                                            continue Label_0177_Outer;
-                                            Label_0348:
-                                            c2 = '\u0007';
-                                            continue Label_0324;
+                                            c4 = charArray[n3];
+                                            Label_0249:
+                                            c3 = 'Q';
+                                            break Label_0232;
+                                            Label_0263:
+                                            c3 = 'z';
                                         }
+                                        charArray[n3] = (char)(c3 ^ c4);
+                                        ++n3;
                                     }
                                     catch (NoSuchMethodException ex) {
                                         continue;

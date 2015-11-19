@@ -8232,23 +8232,20 @@ public final class GoogleDriveService extends IntentService
                         try {
                             Log.e(GoogleDriveService.bb[246] + n);
                             return false;
-                            while (true) {
-                                final SharedPreferences$Editor edit = e().edit();
-                                try {
-                                    edit.putString(GoogleDriveService.bb[245], String.valueOf(n));
-                                    if (!edit.commit()) {
-                                        Log.w(GoogleDriveService.bb[244]);
-                                        return false;
-                                    }
-                                    return true;
+                            // iftrue(Label_0036:, GoogleDriveService.F != 0)
+                            final SharedPreferences$Editor edit = e().edit();
+                            try {
+                                edit.putString(GoogleDriveService.bb[245], String.valueOf(n));
+                                if (!edit.commit()) {
+                                    Log.w(GoogleDriveService.bb[244]);
+                                    return false;
                                 }
-                                catch (NullPointerException ex) {
-                                    throw ex;
-                                }
-                                continue;
+                                return true;
+                            }
+                            catch (NullPointerException ex) {
+                                throw ex;
                             }
                         }
-                        // iftrue(Label_0036:, GoogleDriveService.F != 0)
                         catch (NullPointerException ex2) {
                             throw ex2;
                         }

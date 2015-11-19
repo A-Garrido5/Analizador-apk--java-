@@ -1770,30 +1770,31 @@ public class VoiceService extends Service implements l
                                             return;
                                         }
                                         break Label_5574;
+                                        char c = '\0';
                                         Label_5562: {
-                                            final char c = 'A';
+                                            c = 'A';
                                         }
-                                        while (true) {
+                                        Label_5524: {
                                             break Label_5524;
-                                            Label_5520:
-                                            char c = 'G';
-                                            final char c2;
-                                            charArray[n3] = (char)(c ^ c2);
-                                            ++n3;
-                                            break;
                                             Label_5548:
                                             c = 't';
-                                            continue;
-                                            c2 = charArray[n3];
+                                            break Label_5524;
                                             Label_5541:
                                             c = 's';
-                                            continue;
+                                            break Label_5524;
                                             Label_5555:
                                             c = '\u0010';
-                                            continue;
+                                            break Label_5524;
+                                            Label_5520:
+                                            c = 'G';
                                         }
+                                        final char c2;
+                                        charArray[n3] = (char)(c ^ c2);
+                                        ++n3;
+                                        break;
+                                        c2 = charArray[n3];
                                     }
-                                    // switch([Lcom.strobel.decompiler.ast.Label;@69adbf10, n3 % 5)
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@6980aa80, n3 % 5)
                                     catch (IllegalArgumentException ex) {
                                         throw ex;
                                     }

@@ -6157,11 +6157,11 @@ public class vy
                                                 readableDatabase.endTransaction();
                                             }
                                             return n2;
-                                            s = rawQuery.getString(columnIndex3);
+                                            s = rawQuery.getString(columnIndex4);
                                             break Label_0232;
                                             s = rawQuery.getString(columnIndex);
                                             break Label_0232;
-                                            s = rawQuery.getString(columnIndex4);
+                                            s = rawQuery.getString(columnIndex3);
                                         }
                                         catch (IllegalStateException ex) {
                                             throw ex;

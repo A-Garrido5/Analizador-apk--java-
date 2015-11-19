@@ -86,12 +86,16 @@ public class a2
                         b2.notifyAll();
                         // monitorexit(b2)
                         break EndFinally_6;
+                        // iftrue(Label_0214:, Build$VERSION.SDK_INT < 8)
                         while (true) {
-                            final Bitmap thumbnail2 = MediaStore$Images$Thumbnails.getThumbnail(contentResolver, n, n2, bitmapFactory$Options);
-                            synchronized (b2) {
-                                b2.c = false;
-                                b2.notifyAll();
-                                return thumbnail2;
+                            Block_15: {
+                                break Block_15;
+                                final Bitmap thumbnail2 = MediaStore$Images$Thumbnails.getThumbnail(contentResolver, n, n2, bitmapFactory$Options);
+                                synchronized (b2) {
+                                    b2.c = false;
+                                    b2.notifyAll();
+                                    return thumbnail2;
+                                }
                             }
                             final Bitmap thumbnail3 = MediaStore$Images$Thumbnails.getThumbnail(contentResolver, n, currentThread.getId(), n2, bitmapFactory$Options);
                             synchronized (b2) {
@@ -108,7 +112,6 @@ public class a2
                             return thumbnail4;
                         }
                     }
-                    // iftrue(Label_0214:, Build$VERSION.SDK_INT < 8)
                 }
             }
         }

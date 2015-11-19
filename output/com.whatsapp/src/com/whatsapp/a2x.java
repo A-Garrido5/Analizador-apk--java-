@@ -39,7 +39,6 @@ final class a2x extends SQLiteOpenHelper
                 final char[] charArray = s.toCharArray();
                 final int length = charArray.length;
                 int n3 = 0;
-            Label_3292_Outer:
                 while (true) {
                     Label_3245: {
                         if (length > n3) {
@@ -1069,29 +1068,29 @@ final class a2x extends SQLiteOpenHelper
                             }
                             c = (n4 | 0x10);
                             return;
+                            final char c2 = charArray[n3];
+                            // switch([Lcom.strobel.decompiler.ast.Label;@3ae5eb5b, n3 % 5)
+                            char c3 = '\0';
                             Label_3288: {
-                                final char c2 = '%';
+                                c3 = '%';
                             }
-                            while (true) {
+                            Label_3292: {
+                                break Label_3292;
+                                Label_3309:
+                                c3 = '<';
                                 break Label_3292;
                                 Label_3316:
-                                char c2 = 'Q';
-                                break Label_3292;
-                                final char c3 = charArray[n3];
-                                Label_3309:
-                                c2 = '<';
+                                c3 = 'Q';
                                 break Label_3292;
                                 Label_3323:
-                                c2 = 'D';
-                                charArray[n3] = (char)(c2 ^ c3);
-                                ++n3;
-                                continue Label_3292_Outer;
+                                c3 = 'D';
+                                break Label_3292;
                                 Label_3330:
-                                c2 = '-';
-                                continue;
+                                c3 = '-';
                             }
+                            charArray[n3] = (char)(c3 ^ c2);
+                            ++n3;
                         }
-                        // switch([Lcom.strobel.decompiler.ast.Label;@623ccab, n3 % 5)
                         catch (SQLiteException ex) {
                             throw ex;
                         }

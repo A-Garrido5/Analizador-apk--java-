@@ -119,91 +119,88 @@ public class vi
                                                 }
                                                 ++n4;
                                                 break;
-                                                Label_0316: {
-                                                    final char c = 'p';
+                                                Label_1181: {
+                                                    final char c = 'i';
                                                 }
-                                            Label_1164_Outer:
                                                 while (true) {
-                                                    break Label_0320;
+                                                    break Label_1164;
+                                                    Label_1068:
+                                                    array2[n5] = intern2;
+                                                    array3[n6] = array4;
+                                                    array2 = new String[] { "1", null };
+                                                    n5 = 1;
+                                                    String s2 = "?G/)\n\u0006L";
+                                                    n6 = 1;
+                                                    array3 = a;
+                                                    array4 = array2;
+                                                    int n7 = 0;
+                                                    break Label_0409;
+                                                    char[] charArray2 = null;
+                                                    int n8 = 0;
+                                                    Label_1118:
+                                                    final char c2 = charArray2[n8];
                                                     Label_0351:
-                                                    char c = ']';
-                                                    break Label_0320;
-                                                    Label_1195:
-                                                    char c2 = ']';
+                                                    char c3 = ']';
+                                                Label_0424_Outer:
                                                     while (true) {
-                                                        Label_0424: {
-                                                            while (true) {
-                                                                break Label_1164;
-                                                                Label_1188:
-                                                                c2 = '\"';
-                                                                break Label_1164;
-                                                                Label_1068:
-                                                                array2[n5] = intern2;
-                                                                array3[n6] = array4;
+                                                        break Label_0320;
+                                                        Label_0337:
+                                                        c3 = 'i';
+                                                        break Label_0320;
+                                                        Label_1188:
+                                                        char c = '\"';
+                                                        break Label_1164;
+                                                        while (true) {
+                                                            Block_6: {
+                                                                break Block_6;
+                                                                final String[][] array5 = new String[18][];
                                                                 array2 = new String[] { "1", null };
                                                                 n5 = 1;
-                                                                final String s2 = "?G/)\n\u0006L";
-                                                                n6 = 1;
-                                                                array3 = a;
+                                                                s2 = ":R/)\u001e\u001d";
+                                                                n7 = -1;
+                                                                array3 = array5;
+                                                                a = array5;
+                                                                n6 = 0;
                                                                 array4 = array2;
-                                                                final int n7 = 0;
                                                                 break Label_0409;
-                                                                Label_1160:
-                                                                c2 = 'p';
-                                                                break Label_1164;
-                                                                final char[] charArray2;
-                                                                int n8 = 0;
-                                                                Label_1118:
-                                                                final char c3 = charArray2[n8];
-                                                                final char c4;
-                                                                charArray[n3] = (char)(c ^ c4);
-                                                                ++n3;
-                                                                continue Label_0267_Outer;
-                                                                charArray2 = s2.toCharArray();
-                                                                final int length3 = charArray2.length;
-                                                                n8 = 0;
-                                                                break Label_0424;
-                                                                charArray2[n8] = (char)(c2 ^ c3);
-                                                                ++n8;
-                                                                break Label_0424;
-                                                                Label_1202:
-                                                                c2 = '@';
-                                                                continue Label_0409_Outer;
-                                                                Label_1181:
-                                                                c2 = 'i';
-                                                                continue Label_0409_Outer;
                                                             }
-                                                            Label_0344:
-                                                            c = '\"';
-                                                            continue Label_1164_Outer;
-                                                            Label_0358:
-                                                            c = '@';
-                                                            continue Label_1164_Outer;
-                                                            char[] charArray2 = null;
                                                             intern2 = new String(charArray2).intern();
-                                                            final char c4 = charArray[n3];
-                                                            final String[][] array5 = new String[18][];
-                                                            array2 = new String[] { "1", null };
-                                                            n5 = 1;
-                                                            final String s2 = ":R/)\u001e\u001d";
-                                                            final int n7 = -1;
-                                                            array3 = array5;
-                                                            a = array5;
-                                                            n6 = 0;
-                                                            array4 = array2;
-                                                            continue Label_0409;
+                                                            Label_1195:
+                                                            c = ']';
+                                                            charArray2[n8] = (char)(c ^ c2);
+                                                            ++n8;
+                                                            continue Label_0365_Outer;
+                                                            Label_0316:
+                                                            c3 = 'p';
+                                                            final char c4;
+                                                            charArray[n3] = (char)(c3 ^ c4);
+                                                            ++n3;
+                                                            continue Label_0267_Outer;
+                                                            Label_0344:
+                                                            c3 = '\"';
+                                                            continue Label_0424_Outer;
+                                                            charArray2 = s2.toCharArray();
+                                                            final int length3 = charArray2.length;
+                                                            n8 = 0;
+                                                            continue Label_0365_Outer;
                                                         }
-                                                        continue Label_0365_Outer;
+                                                        final char c4 = charArray[n3];
+                                                        Label_1160:
+                                                        c = 'p';
+                                                        continue Label_0409_Outer;
+                                                        Label_0358:
+                                                        c3 = '@';
+                                                        continue Label_0424_Outer;
                                                     }
-                                                    Label_0337:
-                                                    c = 'i';
-                                                    continue Label_1164_Outer;
+                                                    Label_1202:
+                                                    char c = '@';
+                                                    continue Label_0409_Outer;
                                                 }
                                             }
-                                            // switch([Lcom.strobel.decompiler.ast.Label;@63ceeb6b, n8 % 5)
-                                            // switch([Lcom.strobel.decompiler.ast.Label;@55d33df8, n7)
-                                            // switch([Lcom.strobel.decompiler.ast.Label;@273dcb69, n3 % 5)
+                                            // switch([Lcom.strobel.decompiler.ast.Label;@639421a, n8 % 5)
                                             // iftrue(Label_1118:, length3 > n8)
+                                            // switch([Lcom.strobel.decompiler.ast.Label;@7b3278ab, n7)
+                                            // switch([Lcom.strobel.decompiler.ast.Label;@1bcf945e, n3 % 5)
                                             catch (IllegalArgumentException ex) {
                                                 throw ex;
                                             }

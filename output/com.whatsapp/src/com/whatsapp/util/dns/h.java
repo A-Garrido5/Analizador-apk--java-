@@ -264,26 +264,26 @@ class h
                                 charArray[n3] = (char)(c ^ c2);
                                 ++n3;
                                 continue Label_0840_Outer;
-                                Label_0878: {
-                                    c = 't';
+                                Label_0857: {
+                                    c = '\u0006';
                                 }
                                 continue;
-                                Label_0836:
-                                c = '\u001f';
-                                continue;
-                                Label_0857:
-                                c = '\u0006';
-                                continue;
-                                c2 = charArray[n3];
                                 Label_0864:
                                 c = 'Z';
+                                continue;
+                                Label_0878:
+                                c = 't';
+                                continue;
+                                c2 = charArray[n3];
+                                Label_0836:
+                                c = '\u001f';
                                 continue;
                                 Label_0871:
                                 c = 'z';
                                 continue;
                             }
                         }
-                        // switch([Lcom.strobel.decompiler.ast.Label;@583b3468, n3 % 5)
+                        // switch([Lcom.strobel.decompiler.ast.Label;@7c91a270, n3 % 5)
                         catch (UnknownHostException ex) {
                             throw new Error(ex);
                         }

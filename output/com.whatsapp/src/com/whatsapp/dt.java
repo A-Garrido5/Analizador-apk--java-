@@ -417,17 +417,16 @@ public class dt implements ce
                                         break Label_0158;
                                     }
                                     break Label_0140;
-                                    // monitorexit(this.g)
-                                    // iftrue(Label_0132:, n2 == null || n2.longValue() <= System.currentTimeMillis())
-                                    Block_8: {
-                                        break Block_8;
+                                    while (true) {
+                                        App.aq.a5().postDelayed(this.b, n2 - System.currentTimeMillis());
                                         Label_0132: {
                                             return;
                                         }
+                                        continue Label_0090_Outer;
                                     }
-                                    App.aq.a5().postDelayed(this.b, n2 - System.currentTimeMillis());
-                                    return;
                                 }
+                                // monitorexit(this.g)
+                                // iftrue(Label_0132:, n2 == null || n2.longValue() <= System.currentTimeMillis())
                             }
                             n2 = n;
                             break Label_0158;
@@ -732,18 +731,23 @@ public class dt implements ce
                         Label_0248: {
                             Label_0242: {
                                 Label_0236: {
-                                Label_0230:
+                                    ArrayList<bt> list2;
+                                    ArrayList<bt> list3;
+                                    Iterator<bt> iterator;
+                                    int n2;
+                                    Iterator<i4> iterator2;
+                                    bt bt;
+                                    Label_0230:Label_0183_Outer:Label_0171_Outer:Block_8_Outer:
                                     while (true) {
-                                        final int n2;
                                         synchronized (this.f) {
                                             list = this.f.get(s);
                                             if (list != null) {
                                                 break Label_0248;
                                             }
-                                            final ArrayList<bt> list2 = new ArrayList<bt>();
+                                            list2 = new ArrayList<bt>();
                                             this.f.put(s, list2);
-                                            final ArrayList<bt> list3 = list2;
-                                            final Iterator<bt> iterator = list3.iterator();
+                                            list3 = list2;
+                                            iterator = list3.iterator();
                                             if (!iterator.hasNext()) {
                                                 break Label_0242;
                                             }
@@ -755,36 +759,36 @@ public class dt implements ce
                                                 break Label_0255;
                                             }
                                             break Label_0230;
-                                            // monitorexit(this.f)
                                             // iftrue(Label_0183:, !i)
-                                            // iftrue(Label_0171:, n2 != 0)
                                             // iftrue(Label_0215:, !iterator2.hasNext())
-                                        Block_9_Outer:
+                                            // monitorexit(this.f)
                                             while (true) {
-                                                final Iterator<i4> iterator2 = (Iterator<i4>)this.d.iterator();
-                                            Block_8:
                                                 while (true) {
-                                                    Label_0183: {
-                                                        break Label_0183;
-                                                        iterator2.next().a(s, e);
-                                                        return;
-                                                        break Block_8;
+                                                    while (true) {
+                                                        while (true) {
+                                                            iterator2.next().a(s, e);
+                                                            return;
+                                                            continue Label_0183_Outer;
+                                                        }
+                                                        Label_0215: {
+                                                            return;
+                                                        }
+                                                        iterator2 = this.d.iterator();
+                                                        continue Label_0171_Outer;
                                                     }
-                                                    continue Label_0143_Outer;
+                                                    bt = new bt();
+                                                    bt.e = e;
+                                                    list3.add(bt);
+                                                    continue Block_8_Outer;
                                                 }
-                                                final bt bt = new bt();
-                                                bt.e = e;
-                                                list3.add(bt);
-                                                continue Block_9_Outer;
-                                            }
-                                            Label_0215: {
-                                                return;
+                                                continue Label_0143_Outer;
                                             }
                                         }
+                                        // iftrue(Label_0171:, n2 != 0)
                                         n = n2;
                                         continue Label_0143_Outer;
                                     }
-                                    int n2 = 1;
+                                    n2 = 1;
                                     continue Label_0143;
                                 }
                                 int n2 = n;
@@ -793,7 +797,7 @@ public class dt implements ce
                             int n2 = n;
                             continue Label_0143;
                         }
-                        final ArrayList<bt> list3 = list;
+                        ArrayList<bt> list3 = list;
                         continue Label_0143_Outer;
                     }
                     if (i) {

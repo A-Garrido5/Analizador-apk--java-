@@ -1037,15 +1037,15 @@ public class LinearLayoutCompat extends ViewGroup
                                                                             break Label_0417;
                                                                         }
                                                                     }
-                                                                    int paddingTop = this.getPaddingTop() + (n4 - n2 - this.mTotalLength) / 2;
                                                                     // iftrue(Label_0098:, !a)
-                                                                    // iftrue(Label_0098:, !a)
-                                                                    Block_8: {
-                                                                        break Block_8;
-                                                                        paddingTop = n4 + this.getPaddingTop() - n2 - this.mTotalLength;
-                                                                        continue Label_0357;
+                                                                    while (true) {
+                                                                        break Label_0336;
+                                                                        final int paddingTop = this.getPaddingTop() + (n4 - n2 - this.mTotalLength) / 2;
+                                                                        continue;
                                                                     }
-                                                                    break Label_0336;
+                                                                    final int paddingTop = n4 + this.getPaddingTop() - n2 - this.mTotalLength;
+                                                                    // iftrue(Label_0098:, !a)
+                                                                    continue Label_0357;
                                                                 }
                                                                 catch (RuntimeException ex) {
                                                                     throw ex;
@@ -1074,7 +1074,7 @@ public class LinearLayoutCompat extends ViewGroup
                                 }
                             }
                         }
-                        int paddingTop = this.getPaddingTop();
+                        final int paddingTop = this.getPaddingTop();
                         Label_0098: {
                             n11 = 0;
                         }

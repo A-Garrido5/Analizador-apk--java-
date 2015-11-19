@@ -129,30 +129,32 @@ public class SlidingPaneLayout extends ViewGroup
                         try {
                             IMPL = new SlidingPaneLayout$SlidingPanelLayoutImplJBMR1();
                             return;
-                            Label_0280: {
-                                final char c = 'Y';
-                            }
                             while (true) {
-                                break Label_0284;
-                                Label_0308:
-                                char c = '}';
-                                break Label_0284;
-                                final char c2 = charArray[n3];
+                                char c = '\0';
+                                final char c2;
                                 charArray[n3] = (char)(c ^ c2);
                                 ++n3;
                                 continue Label_0284_Outer;
+                                Label_0315: {
+                                    c = 'j';
+                                }
+                                continue;
+                                c2 = charArray[n3];
+                                Label_0308:
+                                c = '}';
+                                continue;
+                                Label_0280:
+                                c = 'Y';
+                                continue;
                                 Label_0322:
                                 c = '\u0015';
                                 continue;
                                 Label_0301:
                                 c = 'e';
                                 continue;
-                                Label_0315:
-                                c = 'j';
-                                continue;
                             }
                         }
-                        // switch([Lcom.strobel.decompiler.ast.Label;@653383f8, n3 % 5)
+                        // switch([Lcom.strobel.decompiler.ast.Label;@4bb70433, n3 % 5)
                         catch (IllegalStateException ex) {
                             throw ex;
                         }

@@ -1390,9 +1390,9 @@ public class Conversations extends DialogToastActivity
     
     protected void onPrepareDialog(final int n, final Dialog dialog) {
         final boolean i = App.I;
-        Label_0061_Outer:Label_0075_Outer:
+    Label_0089_Outer:
         while (true) {
-        Label_0075:
+        Label_0075_Outer:
             while (true) {
                 while (true) {
                     switch (n) {
@@ -1400,44 +1400,42 @@ public class Conversations extends DialogToastActivity
                             break Label_0040;
                         }
                         case 121: {
-                            break Label_0075;
+                            break Label_0075_Outer;
                         }
                         case 117: {
-                        Block_2_Outer:
-                            while (true) {
+                            Label_0061: {
                                 break Label_0061;
                                 try {
                                     super.onPrepareDialog(n, dialog);
                                     Label_0046: {
                                         return;
                                     }
-                                    while (true) {
-                                        continue Label_0061_Outer;
+                                    ((AlertDialog)dialog).setMessage(yt.c());
+                                    // iftrue(Label_0046:, !i)
+                                    // iftrue(Label_0046:, !i)
+                                    // iftrue(Label_0046:, !i)
+                                    Block_2: {
+                                        break Block_2;
+                                        ((AlertDialog)dialog).setMessage(yt.b());
                                         ((AlertDialog)dialog).setMessage(yt.a());
                                         break Label_0075;
-                                        ((AlertDialog)dialog).setMessage(yt.b());
-                                        continue Block_2_Outer;
-                                        ((AlertDialog)dialog).setMessage(yt.d());
-                                        ((AlertDialog)dialog).setMessage(yt.c());
-                                        continue Label_0075_Outer;
                                     }
+                                    continue Label_0089_Outer;
+                                    ((AlertDialog)dialog).setMessage(yt.d());
+                                    // iftrue(Label_0046:, !i)
+                                    continue Label_0075_Outer;
                                 }
-                                // iftrue(Label_0046:, !i)
-                                // iftrue(Label_0046:, !i)
-                                // iftrue(Label_0046:, !i)
-                                // iftrue(Label_0046:, !i)
                                 catch (IllegalArgumentException ex) {
                                     throw ex;
                                 }
-                                break;
                             }
                             break;
                         }
                         case 118: {
-                            continue Label_0075;
+                            continue;
                         }
                         case 119: {
-                            continue;
+                            continue Label_0075_Outer;
                         }
                     }
                     break;

@@ -3211,7 +3211,6 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase implements MenuB
                 break Label_0047;
             }
             WindowDecorActionBar windowDecorActionBar = new WindowDecorActionBar((Activity)this.mOriginalWindowCallback, this.mOverlayActionBar);
-        Block_4_Outer:
             while (true) {
                 if (windowDecorActionBar == null) {
                     return windowDecorActionBar;
@@ -3219,15 +3218,12 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase implements MenuB
                 try {
                     windowDecorActionBar.setDefaultDisplayHomeAsUpEnabled(this.mEnableDefaultActionBarUp);
                     return windowDecorActionBar;
-                    while (true) {
-                        windowDecorActionBar = new WindowDecorActionBar((Dialog)this.mOriginalWindowCallback);
-                        continue Block_4_Outer;
-                        final boolean b = this.mOriginalWindowCallback instanceof Dialog;
-                        windowDecorActionBar = null;
-                        continue;
-                    }
+                    final boolean b = this.mOriginalWindowCallback instanceof Dialog;
+                    windowDecorActionBar = null;
+                    // iftrue(Label_0033:, !b)
+                    windowDecorActionBar = new WindowDecorActionBar((Dialog)this.mOriginalWindowCallback);
+                    continue;
                 }
-                // iftrue(Label_0033:, !b)
                 catch (IllegalStateException ex) {
                     throw ex;
                 }

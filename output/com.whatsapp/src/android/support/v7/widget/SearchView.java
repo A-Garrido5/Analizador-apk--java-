@@ -419,31 +419,31 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
                                             return;
                                         }
                                         break Label_1162;
-                                        final char c = charArray[n3];
-                                        // switch([Lcom.strobel.decompiler.ast.Label;@cbcbba8, n3 % 5)
+                                        char c = '\0';
+                                        Label_1150: {
+                                            c = '\u0017';
+                                        }
                                         while (true) {
-                                            char c2 = '\0';
-                                            charArray[n3] = (char)(c2 ^ c);
+                                            final char c2;
+                                            charArray[n3] = (char)(c ^ c2);
                                             ++n3;
                                             break;
-                                            Label_1136: {
-                                                c2 = '\u0016';
-                                            }
-                                            continue;
-                                            Label_1108:
-                                            c2 = '<';
-                                            continue;
-                                            Label_1150:
-                                            c2 = '\u0017';
-                                            continue;
                                             Label_1129:
-                                            c2 = '\u0007';
+                                            c = '\u0007';
                                             continue;
                                             Label_1143:
-                                            c2 = '\t';
+                                            c = '\t';
+                                            continue;
+                                            Label_1108:
+                                            c = '<';
+                                            continue;
+                                            Label_1136:
+                                            c = '\u0016';
                                             continue;
                                         }
+                                        final char c2 = charArray[n3];
                                     }
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@69a6976b, n3 % 5)
                                     catch (ActivityNotFoundException ex) {
                                         throw ex;
                                     }

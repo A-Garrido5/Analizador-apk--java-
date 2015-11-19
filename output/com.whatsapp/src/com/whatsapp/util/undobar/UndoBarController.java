@@ -241,31 +241,29 @@ public class UndoBarController extends LinearLayout
                                             return;
                                         }
                                         break Label_0718;
-                                        char c2 = '\0';
-                                        Label_0664: {
-                                            c2 = 'k';
+                                        Label_0699: {
+                                            final char c2 = 'z';
                                         }
                                         while (true) {
-                                            final char c3;
+                                            break Label_0668;
+                                            final char c3 = charArray[n3];
+                                            Label_0685:
+                                            char c2 = '\t';
                                             charArray[n3] = (char)(c2 ^ c3);
                                             ++n3;
                                             break;
-                                            c3 = charArray[n3];
+                                            Label_0664:
+                                            c2 = 'k';
+                                            continue;
                                             Label_0692:
                                             c2 = 'E';
                                             continue;
                                             Label_0706:
                                             c2 = 'U';
                                             continue;
-                                            Label_0685:
-                                            c2 = '\t';
-                                            continue;
-                                            Label_0699:
-                                            c2 = 'z';
-                                            continue;
                                         }
                                     }
-                                    // switch([Lcom.strobel.decompiler.ast.Label;@11255edb, n3 % 5)
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@df791d0, n3 % 5)
                                     catch (IllegalArgumentException ex) {
                                         throw ex;
                                     }
