@@ -518,14 +518,53 @@ def revisarJava(folder,paquete,Version):
 
 
 
+def validarCarpetas():
 
+	output = carpetaPrincipal+"/output"
+	output_Malware = carpetaPrincipal+"/output-Malware"
+	output_Permisos = carpetaPrincipal+"/output_Permisos"
+	output_Permisos_Malware = carpetaPrincipal+"/output_Permisos-Malware"
+	output_Publicidad = carpetaPrincipal+"/output_Publicidad"
+	output_Publicidad_Malware = carpetaPrincipal+"/output_Publicidad-Malware"
+	
+	try:
+	    os.stat(output)
+	except:
+	    os.mkdir(output) 
 
+	try:
+	    os.stat(output_Malware)
+	except:
+	    os.mkdir(output_Malware) 
+
+	try:
+	    os.stat(output_Permisos)
+	except:
+	    os.mkdir(output_Permisos) 
+
+	try:
+	    os.stat(output_Permisos_Malware)
+	except:
+	    os.mkdir(output_Permisos_Malware) 
+
+	try:
+	    os.stat(output_Publicidad)
+	except:
+	    os.mkdir(output_Publicidad) 
+
+	try:
+	    os.stat(output_Publicidad_Malware)
+	except:
+	    os.mkdir(output_Publicidad_Malware) 
+
+	
 
 
 def main():
 
 	global MalWare
 
+	validarCarpetas()
 
 	MalWare = False
 
