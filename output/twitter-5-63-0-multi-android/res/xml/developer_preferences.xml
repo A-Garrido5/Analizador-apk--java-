@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/developer_settings_title" android:key="pref_developer">
-        <Preference android:title="@string/developer_settings_start_card_previewer" android:key="pref_developer_start_card_previewer" />
-    </PreferenceCategory>
-</PreferenceScreen>

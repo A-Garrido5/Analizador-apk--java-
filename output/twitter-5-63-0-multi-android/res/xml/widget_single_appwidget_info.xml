@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<appwidget-provider android:minWidth="300.0dip" android:minHeight="210.0dip" android:updatePeriodMillis="86400000" android:initialLayout="@layout/widget_single_item_loading" android:configure="com.twitter.android.samsung.single.SamsungCheckActivity" android:resizeMode="horizontal|vertical" android:initialKeyguardLayout="@layout/widget_single_keyguard_layout" android:widgetCategory="home_screen"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

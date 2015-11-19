@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
-    <com.twitter.refresh.widget.RefreshableListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" twitter:enablePullToRefresh="false" style="@style/List.Refreshable" />
-    <include layout="@layout/profile_empty_state" />
-</RelativeLayout>

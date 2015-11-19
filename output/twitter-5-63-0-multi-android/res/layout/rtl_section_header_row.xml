@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.twitter.internal.android.widget.TypefacesTextView android:id="@id/title" style="@style/SectionHeader.RTL"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

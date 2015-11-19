@@ -319,10 +319,16 @@ def revisarManifest(folder,carpetaArchivosJava):
 		
 		diccionarioPermisos[x] = 1;
 
-	
-	os.chdir("output_Permisos")		
+	if(MalWare):
 
-	archivo=open('outputPermisos.txt' ,'a')
+		os.chdir("output_Permisos-Malware")
+		archivo=open('outputPermisos-Malware.arff' ,'a')
+
+	else:
+	
+		os.chdir("output_Permisos")		
+
+		archivo=open('outputPermisos.arff' ,'a')
 
 	
 
@@ -364,7 +370,7 @@ def escribirPrimeraParte():
 
 	os.chdir("output_Permisos")		
 
-	archivo=open('outputPermisos.txt' ,'w')
+	archivo=open('outputPermisos.arff' ,'w')
 
 	archivo.write('\n')
 	archivo.write('@Relation Permissions')
@@ -385,9 +391,52 @@ def escribirPrimeraParte():
 
 	os.chdir(carpetaPrincipal)
 
+	os.chdir("output_Permisos-Malware")		
+
+	archivo=open('outputPermisos-Malware.arff' ,'w')
+
+	archivo.write('\n')
+	archivo.write('@Relation Permissions')
+	archivo.write('\n')
+	archivo.write('\n')
+	archivo.write('@ATTRIBUTE packageName string\n')
+	archivo.write('@ATTRIBUTE Version string\n')
+	
+
+	for n in diccionarioPermisos:
+		archivo.write('@ATTRIBUTE '+ n + ' {true,false}\n')
+
+	archivo.write('\n')
+	archivo.write('\n')
+	archivo.write('@data')
+	archivo.write('\n')
+	archivo.write('\n')
+
+	os.chdir(carpetaPrincipal)
 
 	os.chdir("output_Publicidad")			
-	archivo2=open('outputPublicidad.txt' ,'w')
+	archivo2=open('outputPublicidad.arff' ,'w')
+	
+	archivo2.write('\n')
+	archivo2.write('@Relation Publicity')
+	archivo2.write('\n')
+	archivo2.write('\n')
+
+	archivo2.write('@ATTRIBUTE packageName string\n')
+	archivo2.write('@ATTRIBUTE Version string\n')
+
+	for n in diccionarioPublicidad:
+		archivo2.write('@ATTRIBUTE '+ n + ' {true,false}\n')
+
+	archivo2.write('\n')
+	archivo2.write('\n')
+	archivo2.write('@data')
+	archivo2.write('\n')
+
+	os.chdir(carpetaPrincipal)
+
+	os.chdir("output_Publicidad-Malware")			
+	archivo2=open('outputPublicidad-Malware.arff' ,'w')
 	
 	archivo2.write('\n')
 	archivo2.write('@Relation Publicity')
@@ -439,8 +488,13 @@ def revisarJava(folder,paquete,Version):
 	#print(diccionarioPublicidad)
 		#print(x)
 
-	os.chdir("output_Publicidad")			
-	archivo=open('outputPublicidad.txt' ,'a')
+	if(MalWare):
+		os.chdir("output_Publicidad-Malware")			
+		archivo=open('outputPublicidad-Malware.arff' ,'a')
+
+	else:
+		os.chdir("output_Publicidad")			
+		archivo=open('outputPublicidad.arff' ,'a')
 
 
 	archivo.write('\n')
@@ -470,6 +524,10 @@ def revisarJava(folder,paquete,Version):
 
 def main():
 
+	global MalWare
+
+
+	MalWare = False
 
 	escribirPrimeraParte()
 
@@ -477,46 +535,63 @@ def main():
 
 	ficherosMalware = os.listdir(carpetaAPKmalware)
 
-	for x in ficheros:
-		
-		nombreArchivo=os.path.splitext(x)[0]
-		
-		#python3 apk2java.py d /home/adrian/Escritorio/APK/com.whatsapp.apk -o hola --java
-		call('python3 decompilador.py d '+carpetaAPK +'/'+ x+' -o output/ --java',shell=True)
-		call('rm -r -f output/'+nombreArchivo+'-new.apk',shell=True)
-		call('rm -r -f output/'+nombreArchivo+'.jar',shell=True)
+	
 
-		print ("*********************************************")
-		print ("**              Analizando                 **")
-		print ("*********************************************")
-		
-		carpetaArchivosJava=carpetaPrincipal+'/output/'+nombreArchivo+'/src'
+	if not ficheros:
 
-		revisarManifest(carpetaPrincipal+'/output/'+nombreArchivo,carpetaArchivosJava)
+		print("No hay normales")
 
-		print('')
-		print('Listo')
-		print('')
+	else:
 
-	for y in ficherosMalware:
+		for x in ficheros:
+			
+			nombreArchivo=os.path.splitext(x)[0]
+			
+			#python3 apk2java.py d /home/adrian/Escritorio/APK/com.whatsapp.apk -o hola --java
+			call('python3 decompilador.py d '+carpetaAPK +'/'+ x+' -o output/ --java',shell=True)
+			call('rm -r -f output/'+nombreArchivo+'-new.apk',shell=True)
+			call('rm -r -f output/'+nombreArchivo+'.jar',shell=True)
 
-		nombreArchivo=os.path.splitext(y)[0]
+			print ("*********************************************")
+			print ("**              Analizando                 **")
+			print ("*********************************************")
+			
+			carpetaArchivosJava=carpetaPrincipal+'/output/'+nombreArchivo+'/src'
 
-		call('python3 decompilador.py d '+carpetaAPKmalware +'/'+ y+' -o output/ --java',shell=True)
-		call('rm -r -f output/'+nombreArchivo+'-new.apk',shell=True)
-		call('rm -r -f output/'+nombreArchivo+'.jar',shell=True)
+			revisarManifest(carpetaPrincipal+'/output/'+nombreArchivo,carpetaArchivosJava)
 
-		print ("*********************************************")
-		print ("**         Analizando - (MalWare)          **")
-		print ("*********************************************")
-		
-		carpetaArchivosJava=carpetaPrincipal+'/output/'+nombreArchivo+'/src'
+			print('')
+			print('Listo')
+			print('')
 
-		revisarManifest(carpetaPrincipal+'/output/'+nombreArchivo,carpetaArchivosJava)
+	if not ficherosMalware:
+		print("No hay MalWare")
 
-		print('')
-		print('Listo')
-		print('')
+	else:
+
+		MalWare = True;
+
+		for y in ficherosMalware:
+
+
+			nombreArchivo=os.path.splitext(y)[0].lower()
+
+
+			call('python3 decompilador.py d '+carpetaAPKmalware +'/'+ y+' -o output-Malware/ --java',shell=True)
+			call('rm -r -f output-Malware/'+nombreArchivo+'-new.apk',shell=True)
+			call('rm -r -f output-Malware/'+nombreArchivo+'.jar',shell=True)
+
+			print ("*********************************************")
+			print ("**         Analizando - (MalWare)          **")
+			print ("*********************************************")
+			
+			carpetaArchivosJava=carpetaPrincipal+'/output-Malware/'+nombreArchivo+'/src'
+
+			revisarManifest(carpetaPrincipal+'/output-Malware/'+nombreArchivo,carpetaArchivosJava)
+
+			print('')
+			print('Listo')
+			print('')
 
 
 if __name__=="__main__":

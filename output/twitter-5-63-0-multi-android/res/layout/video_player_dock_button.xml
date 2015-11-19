@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ImageView android:id="@id/video_player_dock_button" android:padding="8.0dip" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icn_media_dock" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/av_player_button_dock" android:layout_alignParentEnd="true"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.twitter.library.media.widget.MediaImageView android:id="@id/team_logo" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="@dimen/list_row_padding_horizontal" android:contentDescription="@string/nfl_team_logo" />
-    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:textColor="@color/text" android:id="@id/team_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_large" android:textColor="@color/text" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
-</LinearLayout>

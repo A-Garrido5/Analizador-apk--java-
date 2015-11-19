@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_gravity="bottom|center|right" android:layout_width="@dimen/docked_content_size" android:layout_height="@dimen/docked_content_size" android:layout_margin="@dimen/docked_content_margin" xmlns:twitter="http://schemas.android.com/apk/res-auto"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.twitter.library.media.widget.MediaImageView android:id="@id/artwork_background" android:layout_width="@dimen/docked_content_size" android:layout_height="@dimen/docked_content_size" android:contentDescription="@string/floating_player_artwork_description">
-        <com.twitter.internal.android.widget.RichImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" twitter:cornerRadius="@dimen/corner_radius_audio_card" twitter:overlayDrawable="@drawable/audio_dock_overlay_bg" />
-    </com.twitter.library.media.widget.MediaImageView>
-    <com.twitter.library.media.widget.MediaImageView android:id="@id/partner_logo" android:layout_width="@dimen/docked_badge_size" android:layout_height="@dimen/docked_badge_size" android:layout_marginLeft="@dimen/docked_badge_margin" android:layout_marginBottom="@dimen/docked_badge_margin" android:layout_alignParentBottom="true" android:contentDescription="@string/floating_player_partner_logo_description" />
-</RelativeLayout>

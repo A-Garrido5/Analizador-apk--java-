@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/notification_filter_header" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.twitter.internal.android.widget.TypefacesTextView android:text="@string/notification_filter_title" android:layout_centerInParent="true" style="@style/HighlightTitle" />
-</RelativeLayout>

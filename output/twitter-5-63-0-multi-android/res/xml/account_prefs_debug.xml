@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceScreen android:title="Debug">
-        <PreferenceCategory android:title="Debug" android:key="pref_debug_main">
-            <Preference android:title="@string/settings_change_email_title" android:key="change_email" />
-        </PreferenceCategory>
-    </PreferenceScreen>
-</PreferenceScreen>
