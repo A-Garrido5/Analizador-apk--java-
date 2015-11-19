@@ -492,23 +492,23 @@ public class bg extends sh
                     writableDatabase.setTransactionSuccessful();
                 }
                 return update;
-                // iftrue(Label_0029:, n >= length)
                 while (true) {
-                    while (true) {
-                        final String[] array2;
-                        int n = 0;
-                        array2[0] = String.valueOf(array[n]);
-                        final int n2 = writableDatabase.update(s, contentValues, "entity_id=?", array2) + update;
-                        ++n;
-                        update = n2;
-                        continue;
-                    }
-                    final String[] array2 = { null };
-                    final int length = array.length;
+                    final String[] array2;
                     int n = 0;
+                    array2[0] = String.valueOf(array[n]);
+                    final int n2 = writableDatabase.update(s, contentValues, "entity_id=?", array2) + update;
+                    ++n;
+                    update = n2;
+                    Label_0055: {
+                        break Label_0055;
+                        array2 = new String[] { null };
+                        final int length = array.length;
+                        n = 0;
+                    }
                     continue;
                 }
             }
+            // iftrue(Label_0029:, n >= length)
             finally {
                 writableDatabase.endTransaction();
             }
@@ -1697,22 +1697,37 @@ public class bg extends sh
                 final int n3 = 0;
                 break Label_0452;
             }
-        Label_0125_Outer:
+            int n3;
+            SQLiteDatabase writableDatabase;
+            ContentValues contentValues;
+            long currentTimeMillis;
+            int n4;
+            long long1;
+            int int1 = 0;
+            Cursor query;
+            ContentValues contentValues2;
+            int int2;
+            int max;
+            Iterator<Object> iterator;
+            int n5 = 0;
+            int int3;
+            int max2;
+            boolean d;
+            int n6;
+            Label_0125_Outer:Label_0079_Outer:
             while (true) {
-                final SQLiteDatabase writableDatabase = this.getWritableDatabase();
+                writableDatabase = this.getWritableDatabase();
                 writableDatabase.beginTransaction();
                 while (true) {
-                    int int1 = 0;
-                    int n5 = 0;
                     Label_0618: {
                         try {
-                            final ContentValues contentValues = new ContentValues();
-                            final long currentTimeMillis = System.currentTimeMillis();
-                            int n4 = 0;
-                        Label_0125:
+                            contentValues = new ContentValues();
+                            currentTimeMillis = System.currentTimeMillis();
+                            n4 = 0;
+                        Block_8_Outer:
                             while (true) {
                                 while (true) {
-                                    final long long1 = cursor.getLong(0);
+                                    long1 = cursor.getLong(0);
                                     int1 = cursor.getInt(1);
                                     if (b) {
                                         break;
@@ -1722,13 +1737,10 @@ public class bg extends sh
                                     Label_0438_Outer:
                                         while (true) {
                                             while (true) {
-                                                int max2;
                                                 try {
-                                                    final Cursor query;
                                                     if (query.moveToFirst()) {
-                                                        final ContentValues contentValues2 = new ContentValues(1);
-                                                        final int int2 = query.getInt(3);
-                                                        int max;
+                                                        contentValues2 = new ContentValues(1);
+                                                        int2 = query.getInt(3);
                                                         if (b) {
                                                             max = int2 + 1;
                                                         }
@@ -1742,26 +1754,24 @@ public class bg extends sh
                                                     query.close();
                                                     writableDatabase.setTransactionSuccessful();
                                                     writableDatabase.endTransaction();
-                                                    final int n3 = n4;
+                                                    n3 = n4;
                                                     if (n3 > 0 && b2 != null) {
                                                         b2.a(bg.d);
                                                         b2.a(bg.e);
-                                                        final Iterator<Object> iterator = list.iterator();
+                                                        iterator = list.iterator();
                                                         while (iterator.hasNext()) {
                                                             b2.a(ContentUris.withAppendedId(bf.b, (long)iterator.next()));
                                                         }
                                                         break Label_0452;
                                                     }
                                                     break Label_0452;
+                                                    n5 = z.b(int1, n);
+                                                    break Label_0618;
                                                     Label_0551: {
-                                                        final int int3;
                                                         max2 = Math.max(0, int3 - 1);
                                                     }
-                                                    break Label_0125;
-                                                    n5 = z.b(int1, n);
                                                 }
                                                 finally {
-                                                    final Cursor query;
                                                     query.close();
                                                 }
                                                 contentValues.put("followers", max2);
@@ -1780,7 +1790,7 @@ public class bg extends sh
                                                 if (!b3 || n2 == -1L || list.isEmpty()) {
                                                     continue Label_0125_Outer;
                                                 }
-                                                final Cursor query = writableDatabase.query("users", bs.a, "user_id=?", new String[] { String.valueOf(n2) }, (String)null, (String)null, (String)null);
+                                                query = writableDatabase.query("users", bs.a, "user_id=?", new String[] { String.valueOf(n2) }, (String)null, (String)null, (String)null);
                                                 if (query != null) {
                                                     continue Label_0438_Outer;
                                                 }
@@ -1791,24 +1801,29 @@ public class bg extends sh
                                 }
                                 n5 = z.a(int1, n);
                                 break Label_0618;
-                                final boolean d = bf.d(cursor.getInt(4));
-                                final int int3 = cursor.getInt(2);
-                                int max2 = int3 + 1;
-                                continue Label_0125;
+                            Block_9:
+                                while (true) {
+                                    int3 = cursor.getInt(2);
+                                    break Block_9;
+                                    d = bf.d(cursor.getInt(4));
+                                    continue Label_0079_Outer;
+                                }
+                                max2 = int3 + 1;
+                                continue Block_8_Outer;
                             }
                         }
-                        // iftrue(Label_0151:, !b3 || n6 == 0 || d)
                         // iftrue(Label_0551:, !b)
+                        // iftrue(Label_0151:, !b3 || n6 == 0 || d)
                         finally {
                             writableDatabase.endTransaction();
                         }
                         break;
                     }
                     if ((0x1 & (int1 ^ n5)) != 0x0) {
-                        final int n6 = 1;
+                        n6 = 1;
                         continue;
                     }
-                    final int n6 = 0;
+                    n6 = 0;
                     continue;
                 }
             }
@@ -2894,20 +2909,17 @@ public class bg extends sh
                     writableDatabase.setTransactionSuccessful();
                 }
                 return update;
+                final String[] array2 = { null };
+                final int length = array.length;
+                int n = 0;
                 while (true) {
-                    int n = 0;
-                    final String[] array2;
-                    Block_3: {
-                        break Block_3;
-                        array2 = new String[] { null };
-                        final int length = array.length;
-                        n = 0;
-                        continue;
+                    Label_0055: {
+                        break Label_0055;
+                        array2[0] = String.valueOf(array[n]);
+                        final int n2 = writableDatabase.update(s, contentValues, "_id=?", array2) + update;
+                        ++n;
+                        update = n2;
                     }
-                    array2[0] = String.valueOf(array[n]);
-                    final int n2 = writableDatabase.update(s, contentValues, "_id=?", array2) + update;
-                    ++n;
-                    update = n2;
                     continue;
                 }
             }
@@ -4270,14 +4282,14 @@ public class bg extends sh
                         b.a(uri);
                     }
                     return a;
-                    // iftrue(Label_0092:, n != 13)
-                    s = "search_results";
-                    uri = aw.a;
-                    continue;
                     Label_0092: {
                         s = "status_groups";
                     }
                     uri = az.a;
+                    continue;
+                    // iftrue(Label_0092:, n != 13)
+                    s = "search_results";
+                    uri = aw.a;
                 }
                 finally {
                     writableDatabase.endTransaction();
@@ -9769,7 +9781,6 @@ public class bg extends sh
             if (n2 <= 0L) {
                 break Label_0088;
             }
-        Block_3_Outer:
             while (true) {
                 switch (n) {
                     case 1:
@@ -9783,14 +9794,11 @@ public class bg extends sh
                     this.a(twitterSearchQuery, n2);
                     writableDatabase.setTransactionSuccessful();
                     return n2;
-                    while (true) {
-                        b.a(av.a);
-                        continue Block_3_Outer;
-                        n2 = this.a(twitterSearchQuery, n);
-                        continue;
-                    }
+                    n2 = this.a(twitterSearchQuery, n);
+                    // iftrue(Label_0075:, b == null)
+                    b.a(av.a);
+                    continue;
                 }
-                // iftrue(Label_0075:, b == null)
                 finally {
                     writableDatabase.endTransaction();
                 }
@@ -10023,8 +10031,8 @@ public class bg extends sh
                     int a2 = 0;
                     long insert = 0L;
                     int n7 = 0;
-                    Iterator iterator2;
                     int n8;
+                    Iterator iterator2;
                     TwitterUser twitterUser;
                     long a3 = 0L;
                     String[] array = null;
@@ -10095,23 +10103,25 @@ public class bg extends sh
                                                                 break Label_1547;
                                                             }
                                                             break Label_0381;
+                                                            // iftrue(Label_1628:, n8 == 0)
+                                                            // iftrue(Label_0692:, !iterator2.hasNext())
                                                             while (true) {
                                                                 Block_44: {
-                                                                    Block_46: {
-                                                                        break Block_46;
-                                                                        break Block_44;
+                                                                    break Block_44;
+                                                                    iterator2 = az.g.iterator();
+                                                                    while (true) {
+                                                                        Label_0312: {
+                                                                            break Label_0312;
+                                                                            twitterUser = iterator2.next();
+                                                                            hashMap.put(twitterUser.userId, twitterUser);
+                                                                        }
+                                                                        continue;
                                                                     }
-                                                                    twitterUser = iterator2.next();
-                                                                    hashMap.put(twitterUser.userId, twitterUser);
-                                                                    continue Label_0280_Outer;
                                                                 }
                                                                 list2.add(az);
-                                                                iterator2 = az.g.iterator();
-                                                                continue Label_0280_Outer;
+                                                                continue;
                                                             }
                                                         }
-                                                        // iftrue(Label_0692:, !iterator2.hasNext())
-                                                        // iftrue(Label_1628:, n8 == 0)
                                                         // iftrue(Label_0709:, az.f != 1)
                                                         finally {
                                                             writableDatabase.endTransaction();
@@ -11896,12 +11906,12 @@ public class bg extends sh
         boolean b3 = false;
         boolean b4 = false;
         int n7;
-        Label_0465_Outer:Label_0490_Outer:
+        Label_0465_Outer:Label_0607_Outer:
         while (true) {
             writableDatabase = this.getWritableDatabase();
             writableDatabase.beginTransaction();
+        Label_0490_Outer:
             while (true) {
-            Label_0490:
                 while (true) {
                 Label_0629:
                     while (true) {
@@ -11953,11 +11963,7 @@ public class bg extends sh
                                     b3 = false;
                                     b4 = (longValue > 0L && z.b(this.e(longValue)));
                                     break Label_0629;
-                                    Block_17: {
-                                        break Block_17;
-                                        n7 = 0;
-                                        continue Label_0490;
-                                    }
+                                    n7 = 0;
                                     n6 += writableDatabase.delete("timeline", "owner_id=? AND type=? AND data_type=1 AND data_id=?", new String[] { value, String.valueOf(0), value2 });
                                     Label_0538: {
                                         n2 = n6 + writableDatabase.delete("status_groups", "owner_id=? AND type=? AND g_status_id=?", new String[] { value, String.valueOf(1), value2 });
@@ -11971,15 +11977,15 @@ public class bg extends sh
                             }
                         }
                         b3 = true;
-                        continue Label_0490_Outer;
+                        continue Label_0607_Outer;
                     }
                     if (b || b3 || (longValue > 0L && b4)) {
                         n7 = 1;
-                        continue Label_0490;
+                        continue;
                     }
                     break;
                 }
-                continue;
+                continue Label_0490_Outer;
             }
         }
     }
@@ -12229,9 +12235,9 @@ public class bg extends sh
                             String string;
                             final Cursor query;
                             String[] array3;
-                            int n3 = 0;
+                            int n3;
                             String string2;
-                            Block_8_Outer:Block_12_Outer:
+                            Label_0171_Outer:Label_0076_Outer:
                             while (true) {
                                 sqLiteDatabase.beginTransaction();
                                 while (true) {
@@ -12246,47 +12252,55 @@ public class bg extends sh
                                                 System.arraycopy(array, 0, array3, 1, array.length);
                                                 break Label_0311;
                                             }
-                                            // iftrue(Label_0204:, n3 <= 0)
+                                            // iftrue(Label_0204:, b == null)
                                             // iftrue(Label_0155:, !bg.b)
-                                            // iftrue(Label_0171:, n2 == -1)
                                             // iftrue(Label_0076:, query.moveToNext())
+                                            // iftrue(Label_0204:, n3 <= 0)
                                             while (true) {
-                                            Label_0171:
-                                                while (true) {
-                                                    Block_10: {
+                                                Label_0155: {
+                                                Block_9_Outer:
+                                                    while (true) {
                                                         while (true) {
-                                                            sqLiteDatabase.setTransactionSuccessful();
-                                                            return;
-                                                            break Block_10;
-                                                            b.a(bg.d);
-                                                            b.a(bc.a);
-                                                            continue Block_8_Outer;
+                                                        Block_10_Outer:
+                                                            while (true) {
+                                                                sqLiteDatabase.setTransactionSuccessful();
+                                                                return;
+                                                                Block_12: {
+                                                                    while (true) {
+                                                                        Log.d("DatabaseHelper", "Deleted old friend statuses: " + n3);
+                                                                        break Label_0155;
+                                                                        break Block_12;
+                                                                        continue Label_0171_Outer;
+                                                                    }
+                                                                    array3[0] = String.valueOf(query.getLong(0));
+                                                                    n3 += this.a(string, string2, array3, true);
+                                                                    break Block_10_Outer;
+                                                                    string2 = "g_status_id=? AND " + s2;
+                                                                    break Label_0024;
+                                                                }
+                                                                b.a(bg.d);
+                                                                b.a(bc.a);
+                                                                continue Block_10_Outer;
+                                                            }
+                                                            continue Label_0076_Outer;
                                                         }
-                                                        string2 = "g_status_id=? AND " + s2;
-                                                        break Label_0024;
-                                                        string = "t_data_type=1 AND t_data_id=? AND " + s;
-                                                        break;
-                                                    }
-                                                    Log.d("DatabaseHelper", "Deleted old friend statuses: " + n3);
-                                                    Label_0155: {
                                                         a(sqLiteDatabase, n, n2, 3, 0L);
+                                                        continue Block_9_Outer;
                                                     }
-                                                    break Label_0171;
-                                                    array3[0] = String.valueOf(query.getLong(0));
-                                                    n3 += this.a(string, string2, array3, true);
-                                                    continue Block_12_Outer;
+                                                    string = "t_data_type=1 AND t_data_id=? AND " + s;
+                                                    break;
                                                 }
-                                                continue Label_0245_Outer;
+                                                continue;
                                             }
                                         }
-                                        // iftrue(Label_0204:, b == null)
+                                        // iftrue(Label_0171:, n2 == -1)
                                         finally {
                                             query.close();
                                             sqLiteDatabase.endTransaction();
                                         }
                                     }
                                     n3 = 0;
-                                    continue;
+                                    continue Label_0245_Outer;
                                 }
                             }
                         }

@@ -108,24 +108,24 @@ class q extends Thread
         int n26;
         int n27;
         r e2;
-        GLTextureView glTextureView2;
         int n28;
+        GLTextureView glTextureView2;
         GLTextureView glTextureView3;
-        GL10 gl11 = null;
-        GLTextureView glTextureView4;
+        GL10 gl11;
         int d;
+        GLTextureView glTextureView4;
         GL10 gl12;
-        int n29 = 0;
+        int n29;
         int n30;
         int n31;
         int n32;
         Label_0058_Outer:Label_1137_Outer:
         while (true) {
             while (true) {
-                Label_0261_Outer:Label_0714_Outer:Label_0814_Outer:
+                Label_0261_Outer:Label_0714_Outer:Label_0814_Outer:Label_0930_Outer:
                 while (true) {
-                Label_0889_Outer:
                     while (true) {
+                    Label_1131:
                         while (true) {
                         Label_0814:
                             while (true) {
@@ -295,81 +295,77 @@ class q extends Thread
                                                                                 this.j();
                                                                                 this.k();
                                                                                 // monitorexit(e2)
-                                                                                GLTextureView.a.wait();
-                                                                                continue Label_0261_Outer;
-                                                                                // iftrue(Label_1126:, glTextureView2 == null)
-                                                                                // iftrue(Label_1052:, n13 == 0)
+                                                                                // iftrue(Label_0930:, n16 == 0)
+                                                                                // iftrue(Label_1131:, glTextureView2 == null)
                                                                                 // iftrue(Label_1046:, n14 == 0)
                                                                                 // iftrue(Label_0889:, n == 0)
-                                                                                // iftrue(Label_0959:, glTextureView3 == null)
-                                                                                // iftrue(Label_1131:, glTextureView4 == null)
+                                                                                // iftrue(Label_1126:, glTextureView4 == null)
+                                                                                // iftrue(Label_1052:, n13 == 0)
                                                                                 // iftrue(Label_1120:, this.r.b())
-                                                                                // switch([Lcom.strobel.decompiler.ast.Label;@3a2f14f2, d)
-                                                                                // iftrue(Label_0930:, n16 == 0)
-                                                                            Block_48:
+                                                                                // iftrue(Label_0959:, glTextureView3 == null)
+                                                                            Label_0959:
                                                                                 while (true) {
-                                                                                    Block_46: {
-                                                                                        Block_44: {
-                                                                                        Label_0959:
-                                                                                            while (true) {
-                                                                                                Block_41: {
-                                                                                                    while (true) {
-                                                                                                        while (true) {
-                                                                                                            glTextureView2 = (GLTextureView)this.s.get();
-                                                                                                            break Block_46;
-                                                                                                            break Block_41;
-                                                                                                            break Block_44;
-                                                                                                            synchronized (GLTextureView.a) {
-                                                                                                                this.f = true;
-                                                                                                                GLTextureView.a.notifyAll();
-                                                                                                                // monitorexit(GLTextureView.e())
-                                                                                                                n2 = n19;
-                                                                                                                n3 = n18;
-                                                                                                                n4 = n17;
-                                                                                                                n5 = n16;
-                                                                                                                n6 = n15;
-                                                                                                                n7 = n14;
-                                                                                                                n8 = n13;
-                                                                                                                n28 = n11;
-                                                                                                                runnable = runnable3;
-                                                                                                                n9 = n12;
-                                                                                                                n10 = n28;
-                                                                                                                continue Label_0058_Outer;
-                                                                                                            }
-                                                                                                            continue Label_0814;
-                                                                                                            glTextureView3.d.a(gl11);
-                                                                                                            break Label_0959;
-                                                                                                            continue Label_0814_Outer;
-                                                                                                        }
-                                                                                                        glTextureView3 = (GLTextureView)this.s.get();
-                                                                                                        continue Label_0846_Outer;
-                                                                                                    }
-                                                                                                    glTextureView4 = (GLTextureView)this.s.get();
-                                                                                                    break Block_48;
-                                                                                                    Label_0996: {
-                                                                                                        com.twitter.media.filters.p.a("GLThread", "eglSwapBuffers", d);
-                                                                                                    }
-                                                                                                    synchronized (GLTextureView.a) {
-                                                                                                        this.f = true;
-                                                                                                        GLTextureView.a.notifyAll();
-                                                                                                    }
-                                                                                                }
-                                                                                                continue Label_0846_Outer;
-                                                                                            }
-                                                                                            d = this.r.d();
+                                                                                    while (true) {
+                                                                                        synchronized (GLTextureView.a) {
+                                                                                            this.f = true;
+                                                                                            GLTextureView.a.notifyAll();
+                                                                                            // monitorexit(GLTextureView.e())
+                                                                                            n2 = n19;
+                                                                                            n3 = n18;
+                                                                                            n4 = n17;
+                                                                                            n5 = n16;
+                                                                                            n6 = n15;
+                                                                                            n7 = n14;
+                                                                                            n8 = n13;
+                                                                                            n28 = n11;
+                                                                                            runnable = runnable3;
+                                                                                            n9 = n12;
+                                                                                            n10 = n28;
+                                                                                            continue Label_0058_Outer;
                                                                                         }
-                                                                                        gl12 = (GL10)this.r.c();
-                                                                                        GLTextureView.a.a(gl12);
-                                                                                        n14 = 0;
-                                                                                        gl11 = gl12;
-                                                                                        continue Label_0846;
+                                                                                        break Label_0814;
+                                                                                        GLTextureView.a.wait();
+                                                                                        continue Label_0261_Outer;
+                                                                                        glTextureView2 = (GLTextureView)this.s.get();
+                                                                                        Block_48: {
+                                                                                            break Block_48;
+                                                                                            glTextureView3.d.a(gl11);
+                                                                                            break Label_0959;
+                                                                                            Label_0996: {
+                                                                                                com.twitter.media.filters.p.a("GLThread", "eglSwapBuffers", d);
+                                                                                            }
+                                                                                            synchronized (GLTextureView.a) {
+                                                                                                this.f = true;
+                                                                                                GLTextureView.a.notifyAll();
+                                                                                            }
+                                                                                            while (true) {
+                                                                                                Block_45: {
+                                                                                                    Block_44: {
+                                                                                                        break Block_44;
+                                                                                                        break Block_45;
+                                                                                                        glTextureView4.d.a(gl11, this.r.d);
+                                                                                                        break Label_0814;
+                                                                                                    }
+                                                                                                    gl12 = (GL10)this.r.c();
+                                                                                                    GLTextureView.a.a(gl12);
+                                                                                                    n14 = 0;
+                                                                                                    gl11 = gl12;
+                                                                                                    continue Label_0846;
+                                                                                                }
+                                                                                                glTextureView4 = (GLTextureView)this.s.get();
+                                                                                                continue Label_0930_Outer;
+                                                                                            }
+                                                                                        }
+                                                                                        glTextureView2.d.a(gl11, n12, n19);
+                                                                                        break Label_1131;
+                                                                                        continue Label_0814_Outer;
                                                                                     }
-                                                                                    glTextureView2.d.a(gl11, this.r.d);
-                                                                                    break Label_0814;
-                                                                                    continue Label_0889_Outer;
+                                                                                    glTextureView3 = (GLTextureView)this.s.get();
+                                                                                    continue Label_0846_Outer;
                                                                                 }
-                                                                                glTextureView4.d.a(gl11, n12, n19);
+                                                                                d = this.r.d();
                                                                             }
+                                                                            // switch([Lcom.strobel.decompiler.ast.Label;@73f28ad9, d)
                                                                         }
                                                                     }
                                                                     break;
@@ -425,12 +421,10 @@ class q extends Thread
                                 continue Label_0814;
                             }
                             n = 0;
-                            continue Label_1137_Outer;
+                            continue Label_0930_Outer;
                         }
-                        Label_1131: {
-                            n16 = 0;
-                        }
-                        continue Label_0889_Outer;
+                        n16 = 0;
+                        continue Label_1137_Outer;
                     }
                     if (n17 != 0) {
                         n31 = 1;

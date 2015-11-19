@@ -241,29 +241,31 @@ public class UndoBarController extends LinearLayout
                                             return;
                                         }
                                         break Label_0718;
-                                        final char c2 = charArray[n3];
-                                        // switch([Lcom.strobel.decompiler.ast.Label;@18fd1b84, n3 % 5)
-                                        Label_0692: {
-                                            final char c3 = 'E';
+                                        char c2 = '\0';
+                                        Label_0664: {
+                                            c2 = 'k';
                                         }
                                         while (true) {
-                                            break Label_0668;
-                                            Label_0664:
-                                            char c3 = 'k';
-                                            charArray[n3] = (char)(c3 ^ c2);
+                                            final char c3;
+                                            charArray[n3] = (char)(c2 ^ c3);
                                             ++n3;
                                             break;
-                                            Label_0685:
-                                            c3 = '\t';
+                                            c3 = charArray[n3];
+                                            Label_0692:
+                                            c2 = 'E';
                                             continue;
                                             Label_0706:
-                                            c3 = 'U';
+                                            c2 = 'U';
+                                            continue;
+                                            Label_0685:
+                                            c2 = '\t';
                                             continue;
                                             Label_0699:
-                                            c3 = 'z';
+                                            c2 = 'z';
                                             continue;
                                         }
                                     }
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@11255edb, n3 % 5)
                                     catch (IllegalArgumentException ex) {
                                         throw ex;
                                     }

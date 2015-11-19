@@ -6157,9 +6157,9 @@ public class vy
                                                 readableDatabase.endTransaction();
                                             }
                                             return n2;
-                                            s = rawQuery.getString(columnIndex);
-                                            break Label_0232;
                                             s = rawQuery.getString(columnIndex3);
+                                            break Label_0232;
+                                            s = rawQuery.getString(columnIndex);
                                             break Label_0232;
                                             s = rawQuery.getString(columnIndex4);
                                         }

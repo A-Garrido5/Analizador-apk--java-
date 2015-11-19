@@ -55,31 +55,32 @@ public class f
                                             return;
                                         }
                                         break Label_0218;
-                                        char c = '\0';
-                                        Label_0185: {
-                                            c = '!';
-                                        }
                                         while (true) {
+                                            char c = '\0';
                                             final char c2;
                                             charArray[n3] = (char)(c ^ c2);
                                             ++n3;
                                             break;
-                                            c2 = charArray[n3];
-                                            Label_0199:
-                                            c = '5';
+                                            Label_0192: {
+                                                c = '\f';
+                                            }
                                             continue;
-                                            Label_0192:
-                                            c = '\f';
+                                            Label_0185:
+                                            c = '!';
                                             continue;
                                             Label_0164:
                                             c = 'a';
+                                            continue;
+                                            Label_0199:
+                                            c = '5';
                                             continue;
                                             Label_0206:
                                             c = '%';
                                             continue;
                                         }
+                                        final char c2 = charArray[n3];
                                     }
-                                    // switch([Lcom.strobel.decompiler.ast.Label;@454be972, n3 % 5)
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@5f15780d, n3 % 5)
                                     catch (IllegalArgumentException ex) {
                                         throw ex;
                                     }

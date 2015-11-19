@@ -242,17 +242,19 @@ public class MediaUtils
                     a(iterator2.next());
                 }
                 break Label_0248;
-                final ArrayList<FileDescriptor> list3 = new ArrayList<FileDescriptor>();
-                final Iterator<FileInputStream> iterator3 = list2.iterator();
+                // iftrue(Label_0155:, !iterator3.hasNext())
                 while (true) {
-                    Label_0118: {
-                        break Label_0118;
+                    while (true) {
+                        final ArrayList<FileDescriptor> list3;
+                        final Iterator<FileInputStream> iterator3;
                         list3.add(iterator3.next().getFD());
+                        continue;
                     }
+                    final ArrayList<FileDescriptor> list3 = new ArrayList<FileDescriptor>();
+                    final Iterator<FileInputStream> iterator3 = list2.iterator();
                     continue;
                 }
             }
-            // iftrue(Label_0155:, !iterator3.hasNext())
             catch (IOException ex4) {
                 throw;
                 final FileOutputStream fileOutputStream;

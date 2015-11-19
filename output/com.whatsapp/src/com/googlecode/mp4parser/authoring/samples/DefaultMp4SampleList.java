@@ -77,13 +77,13 @@ public class DefaultMp4SampleList extends AbstractList<Sample>
                             }
                             try {
                                 return new SampleImpl(this.topLevel.getByteBuffer(n9, sampleSizeBox.getSampleSizeAtIndex(n10 - 1)));
-                                n5 = -1L;
-                                n4 = Long.MAX_VALUE;
-                                continue Label_0198_Outer;
                                 final int n11 = n10 + 1;
                                 n9 += sampleSizeBox.getSampleSizeAtIndex(n10 - 1);
                                 n10 = n11;
                                 continue;
+                                n5 = -1L;
+                                n4 = Long.MAX_VALUE;
+                                continue Label_0198_Outer;
                             }
                             catch (IOException ex) {
                                 return null;

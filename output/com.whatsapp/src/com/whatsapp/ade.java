@@ -378,30 +378,31 @@ public class ade
                                         ade.a = -1;
                                         g = new aw_(null);
                                         return;
-                                        Label_1152: {
-                                            final char c = 'Y';
+                                        char c = '\0';
+                                        Label_1166: {
+                                            c = '\u0016';
                                         }
                                         while (true) {
-                                            break Label_1128;
-                                            Label_1159:
-                                            char c = '.';
-                                            break Label_1128;
-                                            final char c2 = charArray[n3];
+                                            final char c2;
                                             charArray[n3] = (char)(c ^ c2);
                                             ++n3;
                                             break;
-                                            Label_1166:
-                                            c = '\u0016';
-                                            continue;
                                             Label_1124:
                                             c = '{';
                                             continue;
+                                            Label_1159:
+                                            c = '.';
+                                            continue;
+                                            c2 = charArray[n3];
                                             Label_1145:
                                             c = 'Z';
                                             continue;
+                                            Label_1152:
+                                            c = 'Y';
+                                            continue;
                                         }
                                     }
-                                    // switch([Lcom.strobel.decompiler.ast.Label;@4b3887cf, n3 % 5)
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@6e6681a0, n3 % 5)
                                     catch (NumberFormatException ex) {
                                         throw ex;
                                     }

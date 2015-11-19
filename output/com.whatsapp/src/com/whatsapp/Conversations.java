@@ -614,14 +614,16 @@ public class Conversations extends DialogToastActivity
                             Label_0027: {
                                 return;
                             }
+                            // iftrue(Label_0027:, !App.I)
+                            // iftrue(Label_0027:, n2 != -1)
+                        Block_3:
                             while (true) {
                                 this.startActivity(Conversation.a(App.S.e(intent.getStringExtra(Conversations.z[28]))));
-                                continue Block_2_Outer;
+                                break Block_3;
                                 continue;
                             }
+                            continue Block_2_Outer;
                         }
-                        // iftrue(Label_0027:, !App.I)
-                        // iftrue(Label_0027:, n2 != -1)
                         catch (IllegalArgumentException ex) {
                             throw ex;
                         }
@@ -1392,7 +1394,6 @@ public class Conversations extends DialogToastActivity
         while (true) {
         Label_0075:
             while (true) {
-            Label_0089:
                 while (true) {
                     switch (n) {
                         default: {
@@ -1402,6 +1403,7 @@ public class Conversations extends DialogToastActivity
                             break Label_0075;
                         }
                         case 117: {
+                        Block_2_Outer:
                             while (true) {
                                 break Label_0061;
                                 try {
@@ -1409,22 +1411,21 @@ public class Conversations extends DialogToastActivity
                                     Label_0046: {
                                         return;
                                     }
-                                    ((AlertDialog)dialog).setMessage(yt.a());
-                                    // iftrue(Label_0046:, !i)
-                                    break Label_0075;
-                                    ((AlertDialog)dialog).setMessage(yt.c());
-                                    // iftrue(Label_0046:, !i)
-                                    // iftrue(Label_0046:, !i)
-                                    // iftrue(Label_0046:, !i)
-                                    Block_2: {
-                                        break Block_2;
+                                    while (true) {
+                                        continue Label_0061_Outer;
+                                        ((AlertDialog)dialog).setMessage(yt.a());
+                                        break Label_0075;
                                         ((AlertDialog)dialog).setMessage(yt.b());
-                                        continue Label_0075_Outer;
+                                        continue Block_2_Outer;
                                         ((AlertDialog)dialog).setMessage(yt.d());
-                                        continue Label_0089;
+                                        ((AlertDialog)dialog).setMessage(yt.c());
+                                        continue Label_0075_Outer;
                                     }
-                                    continue Label_0061_Outer;
                                 }
+                                // iftrue(Label_0046:, !i)
+                                // iftrue(Label_0046:, !i)
+                                // iftrue(Label_0046:, !i)
+                                // iftrue(Label_0046:, !i)
                                 catch (IllegalArgumentException ex) {
                                     throw ex;
                                 }
@@ -1436,7 +1437,7 @@ public class Conversations extends DialogToastActivity
                             continue Label_0075;
                         }
                         case 119: {
-                            continue Label_0089;
+                            continue;
                         }
                     }
                     break;

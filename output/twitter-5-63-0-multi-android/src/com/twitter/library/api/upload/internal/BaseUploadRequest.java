@@ -62,7 +62,7 @@ public abstract class BaseUploadRequest extends c
                 break Label_0096;
             }
             m.b("X-Media-Type", "video/mp4");
-        Label_0029:
+        Block_4_Outer:
             while (true) {
                 m.b(URI.create(ae.a(this.p).g).getHost());
                 m.a("1.1");
@@ -72,10 +72,14 @@ public abstract class BaseUploadRequest extends c
                     this.a(m);
                     this.f = m;
                     return true;
-                    // iftrue(Label_0029:, type != MediaType.e)
-                    m.b("X-Media-Type", "video/mp4");
-                    m.b("X-Media-Cropping", "center");
+                    while (true) {
+                        m.b("X-Media-Type", "video/mp4");
+                        m.b("X-Media-Cropping", "center");
+                        continue Block_4_Outer;
+                        continue;
+                    }
                 }
+                // iftrue(Label_0029:, type != MediaType.e)
                 catch (BaseUploadRequest$BuilderInitException ex) {
                     aa.a(ex.a(), ex.b());
                     return false;

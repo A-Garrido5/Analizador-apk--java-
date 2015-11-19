@@ -1770,32 +1770,30 @@ public class VoiceService extends Service implements l
                                             return;
                                         }
                                         break Label_5574;
+                                        Label_5562: {
+                                            final char c = 'A';
+                                        }
                                         while (true) {
-                                            char c = '\0';
+                                            break Label_5524;
+                                            Label_5520:
+                                            char c = 'G';
                                             final char c2;
                                             charArray[n3] = (char)(c ^ c2);
                                             ++n3;
                                             break;
-                                            Label_5548: {
-                                                c = 't';
-                                            }
+                                            Label_5548:
+                                            c = 't';
                                             continue;
+                                            c2 = charArray[n3];
                                             Label_5541:
                                             c = 's';
-                                            continue;
-                                            Label_5562:
-                                            c = 'A';
                                             continue;
                                             Label_5555:
                                             c = '\u0010';
                                             continue;
-                                            c2 = charArray[n3];
-                                            Label_5520:
-                                            c = 'G';
-                                            continue;
                                         }
                                     }
-                                    // switch([Lcom.strobel.decompiler.ast.Label;@63d1e4be, n3 % 5)
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@69adbf10, n3 % 5)
                                     catch (IllegalArgumentException ex) {
                                         throw ex;
                                     }

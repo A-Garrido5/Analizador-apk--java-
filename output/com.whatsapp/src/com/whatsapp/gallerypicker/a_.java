@@ -153,6 +153,7 @@ public class a_
         // monitorenter(f)
         int n = -1;
         int n2 = 0;
+    Label_0065_Outer:
         while (true) {
             int n3 = 0;
             while (true) {
@@ -172,10 +173,13 @@ public class a_
                                         break Label_0123;
                                     }
                                     break Label_0102;
-                                    // iftrue(Label_0091:, n3 < 0)
-                                    this.f.remove(n3);
-                                    return true;
+                                    while (true) {
+                                        this.f.remove(n3);
+                                        return true;
+                                        continue Label_0065_Outer;
+                                    }
                                 }
+                                // iftrue(Label_0091:, n3 < 0)
                                 finally {
                                 }
                                 // monitorexit(f)

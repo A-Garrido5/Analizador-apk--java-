@@ -3635,74 +3635,77 @@ public class bh
                         while (true) {
                             while (true) {
                                 long n = 0L;
-                            Block_11_Outer:
-                                while (true) {
-                                    try {
-                                        final bp f = a(jsonParser, twitterUser, null, true, true, a).f();
-                                        if (b && f.f() && bp != null) {
-                                            f.G = bp.G;
-                                        }
-                                        list.add(f);
-                                        if (!b2) {
-                                            break Block_11_Outer;
-                                        }
-                                        while (true) {
-                                            NullUserException ex;
-                                            try {
-                                                long max;
-                                                if (f.d()) {
-                                                    final ArrayList<bp> list2;
-                                                    list2.add(f);
-                                                    max = n;
-                                                }
-                                                else {
-                                                    if (f.f()) {
-                                                        break Block_11_Outer;
+                                Label_0298: {
+                                    while (true) {
+                                        try {
+                                            final bp f = a(jsonParser, twitterUser, null, true, true, a).f();
+                                            if (b && f.f() && bp != null) {
+                                                f.G = bp.G;
+                                            }
+                                            list.add(f);
+                                            if (!b2) {
+                                                break Label_0298;
+                                            }
+                                            final ArrayList<bp> list2;
+                                            while (true) {
+                                                NullUserException ex;
+                                                try {
+                                                    long max;
+                                                    if (f.d()) {
+                                                        list2.add(f);
+                                                        max = n;
                                                     }
-                                                    max = Math.max(n, f.G);
+                                                    else {
+                                                        if (f.f()) {
+                                                            break Label_0298;
+                                                        }
+                                                        max = Math.max(n, f.G);
+                                                    }
+                                                    n = max;
+                                                    final bp bp2 = f;
+                                                    final JsonToken a2 = jsonParser.a();
+                                                    bp = bp2;
+                                                    d = a2;
+                                                    break Label_0034;
                                                 }
-                                                n = max;
-                                                final bp bp2 = f;
-                                                final JsonToken a2 = jsonParser.a();
-                                                bp = bp2;
-                                                d = a2;
-                                                break Label_0034;
-                                            }
-                                            catch (NullUserException ex2) {
-                                                ex = ex2;
-                                                final bp bp2 = f;
-                                            }
-                                            if (a != null) {
-                                                a.a(new InvalidDataException(String.format("Received null user for status = %d", ex.statusId)));
+                                                catch (NullUserException ex2) {
+                                                    ex = ex2;
+                                                    final bp bp2 = f;
+                                                }
+                                                if (a != null) {
+                                                    a.a(new InvalidDataException(String.format("Received null user for status = %d", ex.statusId)));
+                                                    continue Label_0137;
+                                                }
                                                 continue Label_0137;
                                             }
-                                            continue Label_0137;
-                                        }
-                                        Label_0282: {
-                                            return list;
+                                            while (true) {
+                                                Block_11: {
+                                                    Block_12: {
+                                                        break Block_12;
+                                                        Label_0282: {
+                                                            return list;
+                                                        }
+                                                        break Block_11;
+                                                    }
+                                                    final Iterator<bp> iterator;
+                                                    final long g;
+                                                    iterator.next().G = g;
+                                                    continue Label_0236_Outer;
+                                                }
+                                                final long g = n + 1L;
+                                                final Iterator<bp> iterator = list2.iterator();
+                                                continue Label_0236_Outer;
+                                            }
                                         }
                                         // iftrue(Label_0282:, !iterator.hasNext())
-                                        while (true) {
-                                            while (true) {
-                                                final Iterator<bp> iterator;
-                                                final long g;
-                                                iterator.next().G = g;
-                                                continue Block_11_Outer;
-                                                g = n + 1L;
-                                                final ArrayList<bp> list2;
-                                                iterator = list2.iterator();
-                                                continue Block_11_Outer;
-                                            }
+                                        // iftrue(Label_0282:, !b2)
+                                        catch (NullUserException ex3) {
+                                            final NullUserException ex = ex3;
+                                            final bp bp2 = bp;
                                             continue Label_0236_Outer;
                                         }
+                                        break;
                                     }
-                                    // iftrue(Label_0282:, !b2)
-                                    catch (NullUserException ex3) {
-                                        final NullUserException ex = ex3;
-                                        final bp bp2 = bp;
-                                        continue Label_0236_Outer;
-                                    }
-                                    break;
                                 }
                                 long max = n;
                                 continue Label_0236_Outer;

@@ -4,8 +4,8 @@
 
 package com.twitter.library.util;
 
-import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ArrayList;
 import com.twitter.library.featureswitch.d;
 import android.graphics.Paint$FontMetrics;
 import android.graphics.drawable.InsetDrawable;

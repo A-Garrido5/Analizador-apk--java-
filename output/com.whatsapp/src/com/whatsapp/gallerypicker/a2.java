@@ -86,17 +86,14 @@ public class a2
                         b2.notifyAll();
                         // monitorexit(b2)
                         break EndFinally_6;
-                        // iftrue(Label_0214:, Build$VERSION.SDK_INT < 8)
-                    Label_0214:
                         while (true) {
-                            final Bitmap thumbnail2 = MediaStore$Images$Thumbnails.getThumbnail(contentResolver, n, currentThread.getId(), n2, bitmapFactory$Options);
+                            final Bitmap thumbnail2 = MediaStore$Images$Thumbnails.getThumbnail(contentResolver, n, n2, bitmapFactory$Options);
                             synchronized (b2) {
                                 b2.c = false;
                                 b2.notifyAll();
                                 return thumbnail2;
                             }
-                            break Label_0214;
-                            final Bitmap thumbnail3 = MediaStore$Video$Thumbnails.getThumbnail(contentResolver, n, n2, bitmapFactory$Options);
+                            final Bitmap thumbnail3 = MediaStore$Images$Thumbnails.getThumbnail(contentResolver, n, currentThread.getId(), n2, bitmapFactory$Options);
                             synchronized (b2) {
                                 b2.c = false;
                                 b2.notifyAll();
@@ -104,13 +101,14 @@ public class a2
                             }
                             continue;
                         }
-                        final Bitmap thumbnail4 = MediaStore$Images$Thumbnails.getThumbnail(contentResolver, n, n2, bitmapFactory$Options);
+                        final Bitmap thumbnail4 = MediaStore$Video$Thumbnails.getThumbnail(contentResolver, n, n2, bitmapFactory$Options);
                         synchronized (b2) {
                             b2.c = false;
                             b2.notifyAll();
                             return thumbnail4;
                         }
                     }
+                    // iftrue(Label_0214:, Build$VERSION.SDK_INT < 8)
                 }
             }
         }

@@ -229,7 +229,6 @@ public class f extends sh
             }
             sb.append(" WHERE ");
             sb.append("sending_state=1");
-        Block_5_Outer:
             while (true) {
                 final Cursor rawQuery = readableDatabase.rawQuery(sb.toString(), (String[])null);
                 int int1 = 0;
@@ -242,14 +241,11 @@ public class f extends sh
                         return int1;
                     }
                     return 0;
-                    while (true) {
-                        sb.append(" WHERE ");
-                        sb.append("sending_state!=1");
-                        continue Block_5_Outer;
-                        continue;
-                    }
+                    // iftrue(Label_0052:, n != 2)
+                    sb.append(" WHERE ");
+                    sb.append("sending_state!=1");
+                    continue;
                 }
-                // iftrue(Label_0052:, n != 2)
                 finally {
                     rawQuery.close();
                 }

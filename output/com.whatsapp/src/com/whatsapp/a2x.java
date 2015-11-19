@@ -1069,30 +1069,29 @@ final class a2x extends SQLiteOpenHelper
                             }
                             c = (n4 | 0x10);
                             return;
-                            Label_3316: {
-                                final char c2 = 'Q';
+                            Label_3288: {
+                                final char c2 = '%';
                             }
                             while (true) {
                                 break Label_3292;
-                                Label_3330:
-                                char c2 = '-';
+                                Label_3316:
+                                char c2 = 'Q';
                                 break Label_3292;
-                                Label_3288:
-                                c2 = '%';
+                                final char c3 = charArray[n3];
+                                Label_3309:
+                                c2 = '<';
                                 break Label_3292;
                                 Label_3323:
                                 c2 = 'D';
-                                break Label_3292;
-                                final char c3 = charArray[n3];
                                 charArray[n3] = (char)(c2 ^ c3);
                                 ++n3;
                                 continue Label_3292_Outer;
-                                Label_3309:
-                                c2 = '<';
+                                Label_3330:
+                                c2 = '-';
                                 continue;
                             }
                         }
-                        // switch([Lcom.strobel.decompiler.ast.Label;@490c4b03, n3 % 5)
+                        // switch([Lcom.strobel.decompiler.ast.Label;@623ccab, n3 % 5)
                         catch (SQLiteException ex) {
                             throw ex;
                         }

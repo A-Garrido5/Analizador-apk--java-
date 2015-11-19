@@ -76,10 +76,10 @@ public class e extends a
                         continue;
                     }
                     break Label_0093;
-                    return new e(s, s2);
-                    e = null;
+                    e e = null;
                     // iftrue(Label_0052:, s2 == null)
-                    return new e(s, s2);
+                    e = new e(s, s2);
+                    return e;
                 }
                 finally {
                 }

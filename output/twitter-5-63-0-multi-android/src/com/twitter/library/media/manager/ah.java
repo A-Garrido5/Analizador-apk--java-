@@ -41,14 +41,9 @@ abstract class ah extends a
                 break Label_0088;
             }
             while (true) {
-                Object o;
-                Object o2;
-                ResourceResponse$ResourceSource b;
-                Pair d;
-                File file;
-                Throwable t2;
-                Label_0085:Label_0224_Outer:
+            Label_0085:
                 while (true) {
+                    Object o2;
                     while (true) {
                         try {
                             o2 = t.c(f);
@@ -57,41 +52,39 @@ abstract class ah extends a
                                     break Label_0107;
                                 }
                                 while (true) {
+                                    Throwable t2;
                                     try {
-                                        b = ResourceResponse$ResourceSource.b;
-                                        o = o2;
+                                        ResourceResponse$ResourceSource b = ResourceResponse$ResourceSource.b;
+                                        Object o = o2;
                                         a = b;
                                         r.j();
                                         r.f();
                                         return new Pair((Object)a, o);
-                                        while (true) {
-                                            file = (File)d.second;
-                                            b = (ResourceResponse$ResourceSource)d.first;
-                                            synchronized (file) {
-                                                if (b == ResourceResponse$ResourceSource.c) {
-                                                    o2 = t.a(f, file);
-                                                }
-                                                else {
-                                                    o2 = t.b(f, file);
-                                                }
-                                                // monitorexit(file)
-                                                if (o2 != null) {
-                                                    if (b != ResourceResponse$ResourceSource.c) {
-                                                        t.a(f, o2);
-                                                    }
-                                                    o = o2;
-                                                    continue Label_0085;
-                                                }
-                                                break;
+                                        final Pair d = t.d(f);
+                                        // iftrue(Label_0244:, d == null)
+                                        final File file = (File)d.second;
+                                        b = (ResourceResponse$ResourceSource)d.first;
+                                        synchronized (file) {
+                                            if (b == ResourceResponse$ResourceSource.c) {
+                                                o2 = t.a(f, file);
                                             }
-                                            d = t.d(f);
-                                            continue Label_0224_Outer;
+                                            else {
+                                                o2 = t.b(f, file);
+                                            }
+                                            // monitorexit(file)
+                                            if (o2 != null) {
+                                                if (b != ResourceResponse$ResourceSource.c) {
+                                                    t.a(f, o2);
+                                                }
+                                                o = o2;
+                                                continue Label_0085;
+                                            }
+                                            break;
                                         }
                                     }
-                                    // iftrue(Label_0244:, d == null)
                                     catch (Throwable t3) {
                                         t2 = t3;
-                                        o = o2;
+                                        final Object o = o2;
                                     }
                                     ErrorReporter.a(t2);
                                     continue Label_0088;
@@ -99,16 +92,16 @@ abstract class ah extends a
                             }
                         }
                         catch (Throwable t4) {
-                            t2 = t4;
-                            o = null;
+                            final Throwable t2 = t4;
+                            final Object o = null;
                             continue;
                         }
                         break;
                     }
                     Label_0244: {
-                        o = o2;
+                        final Object o = o2;
                     }
-                    b = a;
+                    ResourceResponse$ResourceSource b = a;
                     continue Label_0085;
                 }
             }

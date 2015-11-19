@@ -149,13 +149,13 @@ public class aa
                     final JsonGenerator jsonGenerator = a;
                     yh.a(jsonGenerator);
                     return null;
-                    yh.a(a);
-                    throw;
                     a.b();
                     a.flush();
                     final String string = stringWriter.getBuffer().toString();
                     yh.a(a);
                     return string;
+                    yh.a(a);
+                    throw;
                 }
             }
             catch (IOException ex2) {

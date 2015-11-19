@@ -8313,22 +8313,25 @@ public final class GoogleDriveService extends IntentService
                         try {
                             Log.e(GoogleDriveService.bb[32] + e);
                             return false;
-                            // iftrue(Label_0024:, GoogleDriveService.F != 0)
-                            GoogleDriveService.E = e;
-                            c();
-                            final SharedPreferences$Editor edit = e().edit();
-                            try {
-                                edit.putString(GoogleDriveService.bb[31], String.valueOf(e));
-                                if (!edit.commit()) {
-                                    Log.w(GoogleDriveService.bb[30]);
-                                    return false;
+                            while (true) {
+                                GoogleDriveService.E = e;
+                                c();
+                                final SharedPreferences$Editor edit = e().edit();
+                                try {
+                                    edit.putString(GoogleDriveService.bb[31], String.valueOf(e));
+                                    if (!edit.commit()) {
+                                        Log.w(GoogleDriveService.bb[30]);
+                                        return false;
+                                    }
+                                    return true;
                                 }
-                                return true;
-                            }
-                            catch (NullPointerException ex) {
-                                throw ex;
+                                catch (NullPointerException ex) {
+                                    throw ex;
+                                }
+                                continue;
                             }
                         }
+                        // iftrue(Label_0024:, GoogleDriveService.F != 0)
                         catch (NullPointerException ex2) {
                             throw ex2;
                         }

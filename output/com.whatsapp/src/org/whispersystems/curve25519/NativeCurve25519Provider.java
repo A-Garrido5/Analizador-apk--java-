@@ -27,29 +27,31 @@ class NativeCurve25519Provider implements at
                     System.loadLibrary(intern);
                     NativeCurve25519Provider.c = true;
                     return;
-                    Label_0123: {
-                        final char c = '\n';
+                    Label_0102: {
+                        final char c = '\t';
                     }
                     while (true) {
                         break Label_0088;
-                        Label_0084:
-                        char c = '\n';
-                        break Label_0088;
-                        Label_0116:
-                        c = '\u0012';
-                        break Label_0088;
                         final char c2 = charArray[n];
-                        Label_0109:
-                        c = '/';
+                        char c = '\0';
                         charArray[n] = (char)(c ^ c2);
                         ++n;
                         continue Label_0088_Outer;
-                        Label_0102:
-                        c = '\t';
+                        Label_0109:
+                        c = '/';
+                        continue;
+                        Label_0084:
+                        c = '\n';
+                        continue;
+                        Label_0116:
+                        c = '\u0012';
+                        continue;
+                        Label_0123:
+                        c = '\n';
                         continue;
                     }
                 }
-                // switch([Lcom.strobel.decompiler.ast.Label;@5a9ce3c3, n % 5)
+                // switch([Lcom.strobel.decompiler.ast.Label;@6fcd9644, n % 5)
                 catch (UnsatisfiedLinkError unsatisfiedLinkError) {}
                 catch (SecurityException ex) {
                     goto Label_0132;

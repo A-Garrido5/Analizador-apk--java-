@@ -14516,18 +14516,17 @@ public class Conversation extends DialogToastListActivity implements aws, aa0
     
     protected void onPrepareDialog(final int n, final Dialog dialog) {
         final boolean i = App.I;
-        Block_2_Outer:Label_0075_Outer:
+    Label_0089_Outer:
         while (true) {
-        Label_0075:
+        Label_0075_Outer:
             while (true) {
-            Label_0089:
                 while (true) {
                     switch (n) {
                         default: {
                             break Label_0040;
                         }
                         case 121: {
-                            break Label_0075;
+                            break Label_0075_Outer;
                         }
                         case 117: {
                             Label_0061: {
@@ -14537,22 +14536,21 @@ public class Conversation extends DialogToastListActivity implements aws, aa0
                                     Label_0046: {
                                         return;
                                     }
-                                    while (true) {
-                                        continue Block_2_Outer;
+                                    ((AlertDialog)dialog).setMessage(yt.c());
+                                    // iftrue(Label_0046:, !i)
+                                    // iftrue(Label_0046:, !i)
+                                    // iftrue(Label_0046:, !i)
+                                    Block_2: {
+                                        break Block_2;
                                         ((AlertDialog)dialog).setMessage(yt.b());
-                                        break Label_0061;
-                                        ((AlertDialog)dialog).setMessage(yt.d());
-                                        break Label_0089;
                                         ((AlertDialog)dialog).setMessage(yt.a());
-                                        continue Label_0075;
-                                        ((AlertDialog)dialog).setMessage(yt.c());
-                                        continue Label_0075_Outer;
+                                        break Label_0075;
                                     }
+                                    continue Label_0089_Outer;
+                                    ((AlertDialog)dialog).setMessage(yt.d());
+                                    // iftrue(Label_0046:, !i)
+                                    continue Label_0075_Outer;
                                 }
-                                // iftrue(Label_0046:, !i)
-                                // iftrue(Label_0046:, !i)
-                                // iftrue(Label_0046:, !i)
-                                // iftrue(Label_0046:, !i)
                                 catch (ActivityNotFoundException ex) {
                                     throw ex;
                                 }
@@ -14560,10 +14558,10 @@ public class Conversation extends DialogToastListActivity implements aws, aa0
                             break;
                         }
                         case 118: {
-                            continue Label_0075;
+                            continue;
                         }
                         case 119: {
-                            continue Label_0089;
+                            continue Label_0075_Outer;
                         }
                     }
                     break;

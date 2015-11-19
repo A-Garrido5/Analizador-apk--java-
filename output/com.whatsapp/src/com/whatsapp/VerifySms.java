@@ -937,25 +937,25 @@ public class VerifySms extends VerifyNumber
                                         }
                                         break Label_2750;
                                         char c = '\0';
-                                        Label_2724: {
-                                            c = '4';
+                                        Label_2731: {
+                                            c = 'e';
                                         }
-                                        // switch([Lcom.strobel.decompiler.ast.Label;@717f146e, n3 % 5)
+                                        // switch([Lcom.strobel.decompiler.ast.Label;@62242e29, n3 % 5)
                                         final char c2;
                                         Label_2700: {
                                             break Label_2700;
                                             Label_2696:
                                             c = ']';
                                             break Label_2700;
-                                            Label_2738:
-                                            c = '\u000b';
+                                            Label_2724:
+                                            c = '4';
                                             break Label_2700;
+                                            c2 = charArray[n3];
                                             Label_2717:
                                             c = 'X';
                                             break Label_2700;
-                                            c2 = charArray[n3];
-                                            Label_2731:
-                                            c = 'e';
+                                            Label_2738:
+                                            c = '\u000b';
                                         }
                                         charArray[n3] = (char)(c ^ c2);
                                         ++n3;

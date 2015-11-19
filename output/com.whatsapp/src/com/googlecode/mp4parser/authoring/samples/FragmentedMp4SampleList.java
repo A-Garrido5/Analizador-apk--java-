@@ -117,45 +117,41 @@ public class FragmentedMp4SampleList extends AbstractList<Sample>
                                     n8 = ((TrackRunBox.Entry)entries.get(n4)).getSampleSize();
                                     try {
                                         return new SampleImpl(((IsoFile)movieFragmentBox.getParent()).getByteBuffer(n6, n8));
-                                        n6 = n5 + movieFragmentBox.getOffset();
-                                        continue Label_0151_Outer;
-                                        // iftrue(Label_0301:, this.trex != null)
-                                        // iftrue(Label_0284:, !trackFragmentBox.getTrackFragmentHeaderBox().hasDefaultSampleSize())
+                                        Label_0357: {
+                                            n8 = this.trex.getDefaultSampleSize();
+                                        }
+                                        return new SampleImpl(((IsoFile)movieFragmentBox.getParent()).getByteBuffer(n6, n8));
                                         // iftrue(Label_0257:, !trackRunBox.isSampleSizePresent())
-                                        // iftrue(Label_0340:, !trackFragmentBox.getTrackFragmentHeaderBox().hasDefaultSampleSize())
                                         while (true) {
-                                        Label_0251:
                                             while (true) {
-                                            Block_10:
-                                                while (true) {
-                                                    n6 += ((TrackRunBox.Entry)entries.get(n7)).getSampleSize();
-                                                    ++n7;
-                                                    continue Block_9_Outer;
-                                                    n8 = trackFragmentBox.getTrackFragmentHeaderBox().getDefaultSampleSize();
-                                                    return new SampleImpl(((IsoFile)movieFragmentBox.getParent()).getByteBuffer(n6, n8));
-                                                    Label_0357: {
-                                                        n8 = this.trex.getDefaultSampleSize();
-                                                    }
-                                                    return new SampleImpl(((IsoFile)movieFragmentBox.getParent()).getByteBuffer(n6, n8));
-                                                    Label_0284:
-                                                    throw new RuntimeException("File doesn't contain trex box but track fragments aren't fully self contained. Cannot determine sample size.");
-                                                    Label_0257:
-                                                    break Block_10;
-                                                    Label_0301:
-                                                    n6 += this.trex.getDefaultSampleSize();
-                                                    continue Label_0251;
-                                                    continue Label_0251_Outer;
-                                                }
-                                                n6 += trackFragmentBox.getTrackFragmentHeaderBox().getDefaultSampleSize();
-                                                continue Label_0251;
+                                                n6 += ((TrackRunBox.Entry)entries.get(n7)).getSampleSize();
+                                                ++n7;
+                                                continue Block_9_Outer;
+                                                continue Label_0251_Outer;
                                             }
+                                            Label_0257:
+                                            Block_10: {
+                                                break Block_10;
+                                                Label_0284:
+                                                throw new RuntimeException("File doesn't contain trex box but track fragments aren't fully self contained. Cannot determine sample size.");
+                                                n6 = n5 + movieFragmentBox.getOffset();
+                                                continue Label_0151_Outer;
+                                                Label_0340:
+                                                throw new RuntimeException("File doesn't contain trex box but track fragments aren't fully self contained. Cannot determine sample size.");
+                                            }
+                                            n6 += trackFragmentBox.getTrackFragmentHeaderBox().getDefaultSampleSize();
+                                            continue;
+                                            n8 = trackFragmentBox.getTrackFragmentHeaderBox().getDefaultSampleSize();
+                                            return new SampleImpl(((IsoFile)movieFragmentBox.getParent()).getByteBuffer(n6, n8));
+                                            Label_0301:
+                                            n6 += this.trex.getDefaultSampleSize();
                                             continue;
                                         }
-                                        Label_0340: {
-                                            throw new RuntimeException("File doesn't contain trex box but track fragments aren't fully self contained. Cannot determine sample size.");
-                                        }
                                     }
+                                    // iftrue(Label_0284:, !trackFragmentBox.getTrackFragmentHeaderBox().hasDefaultSampleSize())
+                                    // iftrue(Label_0301:, this.trex != null)
                                     // iftrue(Label_0357:, this.trex != null)
+                                    // iftrue(Label_0340:, !trackFragmentBox.getTrackFragmentHeaderBox().hasDefaultSampleSize())
                                     catch (IOException ex) {
                                         return null;
                                     }

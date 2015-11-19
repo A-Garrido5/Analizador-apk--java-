@@ -36,7 +36,6 @@ public class b extends a
 {
     public b(final Throwable t) {
         final NumberFormat integerInstance = NumberFormat.getIntegerInstance(Locale.ENGLISH);
-    Label_0857:
         while (true) {
             Service service = null;
             Object[] array2 = null;
@@ -121,18 +120,17 @@ public class b extends a
                                 service = iterator4.next();
                                 array2 = new Object[] { null };
                                 ++n4;
+                                final an a4;
+                                final al b5 = a4.b();
+                                this.a("OutOfMemoryErrorLog.created_service_count", b5.a());
+                                this.a("OutOfMemoryErrorLog.active_service_count", b5.b().size());
+                                final List c2 = b5.c();
+                                this.a("OutOfMemoryErrorLog.leaked_service_count", c2.size());
+                                iterator4 = c2.iterator();
+                                n4 = 0;
                                 continue;
                             }
-                            final an a4;
-                            final al b5 = a4.b();
-                            this.a("OutOfMemoryErrorLog.created_service_count", b5.a());
-                            this.a("OutOfMemoryErrorLog.active_service_count", b5.b().size());
-                            final List c2 = b5.c();
-                            this.a("OutOfMemoryErrorLog.leaked_service_count", c2.size());
-                            final Iterator<Service> iterator4 = c2.iterator();
-                            n4 = 0;
-                            continue Label_0857;
-                            a4 = an.a();
+                            final an a4 = an.a();
                         }
                         // iftrue(Label_0379:, a4 == null)
                         catch (Throwable t2) {}
@@ -147,7 +145,7 @@ public class b extends a
             catch (Throwable t3) {}
             array2[0] = n4;
             this.a(String.format("OutOfMemoryErrorLog.leaked_service_name_%d", array2), service.getClass().getSimpleName());
-            continue Label_0857;
+            continue;
         }
     }
     

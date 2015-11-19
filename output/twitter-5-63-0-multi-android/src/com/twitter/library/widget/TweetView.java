@@ -2289,10 +2289,10 @@ public class TweetView extends TouchableView implements n, r, ag, wt
                 int n16;
                 int cq;
                 int n17;
-                int n18;
                 int measuredHeight = 0;
+                int n18;
                 ImageView imageView;
-                Label_1078_Outer:Label_1105_Outer:Label_1118_Outer:Label_1128_Outer:
+                Label_1105_Outer:Label_1118_Outer:Label_1128_Outer:
                 while (true) {
                     Label_0436: {
                         while (true) {
@@ -2422,16 +2422,16 @@ public class TweetView extends TouchableView implements n, r, ag, wt
                                                                                                 return;
                                                                                             }
                                                                                             return;
-                                                                                            canvas.translate((float)n18, (float)(f.getBottom() + this.W - f.getPaddingBottom()));
-                                                                                            break Label_0358;
                                                                                             n2 += f.getWidth();
                                                                                             break Label_0396;
-                                                                                            canvas.translate((float)(n3 - intrinsicWidth), (float)n);
-                                                                                            break;
                                                                                             n4 = n + measuredHeight;
                                                                                             break Label_0423;
+                                                                                            canvas.translate((float)(n3 - intrinsicWidth), (float)n);
+                                                                                            break;
                                                                                             n7 = 0;
                                                                                             break Label_0436;
+                                                                                            canvas.translate((float)n18, (float)(f.getBottom() + this.W - f.getPaddingBottom()));
+                                                                                            break Label_0358;
                                                                                         }
                                                                                         catch (Exception ex) {
                                                                                             continue Label_0764_Outer;
@@ -2439,11 +2439,11 @@ public class TweetView extends TouchableView implements n, r, ag, wt
                                                                                         break;
                                                                                     }
                                                                                     n9 = n8;
-                                                                                    continue Label_1078_Outer;
+                                                                                    continue Label_1105_Outer;
                                                                                 }
                                                                             }
                                                                             n6 = n4;
-                                                                            continue Label_1078_Outer;
+                                                                            continue Label_1105_Outer;
                                                                         }
                                                                     }
                                                                 }
@@ -2474,7 +2474,7 @@ public class TweetView extends TouchableView implements n, r, ag, wt
                                                         }
                                                         canvas.save();
                                                         if (!this.cc) {
-                                                            continue Label_1105_Outer;
+                                                            continue;
                                                         }
                                                         break;
                                                     }
@@ -2512,7 +2512,7 @@ public class TweetView extends TouchableView implements n, r, ag, wt
                         n4 += this.cL;
                     }
                     if (this.bb != null) {
-                        continue Label_1078_Outer;
+                        continue Label_1105_Outer;
                     }
                     break;
                 }

@@ -258,29 +258,32 @@ class h
                             b = new InetSocketAddress(InetAddress.getByAddress(new byte[] { 8, 8, 8, 8 }), 53);
                             a = new InetSocketAddress(InetAddress.getByAddress(new byte[] { 8, 8, 4, 4 }), 53);
                             return;
-                            final char c = charArray[n3];
-                            // switch([Lcom.strobel.decompiler.ast.Label;@2deccc4c, n3 % 5)
-                            Label_0864: {
-                                final char c2 = 'Z';
-                            }
                             while (true) {
-                                break Label_0840;
-                                Label_0871:
-                                char c2 = 'z';
-                                charArray[n3] = (char)(c2 ^ c);
+                                char c = '\0';
+                                final char c2;
+                                charArray[n3] = (char)(c ^ c2);
                                 ++n3;
                                 continue Label_0840_Outer;
-                                Label_0836:
-                                c2 = '\u001f';
+                                Label_0878: {
+                                    c = 't';
+                                }
                                 continue;
-                                Label_0878:
-                                c2 = 't';
+                                Label_0836:
+                                c = '\u001f';
                                 continue;
                                 Label_0857:
-                                c2 = '\u0006';
+                                c = '\u0006';
+                                continue;
+                                c2 = charArray[n3];
+                                Label_0864:
+                                c = 'Z';
+                                continue;
+                                Label_0871:
+                                c = 'z';
                                 continue;
                             }
                         }
+                        // switch([Lcom.strobel.decompiler.ast.Label;@583b3468, n3 % 5)
                         catch (UnknownHostException ex) {
                             throw new Error(ex);
                         }

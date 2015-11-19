@@ -245,6 +245,7 @@ listaPermisos = []
 listaPublicidad = []
 
 
+
 def revisarManifest(folder,carpetaArchivosJava):
 
 	f=open(folder+'/AndroidManifest.xml')
@@ -316,46 +317,30 @@ def revisarManifest(folder,carpetaArchivosJava):
 
 		
 		diccionarioPermisos[x] = 1;
-		#print(diccionarioPermisos.get(x))
-
-		#print(str(ubicacion)+'.- '+x)
-
-
-
-	#for x in diccionarioPermisos:
-   		#print(x, ":", diccionarioPermisos[x])
 
 	
-	os.chdir("output_Permisos")			
-	archivo=open('outputPermisos - '+packageName+'.txt' ,'w')
-	archivo.write('% Nombre del paquete = '+packageName)
-	archivo.write('\n')
-	archivo.write('\n')
-	archivo.write('% Version = '+ Version)
-	archivo.write('\n')
-	archivo.write('\n')
-	archivo.write('@Relation Permissions')
-	archivo.write('\n')
-	archivo.write('\n')
+	os.chdir("output_Permisos")		
 
-	for n in diccionarioPermisos:
-		archivo.write('@ATTRIBUTE '+ n + ' {true,false}\n')
+	archivo=open('outputPermisos.txt' ,'a')
 
-	archivo.write('\n')
-	archivo.write('\n')
-	archivo.write('@data')
-	archivo.write('\n')
-	archivo.write('\n')
+	
+
+	archivo.write(packageName+',')
+	archivo.write(Version + ',')
 
 	for n in diccionarioPermisos:
 
 		verificador = diccionarioPermisos.get(n)
 
 		if(verificador==0):
-			archivo.write('false\n')
+			archivo.write('false,')
 		
 		else:
-			archivo.write('true\n')
+			archivo.write('true,')
+
+	archivo.write('\n')
+
+	archivo.close()	
 
 
 	os.chdir(carpetaPrincipal)
@@ -372,10 +357,55 @@ def ficherosEnDir(ruta):
             listado.append(os.path.join(raiz,fichero))
     return listado
 	
-    #linea=archi.readline()
-    
-    #archi.close()
-	#print(folder+'/AndroidManifest.xml')
+
+def escribirPrimeraParte():
+
+
+	os.chdir("output_Permisos")		
+
+	archivo=open('outputPermisos.txt' ,'w')
+
+	archivo.write('\n')
+	archivo.write('@Relation Permissions')
+	archivo.write('\n')
+	archivo.write('\n')
+	archivo.write('@ATTRIBUTE packageName string\n')
+	archivo.write('@ATTRIBUTE Version string\n')
+	
+
+	for n in diccionarioPermisos:
+		archivo.write('@ATTRIBUTE '+ n + ' {true,false}\n')
+
+	archivo.write('\n')
+	archivo.write('\n')
+	archivo.write('@data')
+	archivo.write('\n')
+	archivo.write('\n')
+
+	os.chdir(carpetaPrincipal)
+
+
+	os.chdir("output_Publicidad")			
+	archivo2=open('outputPublicidad.txt' ,'w')
+	
+	archivo2.write('\n')
+	archivo2.write('@Relation Publicity')
+	archivo2.write('\n')
+	archivo2.write('\n')
+
+	archivo2.write('@ATTRIBUTE packageName string\n')
+	archivo2.write('@ATTRIBUTE Version string\n')
+
+	for n in diccionarioPublicidad:
+		archivo2.write('@ATTRIBUTE '+ n + ' {true,false}\n')
+
+	archivo2.write('\n')
+	archivo2.write('\n')
+	archivo2.write('@data')
+	archivo2.write('\n')
+
+	os.chdir(carpetaPrincipal)
+
 
 def revisarJava(folder,paquete,Version):
 
@@ -401,7 +431,7 @@ def revisarJava(folder,paquete,Version):
 
 
 	#for q in diccionarioPublicidad:
-		#print(q + diccionarioPublicidad.get(q))
+		#print(q + diccionarioPublicidad.get(q)S)
 
 	javaFile.close()
 
@@ -409,36 +439,25 @@ def revisarJava(folder,paquete,Version):
 		#print(x)
 
 	os.chdir("output_Publicidad")			
-	archivo=open('outputPublicidad - '+paquete+'.txt' ,'w')
-	archivo.write('% Nombre del paquete = '+paquete)
-	archivo.write('\n')
-	archivo.write('\n')
-	archivo.write('% Version = '+ Version)
-	archivo.write('\n')
-	archivo.write('\n')
-	archivo.write('@Relation Publicity')
-	archivo.write('\n')
-	archivo.write('\n')
+	archivo=open('outputPublicidad.txt' ,'a')
 
-	for n in diccionarioPublicidad:
-		archivo.write('@ATTRIBUTE '+ n + ' {true,false}\n')
 
 	archivo.write('\n')
-	archivo.write('\n')
-	archivo.write('@data')
-	archivo.write('\n')
-	archivo.write('\n')
+
+	archivo.write(paquete+',')
+	archivo.write(Version + ',')
 
 	for n in diccionarioPublicidad:
 
 		verificador = diccionarioPublicidad.get(n)
 
 		if(verificador==0):
-			archivo.write('false\n')
+			archivo.write('false,')
 		
 		else:
-			archivo.write('true\n')
+			archivo.write('true,')
 
+	archivo.close()
 
 	os.chdir(carpetaPrincipal)
 
@@ -450,13 +469,13 @@ def revisarJava(folder,paquete,Version):
 
 def main():
 
-	#obtenerListaPermisos()
+
+	escribirPrimeraParte()
 
 	ficheros = os.listdir(carpetaAPK)
 
 	for x in ficheros:
-		#print(len(ficheros))
-
+		
 		nombreArchivo=os.path.splitext(x)[0]
 		
 		#python3 apk2java.py d /home/adrian/Escritorio/APK/com.whatsapp.apk -o hola --java
@@ -465,16 +484,14 @@ def main():
 		call('rm -r -f output/'+nombreArchivo+'.jar',shell=True)
 
 		print ("*********************************************")
-		print ("**              Analizing                  **")
+		print ("**              Analizando                 **")
 		print ("*********************************************")
 		
 		carpetaArchivosJava=carpetaPrincipal+'/output/'+nombreArchivo+'/src'
 
-		
-		#print (carpetaArchivosJava)
-		#analizar("output/"+nombreArchivo+"/src",nombreArchivo)
-
 		revisarManifest(carpetaPrincipal+'/output/'+nombreArchivo,carpetaArchivosJava)
+
+	print('\n\nListo')
 
 if __name__=="__main__":
   main()

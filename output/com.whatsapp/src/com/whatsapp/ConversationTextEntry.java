@@ -86,11 +86,11 @@ public class ConversationTextEntry extends AppCompatEditText
                                         ConversationTextEntry.c = true;
                                         d = new py();
                                         return;
-                                        Label_0228: {
-                                            final char c = '%';
+                                        Label_0256: {
+                                            final char c = '\u0007';
                                         }
-                                        // switch([Lcom.strobel.decompiler.ast.Label;@59c36073, n4 % 5)
-                                        // switch([Lcom.strobel.decompiler.ast.Label;@6a90deb1, n3 % 5)
+                                        // switch([Lcom.strobel.decompiler.ast.Label;@6f358519, n3 % 5)
+                                        // switch([Lcom.strobel.decompiler.ast.Label;@390ce40a, n4 % 5)
                                     Label_0324:
                                         while (true) {
                                             char c2;
@@ -100,40 +100,37 @@ public class ConversationTextEntry extends AppCompatEditText
                                                 Label_0341:
                                                 c2 = 'Q';
                                                 break Label_0324;
-                                                Label_0348:
-                                                c2 = '\u0007';
-                                                break Label_0324;
-                                                char c = '\0';
-                                                final char c3;
-                                                charArray[n3] = (char)(c ^ c3);
-                                                ++n3;
-                                                continue Label_0116_Outer;
-                                                Label_0249:
-                                                c = 'Q';
-                                                continue Label_0324_Outer;
-                                                c4 = charArray2[n4];
-                                                c3 = charArray[n3];
+                                                final char c3 = charArray[n3];
                                                 Label_0362:
                                                 c2 = '\u0011';
                                                 break Label_0324;
-                                                Label_0256:
-                                                c = '\u0007';
-                                                continue Label_0324_Outer;
                                                 Label_0355:
                                                 c2 = 'z';
                                                 break Label_0324;
-                                                Label_0270:
-                                                c = '\u0011';
-                                                continue Label_0324_Outer;
+                                                Label_0320:
+                                                c2 = '%';
+                                                break Label_0324;
+                                                Label_0228:
+                                                char c = '%';
+                                                break Label_0232;
                                                 Label_0263:
                                                 c = 'z';
+                                                charArray[n3] = (char)(c ^ c3);
+                                                ++n3;
+                                                continue Label_0116_Outer;
+                                                c4 = charArray2[n4];
+                                                Label_0249:
+                                                c = 'Q';
+                                                continue Label_0324_Outer;
+                                                Label_0270:
+                                                c = '\u0011';
                                                 continue Label_0324_Outer;
                                             }
                                             charArray2[n4] = (char)(c2 ^ c4);
                                             ++n4;
                                             continue Label_0177_Outer;
-                                            Label_0320:
-                                            c2 = '%';
+                                            Label_0348:
+                                            c2 = '\u0007';
                                             continue Label_0324;
                                         }
                                     }

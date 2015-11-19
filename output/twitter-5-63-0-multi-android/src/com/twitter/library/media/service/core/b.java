@@ -30,10 +30,10 @@ class b extends Handler
     public void handleMessage(final Message message) {
         final Message obtain = Message.obtain((Handler)null, message.what, message.arg1, message.arg2, (Object)null);
         Bundle data;
-        MediaServiceTask mediaServiceTask;
         Bundle data2;
+        MediaServiceTask mediaServiceTask;
         Bundle data3;
-        Block_2_Outer:Label_0129_Outer:
+        Block_3_Outer:Label_0129_Outer:
         while (true) {
             while (true) {
                 switch (message.what) {
@@ -46,28 +46,29 @@ class b extends Handler
                             try {
                                 message.replyTo.send(obtain);
                                 return;
-                                // iftrue(Label_0044:, MediaService.a() == null)
+                                data = message.getData();
                                 // iftrue(Label_0044:, data == null)
-                            Block_3:
-                                while (true) {
-                                    try {
-                                        data.setClassLoader(this.getClass().getClassLoader());
-                                        mediaServiceTask = (MediaServiceTask)data.getParcelable("parcel");
-                                        mediaServiceTask.a(this.a);
+                                // iftrue(Label_0044:, MediaService.a() == null)
+                                Block_2: {
+                                    break Block_2;
+                                    while (true) {
                                         data2 = new Bundle();
-                                        data2.putParcelable("parcel", (Parcelable)mediaServiceTask);
+                                        data2.putString("crash", MediaService.a);
                                         obtain.setData(data2);
+                                        continue Block_3_Outer;
+                                        continue Label_0129_Outer;
                                     }
-                                    catch (Exception ex) {}
-                                    continue Block_2_Outer;
-                                    break Block_3;
-                                    data = message.getData();
-                                    continue Label_0129_Outer;
                                 }
-                                data3 = new Bundle();
-                                data3.putString("crash", MediaService.a);
-                                obtain.setData(data3);
-                                continue Block_2_Outer;
+                                try {
+                                    data.setClassLoader(this.getClass().getClassLoader());
+                                    mediaServiceTask = (MediaServiceTask)data.getParcelable("parcel");
+                                    mediaServiceTask.a(this.a);
+                                    data3 = new Bundle();
+                                    data3.putParcelable("parcel", (Parcelable)mediaServiceTask);
+                                    obtain.setData(data3);
+                                }
+                                catch (Exception ex) {}
+                                continue Label_0129_Outer;
                             }
                             catch (Exception ex2) {
                                 return;

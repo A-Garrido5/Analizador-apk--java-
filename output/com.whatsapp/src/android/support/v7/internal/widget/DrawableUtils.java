@@ -26,7 +26,6 @@ public class DrawableUtils
                 final char[] charArray = s.toCharArray();
                 final int length = charArray.length;
                 int n3 = 0;
-            Label_0250_Outer:
                 while (true) {
                     Label_0280: {
                         if (length > n3) {
@@ -98,68 +97,62 @@ public class DrawableUtils
                                 return;
                             }
                         }
-                        String intern2;
-                        char c;
-                        char c2;
-                        char c3;
-                        char c4;
-                        Label_0416_Outer:Label_0324_Outer:
+                    Label_0416_Outer:
                         while (true) {
                             Label_0369: {
                                 if (length2 > n4) {
                                     break Label_0369;
                                 }
-                                intern2 = new String(charArray2).intern();
+                                final String intern2 = new String(charArray2).intern();
                                 try {
                                     DrawableUtils.sInsetsClazz = Class.forName(intern2);
                                     return;
-                                    Label_0454: {
-                                        c = ',';
+                                    char c = '\0';
+                                    Label_0320: {
+                                        c = 'Q';
                                     }
-                                    // switch([Lcom.strobel.decompiler.ast.Label;@10929976, n3 % 5)
-                                Label_0324:
-                                    while (true) {
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@549d769b, n4 % 5)
+                                    // switch([Lcom.strobel.decompiler.ast.Label;@56d0eec0, n3 % 5)
+                                    final char c4;
+                                    Label_0324: {
+                                        break Label_0324;
+                                        Label_0440:
+                                        char c2 = '\u001a';
                                         while (true) {
                                             break Label_0416;
-                                            charArray[n3] = (char)(c2 ^ c3);
-                                            ++n3;
-                                            continue Label_0250_Outer;
-                                            charArray2[n4] = (char)(c ^ c4);
+                                            Label_0412:
+                                            c2 = 'Q';
+                                            break Label_0416;
+                                            Label_0454:
+                                            c2 = ',';
+                                            break Label_0416;
+                                            Label_0433:
+                                            c2 = 'D';
+                                            break Label_0416;
+                                            final char c3 = charArray2[n4];
+                                            Label_0355:
+                                            c = '\'';
+                                            break Label_0324;
+                                            charArray2[n4] = (char)(c2 ^ c3);
                                             ++n4;
                                             continue Label_0416_Outer;
-                                            Label_0433:
-                                            c = 'D';
-                                            continue Label_0324_Outer;
-                                            Label_0341:
-                                            c2 = 'D';
-                                            continue Label_0324;
-                                            c3 = charArray[n3];
                                             Label_0447:
-                                            c = '\'';
-                                            continue Label_0324_Outer;
-                                            Label_0362:
-                                            c2 = ',';
-                                            continue Label_0324;
-                                            Label_0348:
-                                            c2 = '\u001a';
-                                            continue Label_0324;
-                                            Label_0355:
                                             c2 = '\'';
-                                            continue Label_0324;
-                                            Label_0440:
-                                            c = '\u001a';
-                                            continue Label_0324_Outer;
-                                            Label_0412:
-                                            c = 'Q';
-                                            continue Label_0324_Outer;
+                                            continue;
                                         }
-                                        c4 = charArray2[n4];
-                                        Label_0320:
-                                        c2 = 'Q';
-                                        continue Label_0324;
+                                        Label_0348:
+                                        c = '\u001a';
+                                        break Label_0324;
+                                        c4 = charArray[n3];
+                                        Label_0362:
+                                        c = ',';
+                                        break Label_0324;
+                                        Label_0341:
+                                        c = 'D';
                                     }
+                                    charArray[n3] = (char)(c ^ c4);
+                                    ++n3;
                                 }
-                                // switch([Lcom.strobel.decompiler.ast.Label;@1c01696c, n4 % 5)
                                 catch (ClassNotFoundException ex) {}
                             }
                             break;

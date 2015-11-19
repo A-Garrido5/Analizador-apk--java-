@@ -4,8 +4,8 @@
 
 package com.twitter.library.util;
 
-import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ArrayList;
 import com.twitter.library.featureswitch.d;
 import android.graphics.Paint$FontMetrics;
 import android.graphics.drawable.InsetDrawable;
@@ -172,16 +172,16 @@ public class t
         int a;
         int n8;
         int n9;
-        Object a2 = null;
-        u b = null;
+        ArrayList a2;
         Iterator<w> iterator;
         w w;
-        ArrayList a3;
+        Object a3 = null;
+        u b = null;
         Label_0422_Outer:Label_0259_Outer:
         while (true) {
             while (true) {
                 if (n2 < length) {
-                    Label_0301_Outer:Block_12_Outer:
+                Label_0353:
                     while (true) {
                         Label_0437: {
                             try {
@@ -207,34 +207,35 @@ public class t
                                     }
                                     break Label_0437;
                                 }
-                                a2 = l.a;
-                                b = l.b;
-                                // iftrue(Label_0363:, b == null)
-                                // iftrue(Label_0363:, !iterator.hasNext())
+                            Block_13_Outer:
                                 while (true) {
-                                    Block_11: {
-                                        break Block_11;
-                                        while (true) {
-                                            while (true) {
-                                                w = iterator.next();
-                                                w.a();
-                                                w.b();
-                                                continue Label_0301_Outer;
-                                            }
-                                            iterator = a3.iterator();
-                                            continue Block_12_Outer;
+                                    iterator = a2.iterator();
+                                Block_11:
+                                    while (true) {
+                                        Label_0301: {
+                                            break Label_0301;
+                                            w = iterator.next();
+                                            w.a();
+                                            w.b();
+                                            break Label_0301;
+                                            a3 = l.a;
+                                            b = l.b;
+                                            break Block_11;
                                         }
+                                        continue Label_0259_Outer;
                                     }
-                                    a3 = b.a;
-                                    continue;
+                                    a2 = b.a;
+                                    continue Block_13_Outer;
                                 }
                             }
-                            // iftrue(Label_0353:, a3.size() > 5)
+                            // iftrue(Label_0363:, b == null)
+                            // iftrue(Label_0363:, !iterator.hasNext())
+                            // iftrue(Label_0353:, a2.size() > 5)
                             finally {
                                 l.a = null;
                                 l.b = null;
                             }
-                            break Label_0301_Outer;
+                            break Label_0353;
                             n2 = n6;
                             n3 = n9;
                             n4 = n8;
@@ -255,8 +256,8 @@ public class t
                 Log.d("EmojiManager", "cost of emoji markup=" + (System.nanoTime() - nanoTime));
             }
         }
-        if (a2 != null) {
-            charSequence = (CharSequence)a2;
+        if (a3 != null) {
+            charSequence = (CharSequence)a3;
         }
         l.a = null;
         l.b = null;

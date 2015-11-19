@@ -138,16 +138,17 @@ public class am
         if (this.P != null) {
             this.P.a("TRANSCODE start. Trimming [" + this.l + ':' + this.m + "] " + (this.m - this.l) + " frames");
         }
-    Label_0154_Outer:
+        long n3;
+        int n4 = 0;
+        int n5;
+        int j;
+        int n6;
+        Label_0123_Outer:Label_0154_Outer:
         while (true) {
-        Label_0154:
             while (true) {
-            Label_0137_Outer:
+            Block_10_Outer:
                 while (true) {
-                    int n4 = 0;
                     Label_0455: {
-                        long n3;
-                        int n5;
                         try {
                             this.c(n, n2);
                             this.e();
@@ -157,35 +158,35 @@ public class am
                             n5 = 0;
                             break Label_0455;
                             // iftrue(Label_0123:, this.g() == 0)
-                            // iftrue(Label_0137:, j == 0)
-                            // iftrue(Label_0240:, j != 2)
                             // iftrue(Label_0295:, n4 == 0)
-                            // iftrue(Label_0130:, this.i() == 0)
+                            // iftrue(Label_0240:, j != 2)
+                            // iftrue(Label_0211:, this.P == null)
                             while (true) {
-                                while (true) {
-                                    Label_0130: {
-                                        break Label_0130;
+                                Label_0130: {
+                                    while (true) {
                                         while (true) {
                                             this.d(6);
                                             throw new VideoTranscoderException("Timeout when transcoding video track");
-                                            final int j = this.j();
-                                            break Label_0154;
+                                            break Label_0130;
                                             this.P.a("File " + this.c + " saved " + this.N + " frames");
                                             Label_0211: {
-                                                continue Label_0137_Outer;
+                                                continue Label_0123_Outer;
                                             }
                                         }
+                                        continue Block_10_Outer;
                                     }
-                                    continue Label_0154_Outer;
                                 }
-                                continue;
+                                Label_0137: {
+                                    j = this.j();
+                                }
+                                continue Label_0154_Outer;
                             }
                         }
-                        // iftrue(Label_0211:, this.P == null)
+                        // iftrue(Label_0130:, this.i() == 0)
+                        // iftrue(Label_0137:, j == 0)
                         finally {
                             this.d();
                         }
-                        int n6 = 0;
                         Label_0240: {
                             n6 = this.L + this.u + this.M + this.N;
                         }
@@ -208,7 +209,7 @@ public class am
                     }
                     break;
                 }
-                continue Label_0154;
+                continue;
             }
         }
         Label_0295: {

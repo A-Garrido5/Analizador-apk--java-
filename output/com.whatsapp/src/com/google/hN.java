@@ -149,10 +149,10 @@ public final class hN implements Cloneable
                                                             return true;
                                                         }
                                                         break;
-                                                        n11 = (n3 & 0x1F);
-                                                        break Label_0084;
                                                         n7 = (n & 0x1F);
                                                         break Label_0073;
+                                                        n11 = (n3 & 0x1F);
+                                                        break Label_0084;
                                                     }
                                                     catch (IllegalArgumentException ex2) {
                                                         throw ex2;

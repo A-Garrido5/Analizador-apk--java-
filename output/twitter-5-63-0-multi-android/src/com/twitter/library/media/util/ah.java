@@ -164,14 +164,14 @@ public class ah
                             n2 = 0;
                             n3 = 0;
                             break Label_0130;
-                            // iftrue(Label_0068:, this.j() != 2)
                             // iftrue(Label_0031:, this.h() == 0)
-                            while (true) {
-                                break Label_0046;
-                                continue Label_0046_Outer;
-                            }
                             // iftrue(Label_0125:, n2 == 0)
-                            throw new VideoTranscoderException("Timeout when transcoding video track");
+                            Block_6: {
+                                break Block_6;
+                                throw new VideoTranscoderException("Timeout when transcoding video track");
+                            }
+                            // iftrue(Label_0068:, this.j() != 2)
+                            continue Label_0046;
                         }
                         finally {
                             this.c();
@@ -195,7 +195,7 @@ public class ah
                         n3 = n4;
                     }
                     if (n2 == 0) {
-                        continue;
+                        continue Label_0046_Outer;
                     }
                     break;
                 }

@@ -230,19 +230,41 @@ public class PushService extends GCMBaseIntentService
                 if (!PushService.h) {
                     break Label_0109;
                 }
-            Label_0895_Outer:
+                j j;
+                f a;
+                f b2;
+                String s;
+                Bundle d2;
+                String string2;
+                j i;
+                com.twitter.library.platform.notifications.d a2;
+                com.twitter.library.platform.notifications.d a3;
+                String string3;
+                j k;
+                List d3;
+                List c;
+                String s2;
+                int b3;
+                String string4;
+                j l;
+                DMTweet b4;
+                DMMessageEntry b5;
+                y c2;
+                String e;
+                String string5;
+                g g2;
+                Label_0144_Outer:Label_0895_Outer:
                 while (true) {
                     while (true) {
                         Label_1545: {
                             try {
                                 Log.d("PushService", "Notification Payload - users: " + new JSONObject(string).toString(2));
-                                final j j = new j(b.a);
-                                final f a = NotificationParser.a(string, j, com.twitter.library.experiments.c.a());
+                                j = new j(b.a);
+                                a = NotificationParser.a(string, j, com.twitter.library.experiments.c.a());
                                 ErrorReporter.a(j);
-                                f b2 = a;
+                                b2 = a;
                                 while (true) {
                                     if (b2 == null || b2.a == null || (b.b != 143 && b2.b == null)) {
-                                        String s;
                                         if (b2 == null) {
                                             s = "Missing users";
                                         }
@@ -258,178 +280,173 @@ public class PushService extends GCMBaseIntentService
                                         }
                                         return null;
                                     }
-                                    final Bundle d2 = new Bundle();
+                                    d2 = new Bundle();
                                     d2.putString("recipient_name", b2.a.b);
                                     Label_0652: {
                                         if (!d.containsKey("priority")) {
                                             break Label_0652;
                                         }
                                         d2.putString("priority", d.getString("priority"));
-                                    Label_0294:
-                                        while (true) {
-                                            Label_0718: {
-                                                if (!d.containsKey("tweet")) {
-                                                    break Label_0718;
+                                        Label_0718: {
+                                            if (!d.containsKey("tweet")) {
+                                                break Label_0718;
+                                            }
+                                            string2 = d.getString("tweet");
+                                            Label_0355: {
+                                                if (!PushService.h) {
+                                                    break Label_0355;
                                                 }
-                                                final String string2 = d.getString("tweet");
-                                                Label_0355: {
-                                                    if (!PushService.h) {
-                                                        break Label_0355;
-                                                    }
-                                                    try {
-                                                        Log.d("PushService", "Notification Payload - tweet: " + new JSONObject(string2).toString(2));
-                                                        final j i = new j(b2.a.a, b.a);
-                                                        final com.twitter.library.platform.notifications.d a2 = NotificationParser.a(string2, i);
-                                                        ErrorReporter.a(i);
-                                                        com.twitter.library.platform.notifications.d a3 = a2;
-                                                        while (true) {
-                                                            Label_0724: {
-                                                                if (!d.f("android_notification_actions_from_push_payload_enabled") || !d.containsKey("actions")) {
-                                                                    break Label_0724;
+                                                try {
+                                                    Log.d("PushService", "Notification Payload - tweet: " + new JSONObject(string2).toString(2));
+                                                    i = new j(b2.a.a, b.a);
+                                                    a2 = NotificationParser.a(string2, i);
+                                                    ErrorReporter.a(i);
+                                                    a3 = a2;
+                                                    while (true) {
+                                                        Label_0724: {
+                                                            if (!d.f("android_notification_actions_from_push_payload_enabled") || !d.containsKey("actions")) {
+                                                                break Label_0724;
+                                                            }
+                                                            string3 = d.getString("actions");
+                                                            Label_0467: {
+                                                                if (!PushService.h) {
+                                                                    break Label_0467;
                                                                 }
-                                                                final String string3 = d.getString("actions");
-                                                                Label_0467: {
-                                                                    if (!PushService.h) {
-                                                                        break Label_0467;
-                                                                    }
-                                                                    try {
-                                                                        Log.d("PushService", "Notification Payload - actions: " + new JSONObject(string3).toString(2));
-                                                                        final j k = new j(b2.a.a, b.a);
-                                                                        final List d3 = NotificationParser.d(string3, k);
-                                                                        ErrorReporter.a(k);
-                                                                        List c = d3;
-                                                                        // iftrue(Label_0294:, !PushService.h)
+                                                                try {
+                                                                    Log.d("PushService", "Notification Payload - actions: " + new JSONObject(string3).toString(2));
+                                                                    k = new j(b2.a.a, b.a);
+                                                                    d3 = NotificationParser.d(string3, k);
+                                                                    ErrorReporter.a(k);
+                                                                    c = d3;
+                                                                    // iftrue(Label_0294:, !PushService.h)
+                                                                    Block_25: {
                                                                         while (true) {
-                                                                            while (true) {
-                                                                                String s2 = null;
-                                                                                Label_0764: {
-                                                                                    if (n == 2) {
-                                                                                        if (b.b != 22) {
-                                                                                            final int b3 = b.b;
-                                                                                            s2 = null;
-                                                                                            if (b3 != 274) {
-                                                                                                break Label_0764;
-                                                                                            }
+                                                                            s2 = null;
+                                                                            Label_0764: {
+                                                                                if (n == 2) {
+                                                                                    if (b.b != 22) {
+                                                                                        b3 = b.b;
+                                                                                        s2 = null;
+                                                                                        if (b3 != 274) {
+                                                                                            break Label_0764;
                                                                                         }
-                                                                                        if (!d.containsKey("notification_event_data")) {
-                                                                                            ErrorReporter.a(new j(b2.a.a, b.a).a(new PushService$InvalidNotificationPayloadException("Missing notification_event_data")));
-                                                                                            if (PushService.h) {
-                                                                                                Log.w("PushService", "Missing notification_event_data");
-                                                                                            }
-                                                                                            return null;
-                                                                                        }
-                                                                                        final String string4 = d.getString("notification_event_data");
-                                                                                        final j l = new j(b2.a.a, b.a);
-                                                                                        DMTweet b4;
-                                                                                        if (d.containsKey("dm_tweet")) {
-                                                                                            b4 = NotificationParser.b(d.getString("dm_tweet"), l);
-                                                                                        }
-                                                                                        else {
-                                                                                            b4 = null;
-                                                                                        }
-                                                                                        final DMMessageEntry b5 = NotificationParser.b(string4, l, Boolean.parseBoolean(d.getString("is_partial")) || b4 != null);
-                                                                                        ErrorReporter.a(l);
-                                                                                        if (b5 == null) {
-                                                                                            return null;
-                                                                                        }
-                                                                                        s2 = a(b5, b4, b2, context);
-                                                                                        d2.putSerializable("notification_dm_data", (Serializable)b5);
                                                                                     }
+                                                                                    if (!d.containsKey("notification_event_data")) {
+                                                                                        ErrorReporter.a(new j(b2.a.a, b.a).a(new PushService$InvalidNotificationPayloadException("Missing notification_event_data")));
+                                                                                        if (PushService.h) {
+                                                                                            Log.w("PushService", "Missing notification_event_data");
+                                                                                        }
+                                                                                        return null;
+                                                                                    }
+                                                                                    string4 = d.getString("notification_event_data");
+                                                                                    l = new j(b2.a.a, b.a);
+                                                                                    if (d.containsKey("dm_tweet")) {
+                                                                                        b4 = NotificationParser.b(d.getString("dm_tweet"), l);
+                                                                                    }
+                                                                                    else {
+                                                                                        b4 = null;
+                                                                                    }
+                                                                                    b5 = NotificationParser.b(string4, l, Boolean.parseBoolean(d.getString("is_partial")) || b4 != null);
+                                                                                    ErrorReporter.a(l);
+                                                                                    if (b5 == null) {
+                                                                                        return null;
+                                                                                    }
+                                                                                    s2 = a(b5, b4, b2, context);
+                                                                                    d2.putSerializable("notification_dm_data", (Serializable)b5);
                                                                                 }
-                                                                                if (b.b == 13 && d.containsKey("notification_event_data")) {
-                                                                                    final y c2 = NotificationParser.c(d.getString("notification_event_data"), new j(b2.a.a, b.a));
-                                                                                    d2.putSerializable("notification_dm_data", (Serializable)c2.a().get(0));
-                                                                                    final String e = c2.c().get(0).e;
-                                                                                    s2 = ak.a(context.getResources(), b2.b.a, b2.b.c, s2, false, false, true, 17, null, true);
-                                                                                    if (s2 != null) {
-                                                                                        d2.putString("text", s2);
-                                                                                    }
-                                                                                    else if (d.containsKey("text")) {
-                                                                                        d2.putString("text", d.getString("text"));
-                                                                                    }
-                                                                                    else {
-                                                                                        if (a3 == null) {
-                                                                                            ErrorReporter.a(new j(b2.a.a, b.a).a(new PushService$InvalidNotificationPayloadException("Missing text")));
-                                                                                            if (PushService.h) {
-                                                                                                Log.w("PushService", "Missing text");
-                                                                                            }
-                                                                                            return null;
-                                                                                        }
-                                                                                        d2.putString("text", a3.d);
-                                                                                    }
-                                                                                    if (e != null) {
-                                                                                        d2.putString("title", e);
-                                                                                    }
-                                                                                    else {
-                                                                                        d2.putString("title", d.getString("title"));
-                                                                                    }
-                                                                                    d2.putString("scribe_target", d.getString("scribe_target"));
-                                                                                    d2.putString("sound", d.getString("sound"));
-                                                                                    d2.putString("collapse_key", b.a);
-                                                                                    d2.putInt("notification_type", b.b);
-                                                                                    if (b.b == 9) {
-                                                                                        d2.putString("notification_setting_key", b.a);
-                                                                                        d2.putString("recipient_id", String.valueOf(b2.a.a));
-                                                                                        d2.putString("uri", d.getString("uri"));
-                                                                                        if (b2.b != null) {
-                                                                                            d2.putString("sender_id", String.valueOf(b2.b.a));
-                                                                                        }
-                                                                                        if (a3 != null) {
-                                                                                            d2.putString("status_id", String.valueOf(a3.a));
-                                                                                        }
-                                                                                        final String string5 = b.a + "_opt_out_count";
-                                                                                        sharedPreferences.edit().putInt(string5, sharedPreferences.getInt(string5, 0) + 1).apply();
-                                                                                    }
-                                                                                    else if (b.b == 270) {
-                                                                                        d2.putString("recipient_id", String.valueOf(b2.a.a));
-                                                                                        d2.putString("uri", d.getString("uri"));
-                                                                                    }
-                                                                                    else {
-                                                                                        d2.putString("recipient_id", String.valueOf(b2.a.a));
-                                                                                        if (a3 != null) {
-                                                                                            d2.putString("status_id", String.valueOf(a3.a));
-                                                                                        }
-                                                                                        else {
-                                                                                            d2.putString("status_id", "0");
-                                                                                        }
-                                                                                        if (b2.b != null) {
-                                                                                            d2.putString("sender_id", String.valueOf(b2.b.a));
-                                                                                        }
-                                                                                        if (b.b == 143) {
-                                                                                            d2.putString("sender_name", "");
-                                                                                        }
-                                                                                        else {
-                                                                                            d2.putString("sender_name", b2.b.b);
-                                                                                        }
-                                                                                    }
-                                                                                    final g g2 = new g();
-                                                                                    g2.a = a3;
-                                                                                    g2.b = b2;
-                                                                                    g2.c = c;
-                                                                                    g2.d = d2;
-                                                                                    return g2;
-                                                                                }
-                                                                                break Label_1545;
-                                                                                Log.w("PushService", "Missing priority");
-                                                                                continue Label_0294;
-                                                                                c = null;
-                                                                                continue Label_0895_Outer;
                                                                             }
+                                                                            if (b.b == 13 && d.containsKey("notification_event_data")) {
+                                                                                c2 = NotificationParser.c(d.getString("notification_event_data"), new j(b2.a.a, b.a));
+                                                                                d2.putSerializable("notification_dm_data", (Serializable)c2.a().get(0));
+                                                                                e = c2.c().get(0).e;
+                                                                                s2 = ak.a(context.getResources(), b2.b.a, b2.b.c, s2, false, false, true, 17, null, true);
+                                                                                if (s2 != null) {
+                                                                                    d2.putString("text", s2);
+                                                                                }
+                                                                                else if (d.containsKey("text")) {
+                                                                                    d2.putString("text", d.getString("text"));
+                                                                                }
+                                                                                else {
+                                                                                    if (a3 == null) {
+                                                                                        ErrorReporter.a(new j(b2.a.a, b.a).a(new PushService$InvalidNotificationPayloadException("Missing text")));
+                                                                                        if (PushService.h) {
+                                                                                            Log.w("PushService", "Missing text");
+                                                                                        }
+                                                                                        return null;
+                                                                                    }
+                                                                                    d2.putString("text", a3.d);
+                                                                                }
+                                                                                if (e != null) {
+                                                                                    d2.putString("title", e);
+                                                                                }
+                                                                                else {
+                                                                                    d2.putString("title", d.getString("title"));
+                                                                                }
+                                                                                d2.putString("scribe_target", d.getString("scribe_target"));
+                                                                                d2.putString("sound", d.getString("sound"));
+                                                                                d2.putString("collapse_key", b.a);
+                                                                                d2.putInt("notification_type", b.b);
+                                                                                if (b.b == 9) {
+                                                                                    d2.putString("notification_setting_key", b.a);
+                                                                                    d2.putString("recipient_id", String.valueOf(b2.a.a));
+                                                                                    d2.putString("uri", d.getString("uri"));
+                                                                                    if (b2.b != null) {
+                                                                                        d2.putString("sender_id", String.valueOf(b2.b.a));
+                                                                                    }
+                                                                                    if (a3 != null) {
+                                                                                        d2.putString("status_id", String.valueOf(a3.a));
+                                                                                    }
+                                                                                    string5 = b.a + "_opt_out_count";
+                                                                                    sharedPreferences.edit().putInt(string5, sharedPreferences.getInt(string5, 0) + 1).apply();
+                                                                                }
+                                                                                else if (b.b == 270) {
+                                                                                    d2.putString("recipient_id", String.valueOf(b2.a.a));
+                                                                                    d2.putString("uri", d.getString("uri"));
+                                                                                }
+                                                                                else {
+                                                                                    d2.putString("recipient_id", String.valueOf(b2.a.a));
+                                                                                    if (a3 != null) {
+                                                                                        d2.putString("status_id", String.valueOf(a3.a));
+                                                                                    }
+                                                                                    else {
+                                                                                        d2.putString("status_id", "0");
+                                                                                    }
+                                                                                    if (b2.b != null) {
+                                                                                        d2.putString("sender_id", String.valueOf(b2.b.a));
+                                                                                    }
+                                                                                    if (b.b == 143) {
+                                                                                        d2.putString("sender_name", "");
+                                                                                    }
+                                                                                    else {
+                                                                                        d2.putString("sender_name", b2.b.b);
+                                                                                    }
+                                                                                }
+                                                                                g2 = new g();
+                                                                                g2.a = a3;
+                                                                                g2.b = b2;
+                                                                                g2.c = c;
+                                                                                g2.d = d2;
+                                                                                return g2;
+                                                                            }
+                                                                            break Label_1545;
                                                                             d2.putString("priority", String.valueOf(0));
                                                                             ErrorReporter.a(new j(b2.a.a, b.a).a(new PushService$InvalidNotificationPayloadException("Missing priority")));
-                                                                            continue;
+                                                                            break Block_25;
+                                                                            c = null;
+                                                                            continue Label_0895_Outer;
                                                                         }
                                                                         a3 = null;
+                                                                        continue Label_0144_Outer;
                                                                     }
-                                                                    catch (JSONException ex) {}
+                                                                    Log.w("PushService", "Missing priority");
                                                                 }
+                                                                catch (JSONException ex) {}
                                                             }
                                                         }
                                                     }
-                                                    catch (JSONException ex2) {}
                                                 }
+                                                catch (JSONException ex2) {}
                                             }
-                                            break;
                                         }
                                     }
                                     b2 = null;
@@ -440,7 +457,7 @@ public class PushService extends GCMBaseIntentService
                                 continue Label_0109;
                             }
                         }
-                        final String e = null;
+                        e = null;
                         continue;
                     }
                 }
