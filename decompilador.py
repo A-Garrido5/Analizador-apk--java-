@@ -9,7 +9,6 @@ import os
 apk_file=''
 apk_folder=''
 project_name=''
-sign_file=''
 cwd=os.path.dirname(os.path.abspath(__file__))
 home=os.path.dirname(os.path.realpath(sys.argv[0]))
 outdir=os.path.dirname(os.path.realpath(sys.argv[1]))+"/"
@@ -54,9 +53,7 @@ def main():
   global apk_folder,apk_file,project_name,home,outdir
   usage = "usage: %prog action file [options]"
   parser = OptionParser(usage=usage)
-  parser.add_option("--java",action="store_true", dest="java", default=True, help="select java source format [DEFAULT]")
-  parser.add_option("-o", dest="outdir", default=cwd+"/", help="specify the output directory "
-	+"(if not specified the decomipled version will be store in a folder in the script directory)")
+  parser.add_option("-o", dest="outdir", default=cwd+"/")
   (options, args) = parser.parse_args()
       
   home = cwd+"/herramientas"
@@ -83,9 +80,8 @@ def main():
         print ("[ ERROR ] Debe selecionar un archivo .apk válido")
         exit(1)
     
-    
   else:
-    parser.print_help()
+    print ("[ ERROR ] En el ingreso de parametros")
 
 if __name__=="__main__":
   main()
