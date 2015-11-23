@@ -473,6 +473,8 @@ def revisarJava(folder,paquete,Version):
 						listaPublicidad.append(y)
 					break;
 
+		javaFile.close()
+
 	for g in listaPublicidad:
 		ubicacion = listaPublicidad.index(g)
 
@@ -483,7 +485,7 @@ def revisarJava(folder,paquete,Version):
 	#for q in diccionarioPublicidad:
 		#print(q + diccionarioPublicidad.get(q)S)
 
-	javaFile.close()
+	
 
 	#print(diccionarioPublicidad)
 		#print(x)
@@ -587,7 +589,7 @@ def main():
 			nombreArchivo=os.path.splitext(x)[0]
 			
 			#python3 apk2java.py d /home/adrian/Escritorio/APK/com.whatsapp.apk -o hola --java
-			call('python3 decompilador.py d '+carpetaAPK +'/'+ x+' -o output/ --java',shell=True)
+			call('python3 decompilador.py d '+carpetaAPK +'/'+ x+' -o output/ ',shell=True)
 			call('rm -r -f output/'+nombreArchivo+'-new.apk',shell=True)
 			call('rm -r -f output/'+nombreArchivo+'.jar',shell=True)
 
@@ -613,10 +615,10 @@ def main():
 		for y in ficherosMalware:
 
 
-			nombreArchivo=os.path.splitext(y)[0].lower()
+			nombreArchivo=os.path.splitext(y)[0]
 
 
-			call('python3 decompilador.py d '+carpetaAPKmalware +'/'+ y+' -o output-Malware/ --java',shell=True)
+			call('python3 decompilador.py d '+carpetaAPKmalware +'/'+ y+' -o output-Malware',shell=True)
 			call('rm -r -f output-Malware/'+nombreArchivo+'-new.apk',shell=True)
 			call('rm -r -f output-Malware/'+nombreArchivo+'.jar',shell=True)
 

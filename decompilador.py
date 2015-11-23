@@ -27,7 +27,7 @@ def apktool():
 
 def dex2jar():
   print ("*********************************************")
-  print ("**        Convertiendo .apk a .jar         **")
+  print ("**        Convertiendo .dex a .jar         **")
   print ("*********************************************")
   
   call(home+'/dex2jar-0.0.9.15/d2j-dex2jar.sh -f -o '+outdir+"/"+project_name+'.jar '+apk_file, shell=True)
@@ -57,13 +57,13 @@ def main():
   (options, args) = parser.parse_args()
       
   home = cwd+"/herramientas"
-  outdir = options.outdir
+  outdir = options.outdir+'/'
   
   if len(args)==2:
     if args[0] == 'd':
       if os.path.isfile(args[1]) and os.path.splitext(args[1])[-1].lower() == '.apk':
         apk_file = args[1].replace(' ','')
-        project_name = os.path.splitext(os.path.basename(args[1]))[0].lower()
+        project_name = os.path.splitext(os.path.basename(args[1]))[0]
         
         if not os.path.exists(outdir):
           os.makedirs(outdir)
