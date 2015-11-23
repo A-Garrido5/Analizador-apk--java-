@@ -335,15 +335,29 @@ def revisarManifest(folder,carpetaArchivosJava):
 	archivo.write(packageName+',')
 	archivo.write(Version + ',')
 
+
+	print(diccionarioPermisos)
+
 	for n in diccionarioPermisos:
 
 		verificador = diccionarioPermisos.get(n)
 
 		if(verificador==0):
 			archivo.write('false,')
+			
 		
 		else:
 			archivo.write('true,')
+
+	for x in listaPermisos:
+
+		ubicacion = listaPermisos.index(x)
+
+		
+		diccionarioPermisos[x] = 0;
+
+	listaPermisos.clear()
+			
 
 	archivo.write('\n')
 
