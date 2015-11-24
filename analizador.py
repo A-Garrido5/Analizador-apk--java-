@@ -336,8 +336,6 @@ def revisarManifest(folder,carpetaArchivosJava):
 	archivo.write(Version + ',')
 
 
-	print(diccionarioPermisos)
-
 	for n in diccionarioPermisos:
 
 		verificador = diccionarioPermisos.get(n)
