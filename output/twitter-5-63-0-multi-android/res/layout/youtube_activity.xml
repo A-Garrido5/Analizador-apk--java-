@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.android.composer.FloatingActionButtonLayout android:id="@id/fab" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/top_toolbar" />
+        <com.twitter.android.composer.ComposerDockLayout android:id="@id/dock" android:layout_width="fill_parent" android:layout_height="fill_parent" twitter:topDockId="@id/scope_option">
+            <com.twitter.library.widget.ObservableScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/youtube_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <fragment android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment" android:id="@id/youtube_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_xlarge" android:textStyle="bold" android:id="@id/youtube_video_title" style="@style/YouTubeText" />
+                    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="@color/medium_gray" android:id="@id/youtube_video_description" style="@style/YouTubeText" />
+                    <Button android:textSize="@dimen/font_size_small" android:textColor="@color/twitter_blue" android:id="@id/open_in_youtube" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_row_padding_horizontal" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/list_row_padding_horizontal" android:layout_marginBottom="8.0dip" android:text="@string/watch_on_youtube" style="@style/Button.Card" />
+                </LinearLayout>
+            </com.twitter.library.widget.ObservableScrollView>
+        </com.twitter.android.composer.ComposerDockLayout>
+    </LinearLayout>
+</com.twitter.android.composer.FloatingActionButtonLayout>

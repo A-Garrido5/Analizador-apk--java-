@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badge_item_count">
+        <item quantity="other">%d个新事项</item>
+        <item quantity="one">1个新事项</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d天</item>
+        <item quantity="one">1天</item>
+    </plurals>
+    <plurals name="followed_by_count">
+        <item quantity="other">被 %1$s 及另外%2$d人关注</item>
+        <item quantity="one">被 %1$s 及另外1人关注</item>
+    </plurals>
+    <plurals name="in_reply_to_name_and_count">
+        <item quantity="other">回复%1$s和%2$d%3$s个其他用户</item>
+        <item quantity="one">回复%1$s和1%3$s个其他用户</item>
+    </plurals>
+    <plurals name="magic_recs_favorite_notif">
+        <item quantity="other">刚被 %1$s 和 %2$d 个你关注的用户收藏</item>
+        <item quantity="one">刚被 %1$s 和 %2$d 个你关注的用户收藏</item>
+    </plurals>
+    <plurals name="magic_recs_follow_notif">
+        <item quantity="other">刚被 %1$s 和 %2$d 个你关注的用户关注</item>
+        <item quantity="one">刚被 %1$s 和 %2$d 个你关注的用户关注</item>
+    </plurals>
+    <plurals name="magic_recs_retweet_notif">
+        <item quantity="other">刚被 %1$s 和 %2$d 个你关注的用户转推</item>
+        <item quantity="one">刚被 %1$s 和 %2$d 个你关注的用户转推</item>
+    </plurals>
+    <plurals name="media_tag_prompt">
+        <item quantity="other">谁在这些照片里?</item>
+        <item quantity="one">谁在这张照片里?</item>
+    </plurals>
+    <plurals name="media_tag_remaining">
+        <item quantity="other">最多再圈出%d个人。</item>
+        <item quantity="one">最多可以再圈出 1 个人。</item>
+    </plurals>
+    <plurals name="media_tag_tagged">
+        <item quantity="other">%d 个人被圈出</item>
+        <item quantity="one">1个人被圈出</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d月</item>
+        <item quantity="one">1月</item>
+    </plurals>
+    <plurals name="new_tweet_count">
+        <item quantity="other">%d 条新推文</item>
+        <item quantity="one">1 条新推文</item>
+    </plurals>
+    <plurals name="photo_stat_label_favorites">
+        <item quantity="other">收藏</item>
+        <item quantity="one">收藏</item>
+    </plurals>
+    <plurals name="photo_stat_label_replies">
+        <item quantity="other">回复</item>
+        <item quantity="one">回复</item>
+    </plurals>
+    <plurals name="photo_stat_label_retweets">
+        <item quantity="other">转推</item>
+        <item quantity="one">转推</item>
+    </plurals>
+    <plurals name="profile_followers_count_label">
+        <item quantity="other">关注者</item>
+        <item quantity="one">关注者</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_favorites">
+        <item quantity="other">%s 个收藏</item>
+        <item quantity="one">%s 个收藏</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_media">
+        <item quantity="other">%s照片</item>
+        <item quantity="one">%s照片</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_timeline">
+        <item quantity="other">%s 条推文</item>
+        <item quantity="one">%s 条推文</item>
+    </plurals>
+    <plurals name="profile_tweets_count_label">
+        <item quantity="other">推文</item>
+        <item quantity="one">发推</item>
+    </plurals>
+    <plurals name="replies_count">
+        <item quantity="other">%1$d条更多回复</item>
+        <item quantity="one">1条更多回复</item>
+    </plurals>
+    <plurals name="search_user_name_pile">
+        <item quantity="other">%1$s, %2$s 及更多</item>
+        <item quantity="one">%1$s 及更多</item>
+    </plurals>
+    <plurals name="selected_image_count">
+        <item quantity="other">%d已选择</item>
+        <item quantity="one">1已选择</item>
+    </plurals>
+    <plurals name="settings_notif_tweets_count">
+        <item quantity="other">%d人</item>
+        <item quantity="one">1人</item>
+    </plurals>
+    <plurals name="social_fav_and_retweets_count">
+        <item quantity="other">%1$s次收藏和%2$s次转推</item>
+        <item quantity="one">%1$s次收藏和1次转推</item>
+    </plurals>
+    <plurals name="social_fav_count">
+        <item quantity="other">%1$s次收藏</item>
+        <item quantity="one">1次收藏</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user">
+        <item quantity="other">%1$s和另外%2$d个你关注的用户已收藏</item>
+        <item quantity="one">%1$s和另外1个你关注的用户已收藏</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user_accessibility_description">
+        <item quantity="other">%1$s和另外%2$d个你关注的人已收藏</item>
+        <item quantity="one">%1$s和另外1个你关注的人已收藏</item>
+    </plurals>
+    <plurals name="social_follow_and_follow_and_others">
+        <item quantity="other">%1$s、%2$s 及另外%3$d人关注了</item>
+        <item quantity="one">%1$s、%2$s 及另外1人关注了</item>
+    </plurals>
+    <plurals name="social_proof_in_reply_multiple_names_and_count">
+        <item quantity="other">回复%1$s、%2$s和%3$d个其他用户</item>
+        <item quantity="one">回复%1$s、%2$s和1个其他用户</item>
+    </plurals>
+    <plurals name="social_retweet_and_favs_count">
+        <item quantity="other">%1$s次转推和%2$s次收藏</item>
+        <item quantity="one">%1$s次转推和1次收藏</item>
+    </plurals>
+    <plurals name="social_retweet_count">
+        <item quantity="other">%1$s次转推</item>
+        <item quantity="one">1次转推</item>
+    </plurals>
+    <plurals name="stat_label_favorites">
+        <item quantity="other">收藏</item>
+        <item quantity="one">收藏</item>
+    </plurals>
+    <plurals name="stat_label_replies">
+        <item quantity="other">回复</item>
+        <item quantity="one">回复</item>
+    </plurals>
+    <plurals name="stat_label_retweets">
+        <item quantity="other">转推</item>
+        <item quantity="one">转推</item>
+    </plurals>
+    <plurals name="stat_label_views">
+        <item quantity="other">查看</item>
+        <item quantity="one">查看</item>
+    </plurals>
+    <plurals name="story_proof_author_follow_by">
+        <item quantity="other">\@%1$s 及另外%2$d人关注了</item>
+        <item quantity="one">\@%1$s 及另外%2$d人关注了</item>
+    </plurals>
+    <plurals name="story_proof_favorite_by">
+        <item quantity="other">\@%1$s 及另外%2$d人收藏了</item>
+        <item quantity="one">\@%1$s 及另外%2$d人收藏了</item>
+    </plurals>
+    <plurals name="story_proof_follow_by">
+        <item quantity="other">\@%1$s 及另外%2$d人最近关注了</item>
+        <item quantity="one">\@%1$s 及另外%2$d人最近关注了</item>
+    </plurals>
+    <plurals name="story_proof_retweet_by">
+        <item quantity="other">\@%1$s 及另外%2$d人转推了</item>
+        <item quantity="one">\@%1$s 及另外%2$d人转推了</item>
+    </plurals>
+    <plurals name="story_proof_shared_by">
+        <item quantity="other">\@%1$s 及另外%2$d人正在谈论这个</item>
+        <item quantity="one">\@%1$s 及另外%2$d人正在谈论这个</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="other">%d天</item>
+        <item quantity="one">1天</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="other">%d天前</item>
+        <item quantity="one">1天前</item>
+    </plurals>
+    <plurals name="time_hours">
+        <item quantity="other">%d时</item>
+        <item quantity="one">1小时</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="other">%d小时前</item>
+        <item quantity="one">1小时前</item>
+    </plurals>
+    <plurals name="time_mins">
+        <item quantity="other">%d分</item>
+        <item quantity="one">1分钟</item>
+    </plurals>
+    <plurals name="time_mins_ago">
+        <item quantity="other">%d分钟前</item>
+        <item quantity="one">1分钟前</item>
+    </plurals>
+    <plurals name="time_secs">
+        <item quantity="other">%d秒</item>
+        <item quantity="one">1秒</item>
+    </plurals>
+    <plurals name="typing_users_count">
+        <item quantity="other">%d人正在输入</item>
+        <item quantity="one">1人正在输入</item>
+    </plurals>
+    <plurals name="users_fast_follow_text">
+        <item quantity="other">+%1$s更多的短信关注者</item>
+        <item quantity="one">+%1$s更多的短信关注者</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="other">%d周</item>
+        <item quantity="one">1周</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d年</item>
+        <item quantity="one">1年</item>
+    </plurals>
+</resources>

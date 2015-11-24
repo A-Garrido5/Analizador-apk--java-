@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/gallery_bar_button_background" android:layout_width="0.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/image" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_gallery_bar_video" android:scaleType="centerInside" android:contentDescription="@string/button_action_camera" />
+</FrameLayout>

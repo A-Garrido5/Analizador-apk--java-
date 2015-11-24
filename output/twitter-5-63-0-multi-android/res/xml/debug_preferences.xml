@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="Debug" android:key="pref_debug">
+        <PreferenceCategory android:title="Debug Network" android:key="pref_debug_network">
+            <com.twitter.android.widget.StagingHostPreference android:title="Set Staging Server" android:positiveButtonText="Apply changes" />
+            <com.twitter.android.widget.UploadHostPreference android:title="Set Upload Server" android:positiveButtonText="Apply changes" />
+            <com.twitter.android.widget.DMHostPreference android:title="Set DM Server" android:positiveButtonText="Apply changes" />
+            <ListPreference android:entries="@array/http_client_entries" android:title="HTTP Client" android:key="http_client_name" android:summary="Select HTTP client (requires restart)" android:defaultValue="" android:entryValues="@array/http_client_values" />
+            <com.twitter.android.widget.TwitterAccessPreference android:title="Set Twitter Access" android:positiveButtonText="Apply changes" />
+            <ListPreference android:entries="@array/simulate_back_pressure_labels" android:title="Simulate Back Pressure" android:key="simulate_back_pressure" android:summary="Select back-pressure simulation mode" android:defaultValue="" android:entryValues="@array/simulate_back_pressure_values" />
+            <CheckBoxPreference android:title="Email Network Capture" android:key="email_network_capture" android:summary="Email generated HAR files" android:defaultValue="true" />
+            <CheckBoxPreference android:title="Data Usage Meter" android:key="data_usage_meter" android:summary="Show 1MB data usage meter" android:defaultValue="false" />
+            <com.twitter.android.widget.NetworkPerformanceEmulatorPreference android:title="Network Performance Emulation" android:positiveButtonText="Apply" />
+            <CheckBoxPreference android:title="Wifi-Only Mode" android:key="wifi_only_mode" android:summary="When enabled, the app will not send any data over the network unless connected to a wifi network." android:defaultValue="false" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Debug" android:key="pref_debug_main">
+            <com.twitter.android.widget.LocalePreference android:title="Set locale" android:positiveButtonText="Apply changes" />
+            <com.twitter.android.widget.PushSettingsSummaryPreference android:title="Push Setting Parameters" android:positiveButtonText="OK" />
+            <com.twitter.android.widget.PromptbirdPreference android:title="Force Promptbird Campaign" android:positiveButtonText="Apply changes" />
+            <Preference android:title="Geo Debug Settings" android:key="geo_debug" />
+            <Preference android:title="Moments Debug" android:key="moments_debug" />
+            <CheckBoxPreference android:title="Enable Zipkin Tracing" android:key="debug_force_zipkin_tracing" android:summary="Look for traceID in TwitterAPI logs" />
+            <CheckBoxPreference android:title="Lock Portrait Mode" android:key="debug_lock_portrait" android:summary="Lock portrait mode (requires restart)" />
+            <Preference android:title="Check phone verification status" android:key="check_phone" />
+            <Preference android:title="Logged in MT" android:key="logged_in_mt" />
+            <Preference android:title="Phone Ownership" android:key="phone_ownership" />
+            <Preference android:title="Show Bouncer" android:key="bouncer" />
+            <com.twitter.android.widget.TvTimelineLaunchDebugPreference android:title="Launch TV Timeline" android:key="launch_tv_timeline" />
+            <Preference android:title="Logcat Viewer" android:key="logcat_viewer" />
+            <Preference android:title="Show Active Hashflags" android:key="debug_show_hashflags" />
+            <Preference android:title="Trigger Home Timeline sync" android:key="debug_home_timeline_sync" />
+            <CheckBoxPreference android:title="Extra dtab entries enabled" android:key="extra_dtab_enabled" />
+            <EditTextPreference android:title="Set extra dtab entries" android:key="extra_dtab" android:dialogMessage="See go/dtaboverride for usage/info" android:inputType="textMultiLine|textNoSuggestions" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Debug Scribing" android:key="pref_debug_scribing">
+            <com.twitter.android.widget.ScribeUrlPreference android:title="Set scribe endpoint" android:positiveButtonText="Apply changes" />
+            <com.twitter.android.widget.ScribeThriftUrlPreference android:title="Set thrift scribe endpoint" android:positiveButtonText="Apply changes" />
+            <CheckBoxPreference android:title="Debug Scribe" android:key="debug_scribe" android:summary="Turn on debug scribe mode" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Debug Push Notifications" android:key="pref_debug_push">
+            <Preference android:title="Simulate logged in push" android:key="simulate_logged_in_push" />
+            <Preference android:title="Simulate logged out push" android:key="simulate_logged_out_push" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Debug Cards" android:key="pref_debug_cards">
+            <Preference android:title="Delete cached tweets" android:key="debug_delete_cached_tweets" />
+            <CheckBoxPreference android:title="Show Catfood Cards" android:key="debug_show_catfood_cards" android:summary="Show cards that are still in staging" />
+            <CheckBoxPreference android:title="Show Card Overlay" android:key="debug_show_card_overlay" android:summary="Show debug information on top of a card" />
+            <EditTextPreference android:title="Local Card Developer Portal Host" android:key="debug_card_previewer_host" android:defaultValue="10.0.2.2" android:dialogMessage="Type in only the hostname portion of the URL (no scheme or port)" android:inputType="textUri" />
+            <EditTextPreference android:title="Commerce Card Host" android:key="debug_card_commerce_host_v2" android:defaultValue="" android:dialogMessage="Type in the hostname of the Commerce host" android:inputType="textUri" />
+            <EditTextPreference android:title="Commerce Card TPay Host" android:key="debug_card_tpay_host_v2" android:defaultValue="" android:dialogMessage="Type in the hostname of the Commerce TPay host" android:inputType="textUri" />
+            <Preference android:title="Start Commerce Product Previewer" android:key="debug_start_product_previewer" />
+            <Preference android:title="Start Card Previewer" android:key="debug_start_card_previewer" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Debug Crashlytics" android:key="pref_debug_crashlytics">
+            <Preference android:title="Fatal Exception" android:key="debug_crash_fatal" />
+            <Preference android:title="Non-Fatal Exception" android:key="debug_crash_nonfatal" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Debug Video" android:key="pref_debug_video">
+            <ListPreference android:entries="@array/video_multi_bitrate_network_type_labels" android:title="Video Multi-bitrate network type" android:key="video_multi_bitrate_network_type" android:summary="Select network type to be used when requesting videos." android:defaultValue="" android:entryValues="@array/video_multi_bitrate_network_type_values" />
+            <CheckBoxPreference android:title="Disable video control hiding" android:key="video_disable_control_hiding" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Debug Dock" android:key="pref_debug_dock">
+            <Preference android:title="Create a new Dock" android:key="show_dock" android:summary="Creates a new empty Dock. Return to home timeline to see it." />
+            <CheckBoxPreference android:title="Show Dock touch targets" android:key="dock_show_touch_targets" android:summary="For any new dock." />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Launch UX" android:key="pref_debug_launch_ux">
+            <Preference android:title="Start Welcome Flow" android:key="start_nux" />
+            <com.twitter.android.widget.DeepLinkPreference android:title="Launch Deep Link" android:positiveButtonText="Launch" />
+            <Preference android:title="Start Highlights" android:key="start_highlights" />
+            <Preference android:title="Start Highlights w/ NUX Flow" android:key="start_highlights_nux" />
+            <Preference android:title="Start Highlights w/ Empty State" android:key="start_highlights_empty" />
+            <Preference android:title="Signup #phone100 Flow" android:key="pref_signup_phone100" />
+            <Preference android:title="Signup #phone100 password entry fragment" android:key="pref_signup_phone100_password" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

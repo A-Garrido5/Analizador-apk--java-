@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.library.widget.AspectRatioFrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" twitter:aspect_ratio="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.android.moments.ui.FillCropFrameLayout android:id="@id/media_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.twitter.library.media.widget.MediaImageView android:id="@id/primary_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.twitter.android.moments.ui.FillCropFrameLayout>
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/moments_guide_media_overlay" />
+</com.twitter.library.widget.AspectRatioFrameLayout>

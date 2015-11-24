@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divider_thickness">2.0px</dimen>
+    <dimen name="message_avatar_top_margin">2.0dip</dimen>
+    <dimen name="photo_row_height">140.0dip</dimen>
+    <dimen name="card_font_size_micro">12.0sp</dimen>
+    <dimen name="card_font_size_small">14.0sp</dimen>
+    <dimen name="font_size_large">18.0sp</dimen>
+    <dimen name="font_size_medium">16.0sp</dimen>
+    <dimen name="font_size_micro">12.0sp</dimen>
+    <dimen name="font_size_small">14.0sp</dimen>
+    <dimen name="font_size_xlarge">20.0sp</dimen>
+    <dimen name="font_size_xmicro">10.0sp</dimen>
+    <dimen name="font_size_xxlarge">22.0sp</dimen>
+    <dimen name="pac_height">26.0dip</dimen>
+    <dimen name="pac_margin">8.0dip</dimen>
+    <dimen name="section_divider_height">10.0px</dimen>
+</resources>

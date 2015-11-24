@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badge_item_count">
+        <item quantity="other">Nové položky (%d)</item>
+        <item quantity="one">1 nová položka</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">Dny (%d)</item>
+        <item quantity="one">1 den</item>
+    </plurals>
+    <plurals name="followed_by_count">
+        <item quantity="other">Tohoto uživatele sleduje %1$s a další uživatelé (%2$d).</item>
+        <item quantity="one">Tohoto uživatele sleduje %1$s a ještě 1 uživatel.</item>
+    </plurals>
+    <plurals name="in_reply_to_name_and_count">
+        <item quantity="other">Odpověď uživateli %1$s a %2$d%3$sdalším</item>
+        <item quantity="one">Odpověď uživateli %1$s a 1%3$sdalšímu</item>
+    </plurals>
+    <plurals name="magic_recs_favorite_notif">
+        <item quantity="other">%1$s a lidé, které sledujete (%2$d), právě označili jako oblíbený.</item>
+        <item quantity="one">%1$s a ještě %2$d člověk, kterého sledujete, právě označili jako oblíbený.</item>
+    </plurals>
+    <plurals name="magic_recs_follow_notif">
+        <item quantity="other">%1$s a lidé, které sledujete (%2$d), právě začali sledovat.</item>
+        <item quantity="one">%1$s a ještě %2$d člověk, kterého sledujete, právě začali sledovat.</item>
+    </plurals>
+    <plurals name="magic_recs_retweet_notif">
+        <item quantity="other">%1$s a lidé, které sledujete (%2$d), právě retweetnuli.</item>
+        <item quantity="one">%1$s a %2$d člověk, kterého sledujete, právě retweetnuli.</item>
+    </plurals>
+    <plurals name="media_tag_prompt">
+        <item quantity="other">Kdo je na těchto fotkách?</item>
+        <item quantity="one">Kdo je na této fotce?</item>
+    </plurals>
+    <plurals name="media_tag_remaining">
+        <item quantity="other">Počet lidí, které ještě můžete označit: %d</item>
+        <item quantity="one">Označit můžete maximálně 1 dalšího člověka.</item>
+    </plurals>
+    <plurals name="media_tag_tagged">
+        <item quantity="other">Označení lidé (%d)</item>
+        <item quantity="one">1 označený člověk</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">Měsíce (%d)</item>
+        <item quantity="one">1 měsíc</item>
+    </plurals>
+    <plurals name="new_tweet_count">
+        <item quantity="other">Nové tweety (%d)</item>
+        <item quantity="one">1 nový tweet</item>
+    </plurals>
+    <plurals name="photo_stat_label_favorites">
+        <item quantity="other">označení jako oblíbené</item>
+        <item quantity="one">označení jako oblíbené</item>
+    </plurals>
+    <plurals name="photo_stat_label_replies">
+        <item quantity="other">odpovědi</item>
+        <item quantity="one">odpověď</item>
+    </plurals>
+    <plurals name="photo_stat_label_retweets">
+        <item quantity="other">retweety</item>
+        <item quantity="one">retweetnutí</item>
+    </plurals>
+    <plurals name="profile_followers_count_label">
+        <item quantity="other">Sledující</item>
+        <item quantity="one">Sledující</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_favorites">
+        <item quantity="other">%s – oblíbené</item>
+        <item quantity="one">%s – oblíbený</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_media">
+        <item quantity="other">Fotky: %s</item>
+        <item quantity="one">%s fotka</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_timeline">
+        <item quantity="other">%s – tweety</item>
+        <item quantity="one">%s – tweet</item>
+    </plurals>
+    <plurals name="profile_tweets_count_label">
+        <item quantity="other">Tweety</item>
+        <item quantity="one">Tweet</item>
+    </plurals>
+    <plurals name="replies_count">
+        <item quantity="other">Další odpovědi (%1$d)</item>
+        <item quantity="one">1 další odpověď</item>
+    </plurals>
+    <plurals name="search_user_name_pile">
+        <item quantity="other">%1$s, %2$s a další</item>
+        <item quantity="one">%1$s a další</item>
+    </plurals>
+    <plurals name="selected_image_count">
+        <item quantity="other">Vybráno: %d</item>
+        <item quantity="one">Vybráno: 1</item>
+    </plurals>
+    <plurals name="settings_notif_tweets_count">
+        <item quantity="other">Lidé (%d)</item>
+        <item quantity="one">1 osoba</item>
+    </plurals>
+    <plurals name="social_fav_and_retweets_count">
+        <item quantity="other">%1$s označení jako oblíbený a %2$s retweetnutí</item>
+        <item quantity="one">%1$s označení jako oblíbený a 1 retweetnutí</item>
+    </plurals>
+    <plurals name="social_fav_count">
+        <item quantity="other">%1$s označení jako oblíbený</item>
+        <item quantity="one">1 označení jako oblíbený</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user">
+        <item quantity="other">%1$s a další uživatelé (%2$d), které sledujete, si tento tweet označili jako oblíbený</item>
+        <item quantity="one">%1$s a 1 další uživatel, kterého sledujete, si tento tweet označili jako oblíbený</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user_accessibility_description">
+        <item quantity="other">Označeno jako oblíbené uživatelem %1$s a %2$d dalšími, které sledujete</item>
+        <item quantity="one">Označeno jako oblíbené uživatelem %1$s a 1 dalším, kterého sledujete</item>
+    </plurals>
+    <plurals name="social_follow_and_follow_and_others">
+        <item quantity="other">%1$s, %2$s a další (%3$d) sledují</item>
+        <item quantity="one">%1$s, %2$s a 1 další sledují</item>
+    </plurals>
+    <plurals name="social_proof_in_reply_multiple_names_and_count">
+        <item quantity="other">Odpověď uživatelům %1$s, %2$s a %3$d dalším</item>
+        <item quantity="one">Odpověď uživatelům %1$s, %2$s a 1 dalšímu</item>
+    </plurals>
+    <plurals name="social_retweet_and_favs_count">
+        <item quantity="other">%1$s retweetnutí a %2$s označení jako oblíbený</item>
+        <item quantity="one">%1$s retweetnutí a 1 označení jako oblíbený</item>
+    </plurals>
+    <plurals name="social_retweet_count">
+        <item quantity="other">%1$s retweetnutí</item>
+        <item quantity="one">1 retweetnutí</item>
+    </plurals>
+    <plurals name="stat_label_favorites">
+        <item quantity="other">OZNAČENÍ JAKO OBLÍBENÉ</item>
+        <item quantity="one">OBLÍBENÝ</item>
+    </plurals>
+    <plurals name="stat_label_replies">
+        <item quantity="other">ODPOVĚDI</item>
+        <item quantity="one">ODPOVĚĎ</item>
+    </plurals>
+    <plurals name="stat_label_retweets">
+        <item quantity="other">RETWEETY</item>
+        <item quantity="one">RETWEETNUTÍ</item>
+    </plurals>
+    <plurals name="stat_label_views">
+        <item quantity="other">ZOBRAZENÍ</item>
+        <item quantity="one">ZOBRAZENÍ</item>
+    </plurals>
+    <plurals name="story_proof_author_follow_by">
+        <item quantity="other">Sledují uživatelé @%1$s a další (%2$d).</item>
+        <item quantity="one">Sledují uživatelé @%1$s a další (%2$d).</item>
+    </plurals>
+    <plurals name="story_proof_favorite_by">
+        <item quantity="other">Označili jako oblíbený uživatelé @%1$s a další (%2$d).</item>
+        <item quantity="one">Označili jako oblíbený uživatelé @%1$s a další (%2$d).</item>
+    </plurals>
+    <plurals name="story_proof_follow_by">
+        <item quantity="other">Nedávno začali sledovat uživatelé @%1$s a další (%2$d).</item>
+        <item quantity="one">Nedávno začali sledovat uživatelé @%1$s a další (%2$d).</item>
+    </plurals>
+    <plurals name="story_proof_retweet_by">
+        <item quantity="other">Retweetnuli uživatelé @%1$s a další (%2$d).</item>
+        <item quantity="one">Retweetnuli uživatelé @%1$s a další (%2$d).</item>
+    </plurals>
+    <plurals name="story_proof_shared_by">
+        <item quantity="other">O tomto mluví uživatelé @%1$s a další (%2$d).</item>
+        <item quantity="one">O tomto mluví uživatelé @%1$s a další (%2$d).</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="other">%d d</item>
+        <item quantity="one">1 den</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="other">PŘED %d DNY</item>
+        <item quantity="one">VČERA</item>
+    </plurals>
+    <plurals name="time_hours">
+        <item quantity="other">%d h</item>
+        <item quantity="one">1 h</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="other">PŘED %d HODINAMI</item>
+        <item quantity="one">PŘED HODINOU</item>
+    </plurals>
+    <plurals name="time_mins">
+        <item quantity="other">%d min</item>
+        <item quantity="one">1 min</item>
+    </plurals>
+    <plurals name="time_mins_ago">
+        <item quantity="other">PŘED %d MINUTAMI</item>
+        <item quantity="one">PŘED MINUTOU</item>
+    </plurals>
+    <plurals name="time_secs">
+        <item quantity="other">%d s</item>
+        <item quantity="one">1 s</item>
+    </plurals>
+    <plurals name="typing_users_count">
+        <item quantity="other">Píše několik lidí (%d).</item>
+        <item quantity="one">Píše 1 člověk.</item>
+    </plurals>
+    <plurals name="users_fast_follow_text">
+        <item quantity="other">A další sledující pomocí SMS (%1$s)</item>
+        <item quantity="one">A %1$s další sledující pomocí SMS</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="other">Týdny (%d)</item>
+        <item quantity="one">1 týden</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">Roky (%d)</item>
+        <item quantity="one">1 rok</item>
+    </plurals>
+</resources>

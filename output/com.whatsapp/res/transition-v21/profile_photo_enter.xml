@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:transitionOrdering="sequential"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <transitionSet android:duration="300">
+        <changeBounds />
+        <changeTransform />
+        <changeImageTransform />
+    </transitionSet>
+    <transitionSet android:duration="120">
+        <transition android:transitionVisibilityMode="mode_in" class="com.whatsapp.RevealTransition" />
+        <targets>
+            <target android:targetId="@id/picture" />
+        </targets>
+    </transitionSet>
+</transitionSet>

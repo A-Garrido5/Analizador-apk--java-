@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.library.widget.SlidingPanel android:id="@id/sliding_notification_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" twitter:panelHeaderLayoutId="@layout/notification_filter_header" twitter:panelContentLayoutId="@layout/notification_filter_choices"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/top_toolbar" />
+        <RelativeLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+    </RelativeLayout>
+</com.twitter.library.widget.SlidingPanel>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_backup" android:key="settings_gdrive"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.whatsapp.preference.WaPreference android:title="@string/settings_gdrive_backup_now_title" android:key="msgstore_backup_now" />
+    <PreferenceCategory android:title="@string/settings_gdrive_category_title" android:key="google_drive_backup">
+        <com.whatsapp.preference.WaListPreference android:entries="@array/gdrive_backup_frequency_options" android:title="@string/settings_gdrive_backup_options_title" android:key="interface_gdrive_backup_frequency" android:defaultValue="0" android:entryValues="@array/gdrive_backup_frequency_options_values" />
+        <com.whatsapp.preference.WaPreference android:title="@string/settings_gdrive_account_name" android:key="gdrive_account_name" />
+        <com.whatsapp.preference.WaListPreference android:entries="@array/gdrive_backup_network_settings_options" android:title="@string/settings_gdrive_network_settings_title" android:key="interface_gdrive_backup_network_setting" android:defaultValue="0" android:entryValues="@array/gdrive_backup_network_settings_options_values" />
+        <com.whatsapp.preference.WaPreference android:selectable="false" android:key="gdrive_user_notification" />
+    </PreferenceCategory>
+</PreferenceScreen>

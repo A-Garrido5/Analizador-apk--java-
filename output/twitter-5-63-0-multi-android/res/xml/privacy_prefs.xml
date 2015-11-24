@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="privacy_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:title="@string/settings_protected_title" android:key="protected" android:summary="@string/settings_protected_summary" />
+    <com.twitter.android.widget.CheckBoxListPreference android:entries="@array/media_tagging_setting_entries" android:title="@string/settings_media_tagging_title" android:key="allow_media_tagging" android:defaultValue="none" android:entryValues="@array/media_tagging_setting_values" twitter:offValue="none" />
+    <CheckBoxPreference android:title="@string/settings_discoverable_by_email_title" android:key="discoverable_by_email" android:summary="@string/settings_discoverable_by_email_summary" />
+    <CheckBoxPreference android:title="@string/settings_discoverable_by_phone_title" android:key="discoverable_by_mobile_phone" android:summary="@string/settings_discoverable_by_phone_summary" />
+    <Preference android:title="@string/settings_personalized_ads_title" android:key="personalized_ads" android:summary="" />
+    <CheckBoxPreference android:title="@string/receive_dms_from_anyone" android:key="allow_dms_from" android:summary="@string/receive_dms_from_anyone_summary" />
+</PreferenceScreen>

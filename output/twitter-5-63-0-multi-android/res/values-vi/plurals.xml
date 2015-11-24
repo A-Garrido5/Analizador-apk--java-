@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badge_item_count">
+        <item quantity="other">%d mục mới</item>
+        <item quantity="one">1 mục mới</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d ngày</item>
+        <item quantity="one">1 ngày</item>
+    </plurals>
+    <plurals name="followed_by_count">
+        <item quantity="other">Được theo dõi bởi %1$s và %2$d người khác</item>
+        <item quantity="one">Được theo dõi bởi %1$s và 1 người khác</item>
+    </plurals>
+    <plurals name="in_reply_to_name_and_count">
+        <item quantity="other">Trả lời %1$s và %2$d%3$sngười khác</item>
+        <item quantity="one">Trả lời %1$s và 1%3$sngười khác</item>
+    </plurals>
+    <plurals name="magic_recs_favorite_notif">
+        <item quantity="other">Vừa được yêu thích bởi %1$s và %2$d người bạn theo dõi</item>
+        <item quantity="one">Vừa được yêu thích bởi %1$s và %2$d người bạn theo dõi</item>
+    </plurals>
+    <plurals name="magic_recs_follow_notif">
+        <item quantity="other">Vừa được theo dõi bởi %1$s và %2$d người bạn theo dõi</item>
+        <item quantity="one">Vừa được theo dõi bởi %1$s và %2$d người bạn theo dõi</item>
+    </plurals>
+    <plurals name="magic_recs_retweet_notif">
+        <item quantity="other">Vừa được tweet lại bởi %1$s và %2$d người bạn theo dõi</item>
+        <item quantity="one">Vừa được tweet lại bởi %1$s và %2$d người bạn theo dõi</item>
+    </plurals>
+    <plurals name="media_tag_prompt">
+        <item quantity="other">Ai trong những ảnh này?</item>
+        <item quantity="one">Ai trong ảnh này?</item>
+    </plurals>
+    <plurals name="media_tag_remaining">
+        <item quantity="other">Đánh dấu tối đa %d người nữa.</item>
+        <item quantity="one">Đánh dấu tối đa 1 người nữa.</item>
+    </plurals>
+    <plurals name="media_tag_tagged">
+        <item quantity="other">%d người được đánh dấu</item>
+        <item quantity="one">1 người được đánh dấu</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d tháng</item>
+        <item quantity="one">1 tháng</item>
+    </plurals>
+    <plurals name="new_tweet_count">
+        <item quantity="other">%d Tweet Mới</item>
+        <item quantity="one">1 Tweet Mới</item>
+    </plurals>
+    <plurals name="photo_stat_label_favorites">
+        <item quantity="other">yêu thích</item>
+        <item quantity="one">yêu thích</item>
+    </plurals>
+    <plurals name="photo_stat_label_replies">
+        <item quantity="other">trả lời</item>
+        <item quantity="one">trả lời</item>
+    </plurals>
+    <plurals name="photo_stat_label_retweets">
+        <item quantity="other">tweet lại</item>
+        <item quantity="one">tweet lại</item>
+    </plurals>
+    <plurals name="profile_followers_count_label">
+        <item quantity="other">Người theo dõi</item>
+        <item quantity="one">Người theo dõi</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_favorites">
+        <item quantity="other">Yêu thích của %s</item>
+        <item quantity="one">%s Yêu thích</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_media">
+        <item quantity="other">%s Ảnh</item>
+        <item quantity="one">%s Ảnh</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_timeline">
+        <item quantity="other">Tweet của %s</item>
+        <item quantity="one">%s Tweet</item>
+    </plurals>
+    <plurals name="profile_tweets_count_label">
+        <item quantity="other">Tweet</item>
+        <item quantity="one">Tweet</item>
+    </plurals>
+    <plurals name="replies_count">
+        <item quantity="other">Thêm %1$d trả lời</item>
+        <item quantity="one">Thêm 1 trả lời</item>
+    </plurals>
+    <plurals name="search_user_name_pile">
+        <item quantity="other">%1$s, %2$s và nhiều hơn</item>
+        <item quantity="one">%1$s và nhiều hơn</item>
+    </plurals>
+    <plurals name="selected_image_count">
+        <item quantity="other">Đã chọn %d</item>
+        <item quantity="one">Đã chọn 1</item>
+    </plurals>
+    <plurals name="settings_notif_tweets_count">
+        <item quantity="other">%d người</item>
+        <item quantity="one">1 người</item>
+    </plurals>
+    <plurals name="social_fav_and_retweets_count">
+        <item quantity="other">%1$s yêu thích và %2$s tweet lại</item>
+        <item quantity="one">%1$s yêu thích và 1 tweet lại</item>
+    </plurals>
+    <plurals name="social_fav_count">
+        <item quantity="other">%1$s yêu thích</item>
+        <item quantity="one">1 yêu thích</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user">
+        <item quantity="other">%1$s và %2$d người khác mà bạn theo dõi đã yêu thích</item>
+        <item quantity="one">%1$s và 1 người khác mà bạn theo dõi đã yêu thích</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user_accessibility_description">
+        <item quantity="other">Được yêu thích bởi %1$s và %2$d người khác mà bạn theo dõi</item>
+        <item quantity="one">Được yêu thích bởi %1$s và 1 người khác mà bạn theo dõi</item>
+    </plurals>
+    <plurals name="social_follow_and_follow_and_others">
+        <item quantity="other">%1$s, %2$s, và %3$d người khác theo dõi</item>
+        <item quantity="one">%1$s, %2$s, và 1 người khác theo dõi</item>
+    </plurals>
+    <plurals name="social_proof_in_reply_multiple_names_and_count">
+        <item quantity="other">Trả lời %1$s, %2$s và %3$d người khác</item>
+        <item quantity="one">Trả lời %1$s, %2$s và 1 người khác</item>
+    </plurals>
+    <plurals name="social_retweet_and_favs_count">
+        <item quantity="other">%1$s tweet lại và %2$s yêu thích</item>
+        <item quantity="one">%1$s tweet lại và 1 yêu thích</item>
+    </plurals>
+    <plurals name="social_retweet_count">
+        <item quantity="other">%1$s tweet lại</item>
+        <item quantity="one">1 tweet lại</item>
+    </plurals>
+    <plurals name="stat_label_favorites">
+        <item quantity="other">YÊU THÍCH</item>
+        <item quantity="one">YÊU THÍCH</item>
+    </plurals>
+    <plurals name="stat_label_replies">
+        <item quantity="other">TRẢ LỜI</item>
+        <item quantity="one">TRẢ LỜI</item>
+    </plurals>
+    <plurals name="stat_label_retweets">
+        <item quantity="other">TWEET LẠI</item>
+        <item quantity="one">TWEET LẠI</item>
+    </plurals>
+    <plurals name="stat_label_views">
+        <item quantity="other">LƯỢT XEM</item>
+        <item quantity="one">LUỢT XEM</item>
+    </plurals>
+    <plurals name="story_proof_author_follow_by">
+        <item quantity="other">\@%1$s và %2$d người khác theo dõi</item>
+        <item quantity="one">\@%1$s và %2$d người khác theo dõi</item>
+    </plurals>
+    <plurals name="story_proof_favorite_by">
+        <item quantity="other">\@%1$s và %2$d người khác đã yêu thích</item>
+        <item quantity="one">\@%1$s và %2$d người khác đã yêu thích</item>
+    </plurals>
+    <plurals name="story_proof_follow_by">
+        <item quantity="other">\@%1$s và %2$d người khác đã theo dõi gần đây</item>
+        <item quantity="one">\@%1$s và %2$d người khác đã theo dõi gần đây</item>
+    </plurals>
+    <plurals name="story_proof_retweet_by">
+        <item quantity="other">\@%1$s và %2$d người khác đã Tweet lại</item>
+        <item quantity="one">\@%1$s và %2$d người khác đã Tweet lại</item>
+    </plurals>
+    <plurals name="story_proof_shared_by">
+        <item quantity="other">\@%1$s và %2$d người khác đang nói về việc này</item>
+        <item quantity="one">\@%1$s và %2$d người khác đang nói về việc này</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="other">%dd</item>
+        <item quantity="one">1d</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="other">%d NGÀY TRƯỚC</item>
+        <item quantity="one">1 NGÀY TRƯỚC</item>
+    </plurals>
+    <plurals name="time_hours">
+        <item quantity="other">%d giờ</item>
+        <item quantity="one">1 giờ</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="other">%d GIỜ TRƯỚC</item>
+        <item quantity="one">1 GIỜ TRƯỚC</item>
+    </plurals>
+    <plurals name="time_mins">
+        <item quantity="other">%d tháng</item>
+        <item quantity="one">1 phút</item>
+    </plurals>
+    <plurals name="time_mins_ago">
+        <item quantity="other">%d PHÚT TRƯỚC</item>
+        <item quantity="one">1 PHÚT TRƯỚC</item>
+    </plurals>
+    <plurals name="time_secs">
+        <item quantity="other">%d giây</item>
+        <item quantity="one">1 giây</item>
+    </plurals>
+    <plurals name="typing_users_count">
+        <item quantity="other">%d người đang gõ</item>
+        <item quantity="one">1 người đang gõ</item>
+    </plurals>
+    <plurals name="users_fast_follow_text">
+        <item quantity="other">+%1$s người theo dõi SMS nữa</item>
+        <item quantity="one">+%1$s người theo dõi SMS nữa</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="other">%d tuần</item>
+        <item quantity="one">1 tuần</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d năm</item>
+        <item quantity="one">1 năm</item>
+    </plurals>
+</resources>

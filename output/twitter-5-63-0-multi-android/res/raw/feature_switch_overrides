@@ -1,0 +1,7 @@
+{
+    "config" : {
+        "global_override_sample" : {
+          "value" : "overriden_value"
+        }
+    }
+}

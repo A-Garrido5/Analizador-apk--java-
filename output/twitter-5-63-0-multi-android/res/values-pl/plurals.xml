@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badge_item_count">
+        <item quantity="other">%d nowych pozycji</item>
+        <item quantity="one">1 nowa pozycja</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d dni</item>
+        <item quantity="one">1 dzień</item>
+    </plurals>
+    <plurals name="followed_by_count">
+        <item quantity="other">Obserwowany przez @%1$s i @%2$d innych</item>
+        <item quantity="one">Obserwowany przez %1$s oraz 1 inną osobę</item>
+    </plurals>
+    <plurals name="in_reply_to_name_and_count">
+        <item quantity="other">W odpowiedzi do %1$s i %2$d%3$sinnych</item>
+        <item quantity="one">W odpowiedzi do %1$s i jeszcze 1%3$sosoby</item>
+    </plurals>
+    <plurals name="magic_recs_favorite_notif">
+        <item quantity="other">Dodany do ulubionych przez %1$s i %2$d inne osoby, które obserwujesz</item>
+        <item quantity="one">Dodany do ulubionych przez %1$s i jeszcze %2$d osobę, którą obserwujesz</item>
+    </plurals>
+    <plurals name="magic_recs_follow_notif">
+        <item quantity="other">Obserwowany przez %1$s i %2$d innych osób, które obserwujesz</item>
+        <item quantity="one">Obserwowany przez %1$s i jeszcze %2$d osobę, którą obserwujesz</item>
+    </plurals>
+    <plurals name="magic_recs_retweet_notif">
+        <item quantity="other">Podany dalej przez %1$s i %2$d innych osób, które obserwujesz</item>
+        <item quantity="one">Podany dalej przez %1$s i %2$d innych osób, które obserwujesz</item>
+    </plurals>
+    <plurals name="media_tag_prompt">
+        <item quantity="other">Kto jest na tych zdjęciach?</item>
+        <item quantity="one">Kto jest na tym zdjęciu?</item>
+    </plurals>
+    <plurals name="media_tag_remaining">
+        <item quantity="other">Oznacz jeszcze maksymalnie %d osób.</item>
+        <item quantity="one">Oznacz jeszcze maksymalnie jedną osobę.</item>
+    </plurals>
+    <plurals name="media_tag_tagged">
+        <item quantity="other">Oznaczone osoby: %d</item>
+        <item quantity="one">1 oznaczona osoba</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d miesięcy</item>
+        <item quantity="one">1 miesiąc</item>
+    </plurals>
+    <plurals name="new_tweet_count">
+        <item quantity="other">%d nowych tweetów</item>
+        <item quantity="one">1 nowy tweet</item>
+    </plurals>
+    <plurals name="photo_stat_label_favorites">
+        <item quantity="other">dodanych do ulubionych</item>
+        <item quantity="one">dodany do ulubionych</item>
+    </plurals>
+    <plurals name="photo_stat_label_replies">
+        <item quantity="other">odpowiedzi</item>
+        <item quantity="one">odpowiedź</item>
+    </plurals>
+    <plurals name="photo_stat_label_retweets">
+        <item quantity="other">podanych dalej</item>
+        <item quantity="one">podany dalej</item>
+    </plurals>
+    <plurals name="profile_followers_count_label">
+        <item quantity="other">Obserwujący</item>
+        <item quantity="one">Obserwujący</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_favorites">
+        <item quantity="other">Ulubione: %s</item>
+        <item quantity="one">%s ulubiony</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_media">
+        <item quantity="other">Zdjęcia: %s</item>
+        <item quantity="one">Zdjęcie: %s</item>
+    </plurals>
+    <plurals name="profile_toolbar_subtitle_timeline">
+        <item quantity="other">Tweety: %s</item>
+        <item quantity="one">Tweety: %s</item>
+    </plurals>
+    <plurals name="profile_tweets_count_label">
+        <item quantity="other">Tweety</item>
+        <item quantity="one">Tweet</item>
+    </plurals>
+    <plurals name="replies_count">
+        <item quantity="other">%1$d odpowiedzi więcej</item>
+        <item quantity="one">1 odpowiedź więcej</item>
+    </plurals>
+    <plurals name="search_user_name_pile">
+        <item quantity="other">%1$s, %2$s i więcej</item>
+        <item quantity="one">%1$s i więcej</item>
+    </plurals>
+    <plurals name="selected_image_count">
+        <item quantity="other">Wybrano %d</item>
+        <item quantity="one">Wybrano 1</item>
+    </plurals>
+    <plurals name="settings_notif_tweets_count">
+        <item quantity="other">%d osób</item>
+        <item quantity="one">1 osoba</item>
+    </plurals>
+    <plurals name="social_fav_and_retweets_count">
+        <item quantity="other">%1$s ulubionych i %2$s podane dalej</item>
+        <item quantity="one">%1$s ulubionych i 1 podany dalej</item>
+    </plurals>
+    <plurals name="social_fav_count">
+        <item quantity="other">%1$s ulubionych</item>
+        <item quantity="one">1 ulubiony</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user">
+        <item quantity="other">%1$s i %2$d innych, których obserwujesz dodali do ulubionych</item>
+        <item quantity="one">%1$s i jeszcze 1 obserwowana przez Ciebie osoba dodali do ulubionych</item>
+    </plurals>
+    <plurals name="social_fav_count_with_user_accessibility_description">
+        <item quantity="other">Dodany do ulubionych przez %1$s i %2$d innych, których obserwujesz</item>
+        <item quantity="one">Dodany do ulubionych przez %1$s i jeszcze jedną osobę, którą obserwujesz</item>
+    </plurals>
+    <plurals name="social_follow_and_follow_and_others">
+        <item quantity="other">Obserwują %1$s, %2$s i jeszcze kilka osób (%3$d)</item>
+        <item quantity="one">Obserwują %1$s, %2$s i jeszcze 1 osoba</item>
+    </plurals>
+    <plurals name="social_proof_in_reply_multiple_names_and_count">
+        <item quantity="other">W odpowiedzi do %1$s, %2$s i %3$d innych</item>
+        <item quantity="one">W odpowiedzi do %1$s, %2$s i jeszcze 1 osoby</item>
+    </plurals>
+    <plurals name="social_retweet_and_favs_count">
+        <item quantity="other">%1$s podanych dalej i %2$s ulubionych</item>
+        <item quantity="one">%1$s podanych dalej i 1 ulubiony</item>
+    </plurals>
+    <plurals name="social_retweet_count">
+        <item quantity="other">%1$s podanych dalej</item>
+        <item quantity="one">1 podany dalej</item>
+    </plurals>
+    <plurals name="stat_label_favorites">
+        <item quantity="other">ULUBIONE</item>
+        <item quantity="one">ULUBIONY</item>
+    </plurals>
+    <plurals name="stat_label_replies">
+        <item quantity="other">ODPOWIEDZI</item>
+        <item quantity="one">ODPOWIEDŹ</item>
+    </plurals>
+    <plurals name="stat_label_retweets">
+        <item quantity="other">PODANE DALEJ</item>
+        <item quantity="one">PODANY DALEJ</item>
+    </plurals>
+    <plurals name="stat_label_views">
+        <item quantity="other">WYŚWIETLEŃ</item>
+        <item quantity="one">WYŚWIETLENIE</item>
+    </plurals>
+    <plurals name="story_proof_author_follow_by">
+        <item quantity="other">\@%1$s i jeszcze %2$d innych obserwują</item>
+        <item quantity="one">\@%1$s i jeszcze %2$d osoba obserwują</item>
+    </plurals>
+    <plurals name="story_proof_favorite_by">
+        <item quantity="other">\@%1$s i %2$d innych dodało do ulubionych</item>
+        <item quantity="one">\@%1$s i jeszcze %2$d osoba dodali do ulubionych</item>
+    </plurals>
+    <plurals name="story_proof_follow_by">
+        <item quantity="other">\@%1$s i %2$d innych zaczęło obserwować</item>
+        <item quantity="one">\@%1$s i jeszcze %2$d osoba zaczęli obserwować</item>
+    </plurals>
+    <plurals name="story_proof_retweet_by">
+        <item quantity="other">\@%1$s i %2$d innych podało dalej</item>
+        <item quantity="one">\@%1$s i jeszcze %2$d osoba podali dalej</item>
+    </plurals>
+    <plurals name="story_proof_shared_by">
+        <item quantity="other">\@%1$s i %2$d innych mówi o tym</item>
+        <item quantity="one">\@%1$s i jeszcze %2$d osoba mówią o tym</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="other">%d dni</item>
+        <item quantity="one">1 dzień</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="other">%d DNI TEMU</item>
+        <item quantity="one">1 DZIEŃ TEMU</item>
+    </plurals>
+    <plurals name="time_hours">
+        <item quantity="other">%d godz.</item>
+        <item quantity="one">1 godz.</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="other">%d GODZIN TEMU</item>
+        <item quantity="one">1 GODZINĘ TEMU</item>
+    </plurals>
+    <plurals name="time_mins">
+        <item quantity="other">%d min</item>
+        <item quantity="one">1 min.</item>
+    </plurals>
+    <plurals name="time_mins_ago">
+        <item quantity="other">%d MINUT TEMU</item>
+        <item quantity="one">MINUTĘ TEMU</item>
+    </plurals>
+    <plurals name="time_secs">
+        <item quantity="other">%d sek.</item>
+        <item quantity="one">1 sek.</item>
+    </plurals>
+    <plurals name="typing_users_count">
+        <item quantity="other">%d osób pisze</item>
+        <item quantity="one">1 osoba pisze</item>
+    </plurals>
+    <plurals name="users_fast_follow_text">
+        <item quantity="other">jeszcze %1$s obserwujących przez SMS</item>
+        <item quantity="one">jeszcze %1$s obserwujący przez SMS</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="other">%d tygodni</item>
+        <item quantity="one">1 tydzień</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">%d lat</item>
+        <item quantity="one">1 rok</item>
+    </plurals>
+</resources>

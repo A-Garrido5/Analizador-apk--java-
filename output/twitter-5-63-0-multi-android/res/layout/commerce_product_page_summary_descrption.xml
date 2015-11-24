@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.android.commerce.widget.form.ExpandableTextView android:textSize="@dimen/commerce_font_size_large" android:textColor="@color/deep_gray" android:layout_gravity="left" android:id="@id/commerce_item_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lorem ipsum dolor sit amet asdf asdf asdf asdf asdf" android:includeFontPadding="false" android:lineSpacingMultiplier="1.2" twitter:lineTrimLength="3" twitter:lineTrimMaxThreshold="4" />
+</LinearLayout>

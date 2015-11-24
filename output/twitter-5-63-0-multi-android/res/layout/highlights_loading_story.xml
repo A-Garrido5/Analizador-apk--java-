@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_title_recent_logo" android:contentDescription="@null" />
+    <ProgressBar android:layout_gravity="center" android:layout_width="@dimen/highlights_progress_diameter" android:layout_height="@dimen/highlights_progress_diameter" android:indeterminateDrawable="@drawable/highlights_loading_progress" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.internal.android.widget.TypefacesTextView android:textSize="12.0sp" android:typeface="monospace" android:layout_gravity="center_vertical" android:id="@id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="23:59:59.999" />
+    <com.twitter.internal.android.widget.TypefacesTextView android:id="@id/entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="http://www.twitter.com/foo/bar?baz=buzz" android:drawableLeft="@drawable/ic_card_warning" />
+</LinearLayout>

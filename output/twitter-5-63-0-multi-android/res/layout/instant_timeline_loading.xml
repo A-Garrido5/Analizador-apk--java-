@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/twitter_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.ui.widget.TwitterIndeterminateProgressSpinner android:id="@id/spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/section_padding" android:layout_centerInParent="true" style="@style/TwitterIndeterminateProgressSpinnerBigLight" />
+    <com.twitter.library.widget.FadeInTextView android:textSize="@dimen/font_size_medium" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/instant_timeline_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/spinner" android:layout_centerInParent="true" android:duration="5000" twitter:texts="@array/instant_timeline_loading_texts" />
+</RelativeLayout>

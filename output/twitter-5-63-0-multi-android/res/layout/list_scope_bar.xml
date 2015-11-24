@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@id/list_scope_bar" android:background="@drawable/border_default_back" android:layout_width="fill_parent" android:layout_height="@dimen/nav_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.library.widget.StyleableRadioButton android:id="@id/tweets" android:checked="true" android:text="@string/profile_tab_title_timeline" style="@style/ScopeOption" />
+    <com.twitter.library.widget.StyleableRadioButton android:id="@id/people" android:text="@string/tab_title_members" style="@style/ScopeOption" />
+</RadioGroup>

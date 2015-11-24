@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/scroll_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?toolBarSize" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/scroll_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.twitter.ui.widget.PromptView android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" twitter:isHeader="true" />
+        <FrameLayout android:id="@id/avatar_container" android:background="@drawable/edit_profile_icon" android:layout_width="@dimen/profile_avatar_size_with_border" android:layout_height="@dimen/profile_avatar_size_with_border" android:layout_marginLeft="@dimen/profile_margin" android:layout_marginTop="-42.0dip" android:layout_below="@id/header" android:onClick="onClickHandler">
+            <com.twitter.library.media.widget.UserImageView android:layout_gravity="center" android:id="@id/avatar_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/edit_avatar_subtitle" twitter:scaleType="fill" twitter:userImageSize="@dimen/profile_avatar_size" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_profile_photo_add" android:maxWidth="29.0dip" android:maxHeight="29.0dip" android:contentDescription="@null" android:alpha="0.85" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_margin" android:layout_marginRight="@dimen/profile_margin" android:layout_below="@id/avatar_container">
+            <EditText android:textSize="@dimen/font_size_large" android:textColor="@color/text" android:id="@id/name" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:hint="@string/edit_profile_fullname" />
+            <View style="@style/HorizontalRule" />
+            <EditText android:textSize="@dimen/font_size_large" android:textColor="@color/text" android:id="@id/edit_bio" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="54.0dip" android:hint="@string/edit_profile_bio_hint" android:inputType="textMultiLine" />
+            <View android:id="@id/divider" android:background="@color/medium_blue" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <com.twitter.internal.android.widget.TypefacesTextView android:textSize="13.0sp" android:textColor="@color/medium_gray" android:layout_gravity="center|right" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_bio_max_chars" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
