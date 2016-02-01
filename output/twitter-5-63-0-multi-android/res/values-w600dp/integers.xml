@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="video_advertisement_notice_duration">5750</integer>
-    <integer name="value_of_twitter_land_margin_weight">11</integer>
-    <integer name="value_of_twitter_land_text_width_weight">47</integer>
-</resources>

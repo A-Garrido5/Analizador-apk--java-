@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/faint_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="@color/twitter_blue" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_tweet_privately" />
-    <com.twitter.library.widget.TweetView android:id="@id/tweet_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ShareTweet" />
-    <com.twitter.ui.widget.TwitterButton android:id="@id/send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_button_send" style="@style/TwitterButtonMediumBold" />
-</LinearLayout>

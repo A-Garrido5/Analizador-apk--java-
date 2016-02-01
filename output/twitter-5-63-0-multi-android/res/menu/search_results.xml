@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/ic_title_filter_default" android:id="@id/menu_search_filter_slideup" android:title="@string/search_filter_title" twitter:showAsAction="ifRoom" />
-    <item android:id="@id/menu_save_search" android:visible="false" android:title="@string/menu_save_search" twitter:showAsAction="never" />
-    <item android:id="@id/menu_delete_search" android:visible="false" android:title="@string/menu_delete_search" twitter:showAsAction="never" />
-</menu>

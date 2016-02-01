@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
-    <item android:drawable="@drawable/btn_inline_following_pressed" twitter:state_inline_action_follow_pressed="true" />
-    <item android:drawable="@drawable/btn_inline_following_default" />
-</selector>

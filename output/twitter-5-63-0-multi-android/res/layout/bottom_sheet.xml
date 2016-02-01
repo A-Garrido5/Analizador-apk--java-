@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.twitter.library.widget.BottomSheetDrawerLayout android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="@dimen/bottom_sheet_max_width" twitter:maxCollapsedHeight="192.0dip" twitter:maxCollapsedHeightSmall="56.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
-    <com.twitter.internal.android.widget.TypefacesTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:gravity="start|center" android:id="@id/title" android:background="@color/white" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" twitter:layout_alwaysShow="true" />
-    <ViewStub android:id="@id/list_stub" android:layout="@layout/bottom_sheet_list" android:inflatedId="@id/bottom_sheet_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <ViewStub android:id="@id/grid_stub" android:layout="@layout/bottom_sheet_grid" android:inflatedId="@id/bottom_sheet_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</com.twitter.library.widget.BottomSheetDrawerLayout>

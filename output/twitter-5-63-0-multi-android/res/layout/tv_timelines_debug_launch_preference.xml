@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:padding="@dimen/section_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.twitter.internal.android.widget.TypefacesTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/section_padding" android:text="@string/tv_timelines_debug_launch_msg" />
-    <EditText android:id="@id/pref_tv_timeline_show_id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="10027746129" android:inputType="numberDecimal" />
-</LinearLayout>

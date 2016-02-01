@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="@dimen/docked_content_size" android:layout_height="@dimen/docked_content_size"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:id="@id/dismiss_background_view" android:background="@drawable/docked_audio_dismiss_bg" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" />
-    <FrameLayout android:background="@drawable/ic_cc_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
-</RelativeLayout>

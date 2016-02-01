@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/moments_progressbar_spacing" android:layout_marginBottom="@dimen/moments_progressbar_spacing" android:layout_below="@id/tertiary_text"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

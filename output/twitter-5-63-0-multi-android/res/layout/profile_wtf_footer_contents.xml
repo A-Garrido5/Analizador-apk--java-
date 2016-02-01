@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.twitter.internal.android.widget.TypefacesTextView android:id="@id/count" android:layout_alignParentRight="true" style="@style/SimpleRowViewCount" />
-    <com.twitter.internal.android.widget.TypefacesTextView android:id="@id/title" style="@style/SimpleRowViewTitle.Profile" />
-</merge>

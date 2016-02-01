@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="start" android:id="@id/proof_box" android:layout_width="fill_parent" android:layout_height="@dimen/highlights_social_proof_height" style="@style/HighlightsProofBar"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/highlights_social_proof_avatar" />
-    <include layout="@layout/highlights_social_proof_avatar" />
-    <include android:layout_width="@dimen/highlights_social_proof_avatar_dimen" android:layout_height="@dimen/highlights_social_proof_avatar_dimen" android:layout_marginRight="@dimen/highlights_social_proof_padding_between_text" layout="@layout/highlights_social_proof_avatar" />
-    <com.twitter.internal.android.widget.TypefacesTextView android:id="@id/proof_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/HighlightsProofBarLabel" />
-</LinearLayout>

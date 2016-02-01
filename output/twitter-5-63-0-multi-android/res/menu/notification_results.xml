@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/ic_title_filter_default" android:id="@id/menu_notification_filter_slideup" android:title="@string/notification_filter_title" twitter:showAsAction="always" />
-</menu>

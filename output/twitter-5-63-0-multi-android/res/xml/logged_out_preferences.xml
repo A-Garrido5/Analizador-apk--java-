@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference android:title="@string/settings_email_disco_title" android:key="email_disco" android:summary="@string/settings_email_disco_summary" />
-    <CheckBoxPreference android:title="@string/settings_phone_disco_title" android:key="phone_disco" android:summary="@string/settings_phone_disco_summary" />
-    <Preference android:title="@string/settings_proxy_settings" android:key="advanced_proxy" android:summary="@string/settings_enable_http_proxy_summary" />
-</PreferenceScreen>
