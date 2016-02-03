@@ -521,7 +521,7 @@ def revisarManifest(folder,carpetaArchivosJava,MalWare):
 
 	os.chdir(carpetaPrincipal)
 
-	intento=1
+	intento=0
 
 	revisarJava(carpetaArchivosJava,packageName,Version,MalWare,riesgoPermisos,intento)
 
@@ -579,6 +579,8 @@ def revisarJava(folder,paquete,Version,MalWare,riesgoPermisos,intento):
 
 	intento = intento +1
 
+	print(intento)
+
 	listaArchivos=ficherosEnDir(folder)
 
 	for x in listaArchivos:
@@ -634,64 +636,68 @@ def revisarJava(folder,paquete,Version,MalWare,riesgoPermisos,intento):
 
 		diccionarioEncriptacion[h] = 1;	
 
-	archivo=open('ResultadosApp.arff' ,'a')
+	if (intento==1):
 
-	#for f in diccionarioPublicidad:
-		#print(f + "    "+ str(diccionarioPublicidad.get(f)))
+		archivo=open('ResultadosApp.arff' ,'a')
+
+		#for f in diccionarioPublicidad:
+			#print(f + "    "+ str(diccionarioPublicidad.get(f)))
 
 
-	for n in diccionarioPublicidad:
+		for n in diccionarioPublicidad:
 
-		verificador = diccionarioPublicidad.get(n)
+			verificador = diccionarioPublicidad.get(n)
 
-		if(verificador==0):
-			archivo.write('false,')
-		
-		if(verificador==1):			
-			archivo.write('true,')
+			if(verificador==0):
+				archivo.write('false,')
 			
-		diccionarioPublicidad[n] = 0;
+			if(verificador==1):			
+				archivo.write('true,')
+				
+			diccionarioPublicidad[n] = 0;
 
-	listaPublicidad.clear()
+		listaPublicidad.clear()
 
 
-	for n in diccionarioEncriptacion:
+		for n in diccionarioEncriptacion:
 
-		verificador = diccionarioEncriptacion.get(n)
+			verificador = diccionarioEncriptacion.get(n)
 
-		if(verificador==0):
-			archivo.write('false,')
-		
+			if(verificador==0):
+				archivo.write('false,')
+			
+			else:
+				archivo.write('true,')
+
+		for x in listaEncriptacion:
+
+			ubicacion = listaEncriptacion.index(x)
+
+			diccionarioEncriptacion[x] = 0;
+
+		listaEncriptacion.clear()
+
+		if MalWare:
+
+			archivo.write("malware")
+
 		else:
-			archivo.write('true,')
+			archivo.write("normal")
 
-	for x in listaEncriptacion:
+		archivo.write('\n')
 
-		ubicacion = listaEncriptacion.index(x)
-
-		diccionarioEncriptacion[x] = 0;
-
-	listaEncriptacion.clear()
-
-	if MalWare:
-
-		archivo.write("malware")
-
-	else:
-		archivo.write("normal")
-
-	archivo.write('\n')
-
-	archivo.close()
+		archivo.close()
 
 	if riesgoPublicidad == -1:
 		riesgoTotal = riesgoPermisos
 
-	if riesgoPublicidad!=0:
-		riesgoTotal = (riesgoPermisos + riesgoPublicidad)/2
-
 	else:
-		riesgoTotal=riesgoPermisos
+
+		if riesgoPublicidad!=0:
+			riesgoTotal = (riesgoPermisos + riesgoPublicidad)/2
+
+		else:
+			riesgoTotal=riesgoPermisos
 
 	try:
 		url = 'http://adriangoicovic.16mb.com/database/post_all_apps.php'
@@ -758,6 +764,22 @@ def validarExistencia(nombreArchivo):
 		existe=False
 
 		return existe
+
+def validarExistenciaMalware(nombreArchivo):
+
+	output = carpetaPrincipal+"/output-Malware/"+nombreArchivo
+
+	existe=True
+	
+	try:
+		os.stat(output)
+
+		return existe
+
+	except:
+		existe=False
+		return existe
+
 
 
 
@@ -838,25 +860,28 @@ def main():
 
 			nombreArchivo=os.path.splitext(os.path.basename(y))[0]
 
+			existe = validarExistenciaMalware(nombreArchivo)
 
-			call('python3 decompilador.py d '+y+' -o output-Malware',shell=True)
-			call('rm -r -f output-Malware/'+nombreArchivo+'-new.apk',shell=True)
-			call('rm -r -f output-Malware/'+nombreArchivo+'.jar',shell=True)
+			if(existe==False):
 
-			print ("*********************************************")
-			print ("**         Analizando - (MalWare)          **")
-			print ("*********************************************")
+
+				call('python3 decompilador.py d '+y+' -o output-Malware',shell=True)
+				call('rm -r -f output-Malware/'+nombreArchivo+'-new.apk',shell=True)
+				call('rm -r -f output-Malware/'+nombreArchivo+'.jar',shell=True)
+
+				print ("*********************************************")
+				print ("**         Analizando - (MalWare)          **")
+				print ("*********************************************")
+				
+				carpetaArchivosJava=carpetaPrincipal+'/output-Malware/'+nombreArchivo+'/src'
+
+				revisarManifest(carpetaPrincipal+'/output-Malware/'+nombreArchivo,carpetaArchivosJava,MalWare)
+
 			
-			carpetaArchivosJava=carpetaPrincipal+'/output-Malware/'+nombreArchivo+'/src'
 
-			revisarManifest(carpetaPrincipal+'/output-Malware/'+nombreArchivo,carpetaArchivosJava,MalWare)
-
-			
-
-			print('')
-			print('Listo')
-			print('')
-	
+				print('')
+				print('Listo')
+				print('')
 
 if __name__=="__main__":
   main()
