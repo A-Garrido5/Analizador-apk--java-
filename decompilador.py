@@ -18,7 +18,8 @@ def apktool():
   print ("**   Extrayendo archivos manifest y .dex   **")
   print ("*********************************************")
 
-  call(home+'/apktool_200rc3.jar d '+apk_file+' -o '+outdir+"/"+project_name+' -sf',shell=True)
+  call('java -jar '+home+'/apktool_200rc3.jar d '+apk_file+' -o '+outdir+"/"+project_name+' -sf',shell=True)
+  print('java -jar '+home+'/apktool_200rc3.jar d '+apk_file+' -o '+outdir+"/"+project_name+' -sf')
   os.system('mv %s %s' % (outdir+project_name+'/classes.dex', outdir+"/"+project_name+'/original/'))
   
   print('')
